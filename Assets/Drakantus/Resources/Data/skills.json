@@ -1,0 +1,1983 @@
+{
+ "slots": [
+  "Z",
+  "X",
+  "C",
+  "V"
+ ],
+ "skills": [
+  {
+   "id": "spin",
+   "classId": "guerreiro",
+   "name": "Golpe Giratório",
+   "desc": "Gira a espada e acerta todos ao redor.",
+   "level": 1,
+   "mp": 12,
+   "cd": 4.0,
+   "icon": [
+    3,
+    45
+   ],
+   "type": "nova",
+   "color": "ff8a4a",
+   "radius": 2.5,
+   "mult": 2.0,
+   "shake": 3.0,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ffffff"
+    },
+    {
+     "style": "burst",
+     "color": "ffd2a0"
+    }
+   ]
+  },
+  {
+   "id": "charge",
+   "classId": "guerreiro",
+   "name": "Investida",
+   "desc": "Avança cortando tudo pelo caminho.",
+   "level": 1,
+   "mp": 8,
+   "cd": 3.5,
+   "icon": [
+    7,
+    52
+   ],
+   "type": "dash_strike",
+   "color": "ff8a4a",
+   "speed": 16.88,
+   "mult": 1.6,
+   "time": 0.28,
+   "vfx": [
+    {
+     "style": "dust",
+     "color": "c8b090"
+    }
+   ]
+  },
+  {
+   "id": "warcry",
+   "classId": "guerreiro",
+   "name": "Grito de Guerra",
+   "desc": "Por 6s seu ataque aumenta (+3) e você se move mais rápido.",
+   "level": 3,
+   "mp": 16,
+   "cd": 15.0,
+   "icon": [
+    5,
+    74
+   ],
+   "type": "buff",
+   "color": "ff8a4a",
+   "speedMult": 1.15,
+   "duration": 6.0,
+   "atk": 3,
+   "text": "FÚRIA!",
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "ff5a3a"
+    },
+    {
+     "style": "burst",
+     "color": "ffb347"
+    }
+   ]
+  },
+  {
+   "id": "leap",
+   "classId": "guerreiro",
+   "name": "Salto Esmagador",
+   "desc": "Salta até o alvo e esmaga o chão, atordoando.",
+   "level": 5,
+   "mp": 20,
+   "cd": 7.0,
+   "icon": [
+    2,
+    75
+   ],
+   "type": "leap",
+   "color": "ff8a4a",
+   "radius": 2.5,
+   "range": 6.88,
+   "mult": 2.6,
+   "stun": 1.0,
+   "shake": 5.0,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "c8a070"
+    },
+    {
+     "style": "dust",
+     "color": "c8b090"
+    },
+    {
+     "style": "burst",
+     "color": "ffe0a0"
+    }
+   ]
+  },
+  {
+   "id": "whirlwind",
+   "classId": "guerreiro",
+   "name": "Redemoinho de Aço",
+   "desc": "Gira por 2,5s causando dano contínuo enquanto anda.",
+   "level": 7,
+   "mp": 26,
+   "cd": 10.0,
+   "icon": [
+    4,
+    45
+   ],
+   "type": "whirlwind",
+   "color": "ff8a4a",
+   "radius": 2.25,
+   "speedMult": 0.75,
+   "mult": 0.7,
+   "duration": 2.5,
+   "tick": 0.25,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "e8f0ff"
+    }
+   ]
+  },
+  {
+   "id": "execute",
+   "classId": "guerreiro",
+   "name": "Corte Executor",
+   "desc": "Um golpe brutal em cone. Dano dobrado em inimigos feridos.",
+   "level": 9,
+   "mp": 22,
+   "cd": 8.0,
+   "icon": [
+    9,
+    45
+   ],
+   "type": "cleave",
+   "color": "ff8a4a",
+   "range": 2.88,
+   "mult": 3.5,
+   "execute": 0.4,
+   "arc": 0.35,
+   "shake": 4.0,
+   "vfx": [
+    {
+     "style": "slash",
+     "color": "ff4a3a"
+    }
+   ]
+  },
+  {
+   "id": "volley",
+   "classId": "arqueiro",
+   "name": "Leque de Flechas",
+   "desc": "Dispara 5 flechas em leque.",
+   "level": 1,
+   "mp": 14,
+   "cd": 4.5,
+   "icon": [
+    6,
+    50
+   ],
+   "type": "projectile",
+   "color": "8fe08a",
+   "mult": 0.9,
+   "count": 5,
+   "spread": 0.16,
+   "proj": "arrow",
+   "vfx": []
+  },
+  {
+   "id": "pierce",
+   "classId": "arqueiro",
+   "name": "Flecha Perfurante",
+   "desc": "Flecha poderosa que atravessa inimigos.",
+   "level": 1,
+   "mp": 10,
+   "cd": 3.0,
+   "icon": [
+    1,
+    51
+   ],
+   "type": "projectile",
+   "color": "8fe08a",
+   "mult": 2.8,
+   "count": 1,
+   "proj": "pierce",
+   "pierce": true,
+   "vfx": [
+    {
+     "style": "burst",
+     "color": "ffe08a"
+    }
+   ]
+  },
+  {
+   "id": "frost_arrow",
+   "classId": "arqueiro",
+   "name": "Flecha Congelante",
+   "desc": "Congela o alvo e quem estiver perto por 1,2s.",
+   "level": 3,
+   "mp": 12,
+   "cd": 5.0,
+   "icon": [
+    2,
+    49
+   ],
+   "type": "projectile",
+   "color": "8fe08a",
+   "aoe": 1.62,
+   "mult": 1.8,
+   "stun": 1.2,
+   "count": 1,
+   "proj": "frost",
+   "vfx": []
+  },
+  {
+   "id": "trap",
+   "classId": "arqueiro",
+   "name": "Armadilha Explosiva",
+   "desc": "Planta uma armadilha que explode quando um inimigo pisa.",
+   "level": 5,
+   "mp": 14,
+   "cd": 8.0,
+   "icon": [
+    2,
+    48
+   ],
+   "type": "trap",
+   "color": "8fe08a",
+   "radius": 2.5,
+   "trigger": 1.12,
+   "mult": 3.0,
+   "stun": 0.8,
+   "life": 20.0,
+   "vfx": []
+  },
+  {
+   "id": "roll",
+   "classId": "arqueiro",
+   "name": "Rolamento",
+   "desc": "Rola para trás, fica invulnerável e ganha velocidade por 2s.",
+   "level": 7,
+   "mp": 8,
+   "cd": 4.0,
+   "icon": [
+    3,
+    49
+   ],
+   "type": "blink",
+   "color": "8fe08a",
+   "distance": -4.0,
+   "speedMult": 1.3,
+   "duration": 2.0,
+   "invuln": 0.4,
+   "vfx": [
+    {
+     "style": "dust",
+     "color": "d8e0c8"
+    }
+   ]
+  },
+  {
+   "id": "arrow_rain",
+   "classId": "arqueiro",
+   "name": "Chuva de Flechas",
+   "desc": "Uma chuva de flechas cai na área mirada por 2s.",
+   "level": 9,
+   "mp": 28,
+   "cd": 12.0,
+   "icon": [
+    4,
+    51
+   ],
+   "type": "rain",
+   "color": "8fe08a",
+   "range": 5.62,
+   "area": 3.0,
+   "hitRadius": 1.0,
+   "mult": 1.2,
+   "drops": 14,
+   "interval": 0.14,
+   "telegraph": "8fd18a",
+   "vfx": []
+  },
+  {
+   "id": "fireball",
+   "classId": "mago",
+   "name": "Bola de Fogo",
+   "desc": "Lança uma bola de fogo que explode no impacto.",
+   "level": 1,
+   "mp": 12,
+   "cd": 2.5,
+   "icon": [
+    0,
+    50
+   ],
+   "type": "projectile",
+   "color": "b98aff",
+   "aoe": 1.88,
+   "mult": 2.2,
+   "count": 1,
+   "proj": "fireball",
+   "vfx": []
+  },
+  {
+   "id": "heal",
+   "classId": "mago",
+   "name": "Luz Curativa",
+   "desc": "Recupera 35% da vida (e cura o mercenário).",
+   "level": 1,
+   "mp": 20,
+   "cd": 10.0,
+   "icon": [
+    11,
+    48
+   ],
+   "type": "heal",
+   "color": "b98aff",
+   "percent": 0.35,
+   "flat": 10,
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "8fe08a"
+    },
+    {
+     "style": "sparkle",
+     "color": "c8ffc0"
+    }
+   ]
+  },
+  {
+   "id": "blast",
+   "classId": "mago",
+   "name": "Explosão Arcana",
+   "desc": "Explosão arcana no ponto mirado.",
+   "level": 3,
+   "mp": 20,
+   "cd": 5.0,
+   "icon": [
+    5,
+    48
+   ],
+   "type": "ground",
+   "color": "b98aff",
+   "radius": 2.25,
+   "range": 4.38,
+   "mult": 3.0,
+   "delay": 0.25,
+   "shake": 3.5,
+   "telegraph": "b9a6ff",
+   "vfx": [
+    {
+     "style": "burst",
+     "color": "b98aff"
+    },
+    {
+     "style": "ring",
+     "color": "d8b8ff"
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "classId": "mago",
+   "name": "Corrente de Raios",
+   "desc": "Um raio salta entre até 5 inimigos.",
+   "level": 5,
+   "mp": 20,
+   "cd": 6.0,
+   "icon": [
+    15,
+    51
+   ],
+   "type": "chain",
+   "color": "b98aff",
+   "range": 8.12,
+   "jumpRange": 4.38,
+   "mult": 1.6,
+   "jumps": 5,
+   "vfx": []
+  },
+  {
+   "id": "blink",
+   "classId": "mago",
+   "name": "Teleporte",
+   "desc": "Teleporta para frente e libera uma onda arcana.",
+   "level": 7,
+   "mp": 14,
+   "cd": 6.0,
+   "icon": [
+    4,
+    48
+   ],
+   "type": "blink",
+   "color": "b98aff",
+   "distance": 5.0,
+   "novaRadius": 1.88,
+   "invuln": 0.3,
+   "novaMult": 1.2,
+   "vfx": [
+    {
+     "style": "burst",
+     "color": "c58bff"
+    }
+   ]
+  },
+  {
+   "id": "meteor",
+   "classId": "mago",
+   "name": "Meteoro",
+   "desc": "Invoca um meteoro devastador após um instante.",
+   "level": 9,
+   "mp": 36,
+   "cd": 14.0,
+   "icon": [
+    13,
+    50
+   ],
+   "type": "ground",
+   "color": "b98aff",
+   "radius": 3.25,
+   "range": 5.62,
+   "mult": 5.5,
+   "stun": 1.0,
+   "delay": 0.9,
+   "shake": 7.0,
+   "telegraph": "ff8a3a",
+   "falling": true,
+   "vfx": [
+    {
+     "style": "burst",
+     "color": "ff7a2a"
+    },
+    {
+     "style": "ring",
+     "color": "ffb347"
+    },
+    {
+     "style": "dust",
+     "color": "6a4a3a"
+    }
+   ]
+  },
+  {
+   "id": "slam",
+   "classId": "tank",
+   "name": "Impacto",
+   "desc": "Golpe no chão que atordoa inimigos próximos.",
+   "level": 1,
+   "mp": 12,
+   "cd": 5.0,
+   "icon": [
+    3,
+    80
+   ],
+   "type": "nova",
+   "color": "8fc4ff",
+   "radius": 2.62,
+   "mult": 1.3,
+   "stun": 1.2,
+   "shake": 5.0,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "c8a070"
+    },
+    {
+     "style": "dust",
+     "color": "c8b090"
+    }
+   ]
+  },
+  {
+   "id": "fortress",
+   "classId": "tank",
+   "name": "Fortaleza",
+   "desc": "Por 5s recebe 65% menos dano e provoca os inimigos.",
+   "level": 1,
+   "mp": 16,
+   "cd": 14.0,
+   "icon": [
+    8,
+    53
+   ],
+   "type": "buff",
+   "color": "8fc4ff",
+   "duration": 5.0,
+   "taunt": 5.0,
+   "dmgTaken": 0.35,
+   "text": "FORTALEZA",
+   "vfx": [
+    {
+     "style": "shield",
+     "color": "8fc4ff"
+    }
+   ]
+  },
+  {
+   "id": "bash",
+   "classId": "tank",
+   "name": "Escudada",
+   "desc": "Investida curta com o escudo que atordoa.",
+   "level": 3,
+   "mp": 10,
+   "cd": 4.0,
+   "icon": [
+    4,
+    53
+   ],
+   "type": "dash_strike",
+   "color": "8fc4ff",
+   "speed": 13.75,
+   "mult": 1.5,
+   "stun": 1.2,
+   "time": 0.2,
+   "vfx": [
+    {
+     "style": "dust",
+     "color": "c8b090"
+    }
+   ]
+  },
+  {
+   "id": "taunt",
+   "classId": "tank",
+   "name": "Provocação",
+   "desc": "Puxa a atenção de todos por perto e ganha escudo.",
+   "level": 5,
+   "mp": 10,
+   "cd": 9.0,
+   "icon": [
+    12,
+    80
+   ],
+   "type": "nova",
+   "color": "8fc4ff",
+   "radius": 5.62,
+   "mult": 0.5,
+   "shield": 30,
+   "taunt": 4.0,
+   "text": "VENHAM!",
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ff5a5a"
+    },
+    {
+     "style": "pillar",
+     "color": "ff8a6a"
+    }
+   ]
+  },
+  {
+   "id": "quake",
+   "classId": "tank",
+   "name": "Terremoto",
+   "desc": "Rachaduras avançam em linha atordoando tudo.",
+   "level": 7,
+   "mp": 24,
+   "cd": 10.0,
+   "icon": [
+    8,
+    80
+   ],
+   "type": "line",
+   "color": "8fc4ff",
+   "radius": 1.25,
+   "spacing": 1.25,
+   "mult": 1.8,
+   "stun": 0.8,
+   "interval": 0.09,
+   "count": 6,
+   "shake": 2.0,
+   "vfx": []
+  },
+  {
+   "id": "guardian",
+   "classId": "tank",
+   "name": "Bênção do Guardião",
+   "desc": "Cura 25% da vida e reduz o dano recebido por 6s.",
+   "level": 9,
+   "mp": 26,
+   "cd": 18.0,
+   "icon": [
+    11,
+    82
+   ],
+   "type": "heal",
+   "color": "8fc4ff",
+   "percent": 0.25,
+   "flat": 0,
+   "dmgTaken": 0.6,
+   "buffDuration": 6.0,
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "ffe08a"
+    },
+    {
+     "style": "sparkle",
+     "color": "fff2c0"
+    }
+   ]
+  },
+  {
+   "id": "as_shadowcloak",
+   "classId": "assassino",
+   "name": "Manto das Sombras",
+   "desc": "Fica invisível por 5s e 40% mais rápido; os inimigos perdem o alvo. O próximo golpe é crítico garantido x2,5 e revela você.",
+   "level": 10,
+   "mp": 18,
+   "cd": 14,
+   "icon": [
+    3,
+    49
+   ],
+   "type": "stealth",
+   "color": "9b6bff",
+   "stealth": 5.0,
+   "duration": 5.0,
+   "critMult": 2.5,
+   "vfx": [
+    {
+     "style": "burst",
+     "color": "5a3a8a"
+    }
+   ]
+  },
+  {
+   "id": "as_flurry",
+   "classId": "assassino",
+   "name": "Rajada de Lâminas",
+   "desc": "6 golpes rápidos em cone à frente em 0,6s.",
+   "level": 10,
+   "mp": 14,
+   "cd": 6,
+   "icon": [
+    4,
+    45
+   ],
+   "type": "flurry",
+   "color": "9b6bff",
+   "hits": 6,
+   "time": 0.6,
+   "range": 2.6,
+   "arc": 0.35,
+   "mult": 0.55,
+   "vfx": [
+    {
+     "style": "slash",
+     "color": "c8a8ff"
+    }
+   ]
+  },
+  {
+   "id": "as_shadowstep",
+   "classId": "assassino",
+   "name": "Passo Sombrio",
+   "desc": "Surge nas costas do inimigo mais próximo (até 8 m) e golpeia x2,2. Crítico garantido se invisível.",
+   "level": 12,
+   "mp": 16,
+   "cd": 7,
+   "icon": [
+    7,
+    52
+   ],
+   "type": "backstab",
+   "color": "9b6bff",
+   "range": 8.0,
+   "mult": 2.2,
+   "critMult": 2.5,
+   "vfx": [
+    {
+     "style": "burst",
+     "color": "9b6bff"
+    }
+   ]
+  },
+  {
+   "id": "as_poison",
+   "classId": "assassino",
+   "name": "Lâminas Envenenadas",
+   "desc": "Por 8s seus golpes envenenam (dano por segundo, acumula até 3 vezes).",
+   "level": 14,
+   "mp": 18,
+   "cd": 16,
+   "icon": [
+    2,
+    48
+   ],
+   "type": "stance",
+   "color": "9b6bff",
+   "duration": 8.0,
+   "dot": "poison",
+   "dotMult": 0.35,
+   "dotTime": 4.0,
+   "dotStacks": 3,
+   "vfx": [
+    {
+     "style": "sparkle",
+     "color": "8fe05a"
+    }
+   ]
+  },
+  {
+   "id": "as_smoke",
+   "classId": "assassino",
+   "name": "Bomba de Fumaça",
+   "desc": "Nuvem de 4 m por 4s: inimigos dentro ficam cegos e lentos; dentro dela você fica invisível.",
+   "level": 16,
+   "mp": 22,
+   "cd": 18,
+   "icon": [
+    12,
+    80
+   ],
+   "type": "zone",
+   "color": "9b6bff",
+   "radius": 4.0,
+   "duration": 4.0,
+   "blind": 1.0,
+   "stealth": 1.0,
+   "vfx": [
+    {
+     "style": "dust",
+     "color": "4a4050"
+    }
+   ]
+  },
+  {
+   "id": "as_deathmark",
+   "classId": "assassino",
+   "name": "Marca da Morte",
+   "desc": "Marca um inimigo por 6s: 30% do dano que ele sofrer explode no fim. Abaixo de 20% de vida ele é executado (exceto chefes).",
+   "level": 18,
+   "mp": 26,
+   "cd": 20,
+   "icon": [
+    9,
+    45
+   ],
+   "type": "deathmark",
+   "color": "9b6bff",
+   "range": 10.0,
+   "duration": 6.0,
+   "markStore": 0.3,
+   "execute": 0.2,
+   "mult": 0.8,
+   "vfx": [
+    {
+     "style": "burst",
+     "color": "c070ff"
+    }
+   ]
+  },
+  {
+   "id": "kn_crescent",
+   "classId": "cavaleiro",
+   "name": "Corte Crescente",
+   "desc": "Corte de 180° com alcance 3,5: dano x2,4 e empurra.",
+   "level": 10,
+   "mp": 14,
+   "cd": 5,
+   "icon": [
+    3,
+    45
+   ],
+   "type": "kit_strike",
+   "color": "e0b050",
+   "range": 3.5,
+   "arc": 0.01,
+   "mult": 2.4,
+   "push": 2.5,
+   "shake": 3.0,
+   "vfx": [
+    {
+     "style": "slash",
+     "color": "ffe0a0"
+    }
+   ]
+  },
+  {
+   "id": "kn_earthsplitter",
+   "classId": "cavaleiro",
+   "name": "Racha-Terra",
+   "desc": "Onda de choque em linha de 9 m: dano x2,0 e atordoa 0,8s.",
+   "level": 10,
+   "mp": 18,
+   "cd": 8,
+   "icon": [
+    8,
+    80
+   ],
+   "type": "line",
+   "color": "e0b050",
+   "count": 7,
+   "spacing": 1.3,
+   "radius": 1.3,
+   "mult": 2.0,
+   "stun": 0.8,
+   "interval": 0.06,
+   "shake": 3.0,
+   "vfx": [
+    {
+     "style": "dust",
+     "color": "c8b090"
+    }
+   ]
+  },
+  {
+   "id": "kn_heavycombo",
+   "classId": "cavaleiro",
+   "name": "Combo do Juramento",
+   "desc": "3 golpes pesados; o último explode em 3,5 m (x3,2).",
+   "level": 12,
+   "mp": 22,
+   "cd": 9,
+   "icon": [
+    9,
+    45
+   ],
+   "type": "combo3",
+   "color": "e0b050",
+   "hits": 3,
+   "range": 3.0,
+   "arc": 0.3,
+   "mult": 1.6,
+   "radius": 3.5,
+   "novaMult": 3.2,
+   "stun": 0.5,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ffe08a"
+    }
+   ]
+  },
+  {
+   "id": "kn_ironstance",
+   "classId": "cavaleiro",
+   "name": "Postura de Ferro",
+   "desc": "Por 6s não é interrompido, recebe 30% menos dano e causa +20% de dano.",
+   "level": 14,
+   "mp": 18,
+   "cd": 18,
+   "icon": [
+    8,
+    53
+   ],
+   "type": "stance",
+   "color": "e0b050",
+   "duration": 6.0,
+   "dmgTaken": 0.7,
+   "atkPct": 0.2,
+   "unstoppable": true,
+   "text": "FIRME!",
+   "vfx": [
+    {
+     "style": "shield",
+     "color": "e0b050"
+    }
+   ]
+  },
+  {
+   "id": "kn_judgment",
+   "classId": "cavaleiro",
+   "name": "Golpe do Julgamento",
+   "desc": "Salta até 7 m e esmaga o chão: área de 3,5 m, dano x3,0.",
+   "level": 16,
+   "mp": 24,
+   "cd": 10,
+   "icon": [
+    2,
+    75
+   ],
+   "type": "leap",
+   "color": "e0b050",
+   "range": 7.0,
+   "radius": 3.5,
+   "mult": 3.0,
+   "stun": 0.6,
+   "shake": 6.0,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ffe08a"
+    },
+    {
+     "style": "dust",
+     "color": "c8b090"
+    }
+   ]
+  },
+  {
+   "id": "kn_bladestorm",
+   "classId": "cavaleiro",
+   "name": "Tempestade de Aço",
+   "desc": "Gira por 3s (raio 3) andando devagar, com golpes contínuos fortes.",
+   "level": 18,
+   "mp": 32,
+   "cd": 16,
+   "icon": [
+    4,
+    45
+   ],
+   "type": "whirlwind",
+   "color": "e0b050",
+   "duration": 3.0,
+   "radius": 3.0,
+   "mult": 1.0,
+   "tick": 0.25,
+   "speedMult": 0.55,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "fff0c0"
+    }
+   ]
+  },
+  {
+   "id": "gs_fanfire",
+   "classId": "pistoleiro",
+   "name": "Leque de Balas",
+   "desc": "Dispara 7 balas em leque.",
+   "level": 10,
+   "mp": 14,
+   "cd": 5,
+   "icon": [
+    6,
+    50
+   ],
+   "type": "projectile",
+   "color": "ffb347",
+   "proj": "bullet",
+   "count": 7,
+   "spread": 0.12,
+   "mult": 0.8,
+   "vfx": []
+  },
+  {
+   "id": "gs_dodgeshot",
+   "classId": "pistoleiro",
+   "name": "Rolamento Atirador",
+   "desc": "Rola para trás atirando 2 balas e recarrega as pistolas na hora.",
+   "level": 10,
+   "mp": 10,
+   "cd": 5,
+   "icon": [
+    3,
+    49
+   ],
+   "type": "dodgeshot",
+   "color": "ffb347",
+   "distance": -4.5,
+   "hits": 2,
+   "mult": 1.2,
+   "invuln": 0.35,
+   "vfx": [
+    {
+     "style": "dust",
+     "color": "d8d0c0"
+    }
+   ]
+  },
+  {
+   "id": "gs_explosive",
+   "classId": "pistoleiro",
+   "name": "Tiro Explosivo",
+   "desc": "Bala que explode no impacto (raio 2,5).",
+   "level": 12,
+   "mp": 16,
+   "cd": 6,
+   "icon": [
+    0,
+    50
+   ],
+   "type": "projectile",
+   "color": "ffb347",
+   "proj": "bullet_explosive",
+   "aoe": 2.5,
+   "mult": 2.6,
+   "vfx": []
+  },
+  {
+   "id": "gs_quickdraw",
+   "classId": "pistoleiro",
+   "name": "Saque Rápido",
+   "desc": "Por 6s atira 60% mais rápido e não gasta munição.",
+   "level": 14,
+   "mp": 20,
+   "cd": 18,
+   "icon": [
+    5,
+    74
+   ],
+   "type": "stance",
+   "color": "ffb347",
+   "duration": 6.0,
+   "atkSpeed": 0.6,
+   "infiniteAmmo": true,
+   "text": "SAQUE!",
+   "vfx": [
+    {
+     "style": "sparkle",
+     "color": "ffd08a"
+    }
+   ]
+  },
+  {
+   "id": "gs_ricochet",
+   "classId": "pistoleiro",
+   "name": "Ricochete",
+   "desc": "Bala que quica entre até 5 inimigos.",
+   "level": 16,
+   "mp": 18,
+   "cd": 7,
+   "icon": [
+    15,
+    51
+   ],
+   "type": "projectile",
+   "color": "ffb347",
+   "proj": "bullet",
+   "bounces": 5,
+   "mult": 1.8,
+   "vfx": []
+  },
+  {
+   "id": "gs_deadeye",
+   "classId": "pistoleiro",
+   "name": "Olho Morto",
+   "desc": "Mira em até 6 inimigos à frente e, após 0,8s, atira em cada um (x3, crítico).",
+   "level": 18,
+   "mp": 30,
+   "cd": 18,
+   "icon": [
+    1,
+    51
+   ],
+   "type": "deadeye",
+   "color": "ffb347",
+   "targets": 6,
+   "range": 14.0,
+   "mult": 3.0,
+   "delay": 0.8,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ffd08a"
+    }
+   ]
+  },
+  {
+   "id": "ls_powershot",
+   "classId": "arqueiro_superior",
+   "name": "Tiro Potente",
+   "desc": "Flecha enorme que atravessa tudo: dano x3,5 e empurra.",
+   "level": 10,
+   "mp": 16,
+   "cd": 6,
+   "icon": [
+    1,
+    51
+   ],
+   "type": "projectile",
+   "color": "5fd07a",
+   "proj": "heavy_arrow",
+   "pierce": true,
+   "mult": 3.5,
+   "push": 2.5,
+   "vfx": []
+  },
+  {
+   "id": "ls_pin",
+   "classId": "arqueiro_superior",
+   "name": "Flecha Âncora",
+   "desc": "Prende o alvo no chão por 2,5s.",
+   "level": 10,
+   "mp": 12,
+   "cd": 8,
+   "icon": [
+    2,
+    49
+   ],
+   "type": "projectile",
+   "color": "5fd07a",
+   "proj": "pin_arrow",
+   "mult": 1.4,
+   "root": 2.5,
+   "vfx": []
+  },
+  {
+   "id": "ls_volley",
+   "classId": "arqueiro_superior",
+   "name": "Saraivada Pesada",
+   "desc": "Chuva de flechas grandes numa área de 4 m.",
+   "level": 12,
+   "mp": 26,
+   "cd": 11,
+   "icon": [
+    4,
+    51
+   ],
+   "type": "rain",
+   "color": "5fd07a",
+   "range": 9.0,
+   "area": 4.0,
+   "hitRadius": 1.4,
+   "mult": 1.6,
+   "drops": 12,
+   "interval": 0.12,
+   "telegraph": "5fd07a",
+   "vfx": []
+  },
+  {
+   "id": "ls_focus",
+   "classId": "arqueiro_superior",
+   "name": "Foco do Caçador",
+   "desc": "Por 8s: +50% de dano e +15% de crítico, mas 25% mais lento.",
+   "level": 14,
+   "mp": 20,
+   "cd": 20,
+   "icon": [
+    5,
+    74
+   ],
+   "type": "stance",
+   "color": "5fd07a",
+   "duration": 8.0,
+   "atkPct": 0.5,
+   "crit": 0.15,
+   "speedMult": 0.75,
+   "text": "FOCO",
+   "vfx": [
+    {
+     "style": "sparkle",
+     "color": "c8ffc0"
+    }
+   ]
+  },
+  {
+   "id": "ls_split",
+   "classId": "arqueiro_superior",
+   "name": "Flecha Fragmentada",
+   "desc": "Ao acertar, divide-se em 5 flechas.",
+   "level": 16,
+   "mp": 20,
+   "cd": 8,
+   "icon": [
+    6,
+    50
+   ],
+   "type": "projectile",
+   "color": "5fd07a",
+   "proj": "longarrow",
+   "splits": 5,
+   "mult": 2.2,
+   "vfx": []
+  },
+  {
+   "id": "ls_skyfall",
+   "classId": "arqueiro_superior",
+   "name": "Lança Celeste",
+   "desc": "Uma flecha gigante cai do céu no ponto mirado: raio 4, dano x5.",
+   "level": 18,
+   "mp": 34,
+   "cd": 16,
+   "icon": [
+    13,
+    50
+   ],
+   "type": "skyfall",
+   "color": "5fd07a",
+   "range": 12.0,
+   "radius": 4.0,
+   "mult": 5.0,
+   "delay": 0.7,
+   "stun": 1.0,
+   "vfx": []
+  },
+  {
+   "id": "pr_heal",
+   "classId": "sacerdote",
+   "name": "Prece de Cura",
+   "desc": "Cura todos do grupo num raio de 8 m em 30% da vida máxima.",
+   "level": 10,
+   "mp": 24,
+   "cd": 10,
+   "icon": [
+    11,
+    48
+   ],
+   "type": "party",
+   "color": "ffe08a",
+   "radius": 8.0,
+   "percent": 0.3,
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "fff2b0"
+    },
+    {
+     "style": "sparkle",
+     "color": "fff2c0"
+    }
+   ]
+  },
+  {
+   "id": "pr_blessing",
+   "classId": "sacerdote",
+   "name": "Bênção da Força",
+   "desc": "O grupo (8 m) causa +25% de dano por 10s.",
+   "level": 10,
+   "mp": 20,
+   "cd": 18,
+   "icon": [
+    5,
+    74
+   ],
+   "type": "party",
+   "color": "ffe08a",
+   "radius": 8.0,
+   "duration": 10.0,
+   "atkPct": 0.25,
+   "text": "BÊNÇÃO!",
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "ffe08a"
+    }
+   ]
+  },
+  {
+   "id": "pr_aegis",
+   "classId": "sacerdote",
+   "name": "Égide Sagrada",
+   "desc": "O grupo (8 m) ganha escudo de 25% da vida máxima por 6s.",
+   "level": 12,
+   "mp": 24,
+   "cd": 16,
+   "icon": [
+    8,
+    53
+   ],
+   "type": "party",
+   "color": "ffe08a",
+   "radius": 8.0,
+   "shieldPct": 0.25,
+   "duration": 6.0,
+   "vfx": [
+    {
+     "style": "shield",
+     "color": "ffe08a"
+    }
+   ]
+  },
+  {
+   "id": "pr_sanctuary",
+   "classId": "sacerdote",
+   "name": "Santuário",
+   "desc": "Círculo sagrado de 5 m por 8s: cura aliados a cada segundo e deixa inimigos lentos.",
+   "level": 14,
+   "mp": 30,
+   "cd": 20,
+   "icon": [
+    4,
+    48
+   ],
+   "type": "zone",
+   "color": "ffe08a",
+   "range": 6.0,
+   "radius": 5.0,
+   "duration": 8.0,
+   "regen": 0.03,
+   "slow": 0.5,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "fff2b0"
+    }
+   ]
+  },
+  {
+   "id": "pr_smite",
+   "classId": "sacerdote",
+   "name": "Julgamento Divino",
+   "desc": "Pilar de luz no ponto mirado: raio 2,5, dano x3.",
+   "level": 16,
+   "mp": 22,
+   "cd": 7,
+   "icon": [
+    5,
+    48
+   ],
+   "type": "ground",
+   "color": "ffe08a",
+   "range": 8.0,
+   "radius": 2.5,
+   "mult": 3.0,
+   "delay": 0.35,
+   "stun": 0.5,
+   "shake": 3.0,
+   "telegraph": "ffe08a",
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "fff2b0"
+    },
+    {
+     "style": "burst",
+     "color": "ffe08a"
+    }
+   ]
+  },
+  {
+   "id": "pr_resurrection",
+   "classId": "sacerdote",
+   "name": "Luz da Ressurreição",
+   "desc": "Revive aliados caídos, cura todo o grupo, 3s de invulnerabilidade e remove efeitos ruins.",
+   "level": 18,
+   "mp": 50,
+   "cd": 60,
+   "icon": [
+    11,
+    82
+   ],
+   "type": "party",
+   "color": "ffe08a",
+   "radius": 12.0,
+   "percent": 1.0,
+   "invuln": 3.0,
+   "cleanse": true,
+   "text": "LUZ!",
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "ffffff"
+    },
+    {
+     "style": "sparkle",
+     "color": "fff2c0"
+    }
+   ]
+  },
+  {
+   "id": "am_barrage",
+   "classId": "arquimago",
+   "name": "Barragem Arcana",
+   "desc": "5 orbes teleguiados.",
+   "level": 10,
+   "mp": 18,
+   "cd": 5,
+   "icon": [
+    15,
+    51
+   ],
+   "type": "projectile",
+   "color": "c070ff",
+   "proj": "homing_orb",
+   "count": 5,
+   "spread": 0.3,
+   "mult": 0.9,
+   "vfx": []
+  },
+  {
+   "id": "am_overload",
+   "classId": "arquimago",
+   "name": "Sobrecarga",
+   "desc": "Por 8s suas magias causam +50% de dano e custam 50% menos mana.",
+   "level": 10,
+   "mp": 20,
+   "cd": 22,
+   "icon": [
+    7,
+    48
+   ],
+   "type": "stance",
+   "color": "c070ff",
+   "duration": 8.0,
+   "spellPct": 0.5,
+   "manaCut": 0.5,
+   "text": "SOBRECARGA",
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "c070ff"
+    }
+   ]
+  },
+  {
+   "id": "am_singularity",
+   "classId": "arquimago",
+   "name": "Singularidade",
+   "desc": "Abre um vórtice no ponto mirado que puxa inimigos por 3s causando dano.",
+   "level": 12,
+   "mp": 28,
+   "cd": 14,
+   "icon": [
+    4,
+    48
+   ],
+   "type": "zone",
+   "color": "c070ff",
+   "range": 8.0,
+   "radius": 4.5,
+   "duration": 3.0,
+   "pull": 5.0,
+   "mult": 0.5,
+   "tick": 0.5,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "8a5aff"
+    }
+   ]
+  },
+  {
+   "id": "am_manashield",
+   "classId": "arquimago",
+   "name": "Escudo de Mana",
+   "desc": "Por 10s o dano recebido sai da mana (2 de mana por 1 de dano).",
+   "level": 14,
+   "mp": 16,
+   "cd": 20,
+   "icon": [
+    8,
+    53
+   ],
+   "type": "stance",
+   "color": "c070ff",
+   "duration": 10.0,
+   "manaShield": 2.0,
+   "vfx": [
+    {
+     "style": "shield",
+     "color": "8fb4ff"
+    }
+   ]
+  },
+  {
+   "id": "am_frostnova",
+   "classId": "arquimago",
+   "name": "Nova Glacial",
+   "desc": "Congela inimigos num raio de 5 m por 2s.",
+   "level": 16,
+   "mp": 26,
+   "cd": 14,
+   "icon": [
+    2,
+    49
+   ],
+   "type": "kit_strike",
+   "color": "c070ff",
+   "range": 5.0,
+   "arc": -1.0,
+   "mult": 1.5,
+   "freeze": 2.0,
+   "shake": 3.0,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "bfeaff"
+    },
+    {
+     "style": "burst",
+     "color": "9fe4ff"
+    }
+   ]
+  },
+  {
+   "id": "am_cataclysm",
+   "classId": "arquimago",
+   "name": "Cataclismo",
+   "desc": "Chuva de meteoros numa área grande.",
+   "level": 18,
+   "mp": 45,
+   "cd": 24,
+   "icon": [
+    13,
+    50
+   ],
+   "type": "rain",
+   "color": "c070ff",
+   "range": 10.0,
+   "area": 6.0,
+   "hitRadius": 2.0,
+   "mult": 2.5,
+   "drops": 14,
+   "interval": 0.18,
+   "telegraph": "ff8a3a",
+   "vfx": []
+  },
+  {
+   "id": "bk_cleave",
+   "classId": "berserker",
+   "name": "Corte Duplo",
+   "desc": "Corte cruzado com os dois machados à frente (x2,2).",
+   "level": 10,
+   "mp": 12,
+   "cd": 5,
+   "icon": [
+    9,
+    45
+   ],
+   "type": "kit_strike",
+   "color": "ff4a3a",
+   "range": 3.0,
+   "arc": 0.3,
+   "mult": 2.2,
+   "alt": "bk_cleave_f",
+   "shake": 3.0,
+   "vfx": [
+    {
+     "style": "slash",
+     "color": "ff8a6a"
+    }
+   ]
+  },
+  {
+   "id": "bk_cleave_f",
+   "classId": "berserker",
+   "name": "Carnificina",
+   "desc": "FÚRIA: corte em volta de 360° (x4,6). Custa 7% da vida atual e rouba vida.",
+   "level": 10,
+   "mp": 0,
+   "cd": 5,
+   "icon": [
+    9,
+    45
+   ],
+   "type": "kit_strike",
+   "color": "ff2a1a",
+   "range": 3.4,
+   "arc": -1.0,
+   "mult": 4.6,
+   "hpCost": 0.07,
+   "lifesteal": 0.12,
+   "shake": 5.0,
+   "vfx": [
+    {
+     "style": "slash",
+     "color": "ff2a1a"
+    }
+   ]
+  },
+  {
+   "id": "bk_leap",
+   "classId": "berserker",
+   "name": "Salto Brutal",
+   "desc": "Salta até 7 m e golpeia o chão (x2,4).",
+   "level": 10,
+   "mp": 18,
+   "cd": 8,
+   "icon": [
+    2,
+    75
+   ],
+   "type": "leap",
+   "color": "ff4a3a",
+   "range": 7.0,
+   "radius": 2.6,
+   "mult": 2.4,
+   "stun": 0.6,
+   "alt": "bk_leap_f",
+   "shake": 5.0,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ff8a6a"
+    },
+    {
+     "style": "dust",
+     "color": "c8b090"
+    }
+   ]
+  },
+  {
+   "id": "bk_leap_f",
+   "classId": "berserker",
+   "name": "Queda do Abismo",
+   "desc": "FÚRIA: salto devastador com impacto de 4 m (x5,0). Custa 8% da vida atual e rouba vida.",
+   "level": 10,
+   "mp": 0,
+   "cd": 8,
+   "icon": [
+    2,
+    75
+   ],
+   "type": "leap",
+   "color": "ff2a1a",
+   "range": 8.0,
+   "radius": 4.0,
+   "mult": 5.0,
+   "stun": 1.0,
+   "hpCost": 0.08,
+   "lifesteal": 0.12,
+   "shake": 8.0,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ff2a1a"
+    },
+    {
+     "style": "dust",
+     "color": "6a2a1a"
+    }
+   ]
+  },
+  {
+   "id": "bk_roar",
+   "classId": "berserker",
+   "name": "Rugido",
+   "desc": "Provoca os inimigos em 7 m e ganha +20% de dano por 6s.",
+   "level": 12,
+   "mp": 16,
+   "cd": 16,
+   "icon": [
+    5,
+    74
+   ],
+   "type": "stance",
+   "color": "ff4a3a",
+   "duration": 6.0,
+   "radius": 7.0,
+   "taunt": 4.0,
+   "atkPct": 0.2,
+   "alt": "bk_roar_f",
+   "text": "AAARGH!",
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ff5a3a"
+    }
+   ]
+  },
+  {
+   "id": "bk_roar_f",
+   "classId": "berserker",
+   "name": "Sede de Sangue",
+   "desc": "FÚRIA: por 6s rouba 25% do dano como vida e ataca 50% mais rápido. Custa 6% da vida atual.",
+   "level": 12,
+   "mp": 0,
+   "cd": 16,
+   "icon": [
+    5,
+    74
+   ],
+   "type": "stance",
+   "color": "ff2a1a",
+   "duration": 6.0,
+   "lifesteal": 0.25,
+   "atkSpeed": 0.5,
+   "hpCost": 0.06,
+   "text": "SANGUE!",
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "ff2a1a"
+    }
+   ]
+  },
+  {
+   "id": "bk_whirl",
+   "classId": "berserker",
+   "name": "Redemoinho de Machados",
+   "desc": "Gira os dois machados por 2,5s acertando tudo em volta.",
+   "level": 14,
+   "mp": 24,
+   "cd": 10,
+   "icon": [
+    4,
+    45
+   ],
+   "type": "whirlwind",
+   "color": "ff4a3a",
+   "duration": 2.5,
+   "radius": 2.6,
+   "mult": 0.8,
+   "tick": 0.25,
+   "speedMult": 0.8,
+   "alt": "bk_whirl_f",
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ffb0a0"
+    }
+   ]
+  },
+  {
+   "id": "bk_whirl_f",
+   "classId": "berserker",
+   "name": "Tornado Rubro",
+   "desc": "FÚRIA: tornado de 3s (raio 3,2) que faz sangrar e rouba vida. Custa 10% da vida atual.",
+   "level": 14,
+   "mp": 0,
+   "cd": 10,
+   "icon": [
+    4,
+    45
+   ],
+   "type": "whirlwind",
+   "color": "ff2a1a",
+   "duration": 3.0,
+   "radius": 3.2,
+   "mult": 1.7,
+   "tick": 0.25,
+   "speedMult": 1.0,
+   "hpCost": 0.1,
+   "lifesteal": 0.12,
+   "dot": "bleed",
+   "dotMult": 0.3,
+   "dotTime": 3.0,
+   "dotStacks": 3,
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "ff2a1a"
+    }
+   ]
+  },
+  {
+   "id": "bk_throw",
+   "classId": "berserker",
+   "name": "Machado Arremessado",
+   "desc": "Arremessa um machado que vai e volta, cortando tudo no caminho.",
+   "level": 16,
+   "mp": 16,
+   "cd": 7,
+   "icon": [
+    12,
+    107
+   ],
+   "type": "projectile",
+   "color": "ff4a3a",
+   "proj": "axe_spin",
+   "mult": 2.0,
+   "pierce": true,
+   "alt": "bk_throw_f",
+   "vfx": []
+  },
+  {
+   "id": "bk_throw_f",
+   "classId": "berserker",
+   "name": "Machados Gêmeos",
+   "desc": "FÚRIA: dois machados bumerangue que fazem sangrar. Custa 8% da vida atual e rouba vida.",
+   "level": 16,
+   "mp": 0,
+   "cd": 7,
+   "icon": [
+    12,
+    107
+   ],
+   "type": "projectile",
+   "color": "ff2a1a",
+   "proj": "axe_spin",
+   "count": 2,
+   "spread": 0.35,
+   "mult": 4.4,
+   "pierce": true,
+   "hpCost": 0.08,
+   "lifesteal": 0.12,
+   "dot": "bleed",
+   "dotMult": 0.5,
+   "dotTime": 4.0,
+   "dotStacks": 3,
+   "vfx": []
+  },
+  {
+   "id": "bk_rage",
+   "classId": "berserker",
+   "name": "Fúria Desperta",
+   "desc": "Paga 20% da vida atual para entrar na Fúria por 10s, mesmo com a vida alta.",
+   "level": 18,
+   "mp": 0,
+   "cd": 40,
+   "icon": [
+    0,
+    45
+   ],
+   "type": "rage",
+   "color": "ff4a3a",
+   "duration": 10.0,
+   "hpCost": 0.2,
+   "text": "FÚRIA!",
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "ff2a1a"
+    },
+    {
+     "style": "burst",
+     "color": "ff5a3a"
+    }
+   ]
+  },
+  {
+   "id": "gd_retribution",
+   "classId": "the_guard",
+   "name": "Retribuição",
+   "desc": "Golpe de escudo em cone (x1,2) + 100% da Vingança. Consome o medidor.",
+   "level": 10,
+   "mp": 10,
+   "cd": 5,
+   "icon": [
+    4,
+    53
+   ],
+   "type": "kit_strike",
+   "color": "7fb0ff",
+   "range": 3.2,
+   "arc": 0.2,
+   "mult": 1.2,
+   "vengeanceMult": 1.0,
+   "push": 1.5,
+   "shake": 4.0,
+   "vfx": [
+    {
+     "style": "slash",
+     "color": "c8dcff"
+    }
+   ]
+  },
+  {
+   "id": "gd_shieldwall",
+   "classId": "the_guard",
+   "name": "Muralha de Escudos",
+   "desc": "O grupo num raio de 6 m recebe 40% menos dano por 6s. O dano evitado nos aliados enche a Vingança em dobro.",
+   "level": 10,
+   "mp": 20,
+   "cd": 18,
+   "icon": [
+    8,
+    53
+   ],
+   "type": "party",
+   "color": "7fb0ff",
+   "radius": 6.0,
+   "duration": 6.0,
+   "dmgTaken": 0.6,
+   "text": "MURALHA!",
+   "vfx": [
+    {
+     "style": "shield",
+     "color": "7fb0ff"
+    }
+   ]
+  },
+  {
+   "id": "gd_shadowstep",
+   "classId": "the_guard",
+   "name": "Passo da Sombra",
+   "desc": "Uma sombra corre pelo chão até o inimigo mirado (4 a 14 m) e o imobiliza por 3s (chefes 1,2s).",
+   "level": 12,
+   "mp": 16,
+   "cd": 10,
+   "icon": [
+    5,
+    93
+   ],
+   "type": "shadowstep",
+   "color": "7fb0ff",
+   "distance": 4.0,
+   "range": 14.0,
+   "root": 3.0,
+   "mult": 0.6,
+   "vfx": []
+  },
+  {
+   "id": "gd_banner",
+   "classId": "the_guard",
+   "name": "Estandarte do Bastião",
+   "desc": "Finca um estandarte por 10s: o grupo em 7 m ganha +20% de dano, +20% de defesa e regenera vida.",
+   "level": 14,
+   "mp": 26,
+   "cd": 24,
+   "icon": [
+    11,
+    82
+   ],
+   "type": "zone",
+   "color": "7fb0ff",
+   "range": 2.0,
+   "radius": 7.0,
+   "duration": 10.0,
+   "atkPct": 0.2,
+   "defPct": 0.2,
+   "regen": 0.015,
+   "vfx": [
+    {
+     "style": "pillar",
+     "color": "7fb0ff"
+    }
+   ]
+  },
+  {
+   "id": "gd_reflect",
+   "classId": "the_guard",
+   "name": "Espelho de Aço",
+   "desc": "Por 3s devolve 100% do dano corpo a corpo e 50% do à distância a quem atacou. Recebe 40% menos dano e anda devagar.",
+   "level": 16,
+   "mp": 18,
+   "cd": 14,
+   "icon": [
+    5,
+    53
+   ],
+   "type": "stance",
+   "color": "7fb0ff",
+   "duration": 3.0,
+   "reflect": 1.0,
+   "reflectRanged": 0.5,
+   "dmgTaken": 0.6,
+   "speedMult": 0.5,
+   "text": "ESPELHO!",
+   "vfx": [
+    {
+     "style": "shield",
+     "color": "e8f0ff"
+    }
+   ]
+  },
+  {
+   "id": "gd_sentence",
+   "classId": "the_guard",
+   "name": "Sentença do Guardião",
+   "desc": "Salta no ponto mirado: impacto de 4 m (x2) + 200% da Vingança, provoca e atordoa 1,5s.",
+   "level": 18,
+   "mp": 30,
+   "cd": 18,
+   "icon": [
+    3,
+    80
+   ],
+   "type": "leap",
+   "color": "7fb0ff",
+   "range": 8.0,
+   "radius": 4.0,
+   "mult": 2.0,
+   "vengeanceMult": 2.0,
+   "taunt": 4.0,
+   "stun": 1.5,
+   "shake": 8.0,
+   "text": "SENTENÇA!",
+   "vfx": [
+    {
+     "style": "ring",
+     "color": "7fb0ff"
+    },
+    {
+     "style": "dust",
+     "color": "c8b090"
+    }
+   ]
+  }
+ ]
+}

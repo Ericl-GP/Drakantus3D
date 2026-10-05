@@ -1,0 +1,2252 @@
+{
+ "Barbarian": {
+  "center": [
+   0.0,
+   1.1989,
+   0.1066
+  ],
+  "folder": "Characters",
+  "minY": -0.0,
+  "size": [
+   1.9425,
+   2.3978,
+   1.2639
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 3732
+ },
+ "Bush_1_A_Color1": {
+  "center": [
+   0.0,
+   0.1104,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.0029,
+  "size": [
+   0.2672,
+   0.2267,
+   0.2341
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 38
+ },
+ "Bush_1_C_Color1": {
+  "center": [
+   0.0,
+   0.3924,
+   -0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.0114,
+  "size": [
+   1.2041,
+   0.8074,
+   1.2041
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 86
+ },
+ "Bush_2_A_Color1": {
+  "center": [
+   0.0,
+   0.264,
+   -0.0
+  ],
+  "folder": "Forest",
+  "minY": 0.0,
+  "size": [
+   0.528,
+   0.528,
+   0.528
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 24
+ },
+ "Bush_3_A_Color1": {
+  "center": [
+   -0.0,
+   0.2172,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.0254,
+  "size": [
+   1.0331,
+   0.4853,
+   1.0331
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 106
+ },
+ "Bush_4_A_Color1": {
+  "center": [
+   -0.0,
+   0.217,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.0002,
+  "size": [
+   0.5768,
+   0.4344,
+   0.5768
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 24
+ },
+ "Gold_Bars_Stack_Small": {
+  "center": [
+   0.0,
+   0.375,
+   0.0
+  ],
+  "folder": "Resources",
+  "minY": 0.0,
+  "size": [
+   0.8,
+   0.75,
+   0.8
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 336
+ },
+ "Gold_Nuggets": {
+  "center": [
+   0.077,
+   0.2055,
+   -0.0228
+  ],
+  "folder": "Resources",
+  "minY": -0.0319,
+  "size": [
+   0.9288,
+   0.4749,
+   0.8501
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 192
+ },
+ "Grass_1_A_Color1": {
+  "center": [
+   0.0,
+   0.2597,
+   -0.0025
+  ],
+  "folder": "Forest",
+  "minY": -0.02,
+  "size": [
+   0.3393,
+   0.5593,
+   0.1518
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 26
+ },
+ "Grass_1_C_Color1": {
+  "center": [
+   -0.0181,
+   0.2546,
+   -0.0257
+  ],
+  "folder": "Forest",
+  "minY": -0.0371,
+  "size": [
+   0.7518,
+   0.5834,
+   0.7171
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 234
+ },
+ "Grass_2_A_Color1": {
+  "center": [
+   0.0,
+   0.4281,
+   -0.0472
+  ],
+  "folder": "Forest",
+  "minY": -0.0313,
+  "size": [
+   0.155,
+   0.9188,
+   0.2537
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 26
+ },
+ "Grass_2_C_Color1": {
+  "center": [
+   0.0449,
+   0.4199,
+   -0.0559
+  ],
+  "folder": "Forest",
+  "minY": -0.0477,
+  "size": [
+   0.8965,
+   0.9352,
+   0.7575
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 312
+ },
+ "Knight": {
+  "center": [
+   0.0,
+   1.2716,
+   0.1117
+  ],
+  "folder": "Characters",
+  "minY": -0.0,
+  "size": [
+   1.9425,
+   2.5431,
+   1.3078
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 3004
+ },
+ "Mage": {
+  "center": [
+   0.0,
+   1.3253,
+   0.0167
+  ],
+  "folder": "Characters",
+  "minY": -0.002,
+  "size": [
+   1.9425,
+   2.6547,
+   1.9665
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 3452
+ },
+ "Pallet_Wood_Covered_A": {
+  "center": [
+   0.0,
+   0.15,
+   -0.0
+  ],
+  "folder": "Resources",
+  "minY": -0.0,
+  "size": [
+   1.7242,
+   0.3,
+   1.7242
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 206
+ },
+ "Ranger": {
+  "center": [
+   0.0,
+   1.1355,
+   0.0103
+  ],
+  "folder": "Characters",
+  "minY": -0.002,
+  "size": [
+   1.9425,
+   2.275,
+   1.0494
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 4573
+ },
+ "Rock_1_A_Color1": {
+  "center": [
+   -0.0305,
+   0.2701,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.0,
+  "size": [
+   0.578,
+   0.5403,
+   0.6078
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 26
+ },
+ "Rock_1_E_Color1": {
+  "center": [
+   0.0,
+   0.565,
+   -0.1097
+  ],
+  "folder": "Forest",
+  "minY": -0.0,
+  "size": [
+   1.0,
+   1.13,
+   1.0854
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 44
+ },
+ "Rock_1_J_Color1": {
+  "center": [
+   -0.53,
+   1.6779,
+   0.1614
+  ],
+  "folder": "Forest",
+  "minY": -0.0,
+  "size": [
+   3.3909,
+   3.3557,
+   3.757
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 287
+ },
+ "Rock_2_A_Color1": {
+  "center": [
+   0.0,
+   0.1078,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": 0.0,
+  "size": [
+   0.2156,
+   0.2156,
+   0.2156
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 8
+ },
+ "Rock_2_D_Color1": {
+  "center": [
+   0.0,
+   0.8699,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": 0.0001,
+  "size": [
+   1.7088,
+   1.7398,
+   1.7088
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 56
+ },
+ "Rock_3_A_Color1": {
+  "center": [
+   -0.0514,
+   -0.0359,
+   -0.0112
+  ],
+  "folder": "Forest",
+  "minY": -0.4653,
+  "size": [
+   0.9563,
+   0.8589,
+   0.8075
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 44
+ },
+ "Rock_3_F_Color1": {
+  "center": [
+   0.0182,
+   -0.0002,
+   0.0039
+  ],
+  "folder": "Forest",
+  "minY": -0.588,
+  "size": [
+   1.0876,
+   1.1755,
+   1.1883
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 44
+ },
+ "Rogue": {
+  "center": [
+   0.0,
+   1.0882,
+   -0.0087
+  ],
+  "folder": "Characters",
+  "minY": -0.002,
+  "size": [
+   1.9447,
+   2.1804,
+   1.1439
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 3943
+ },
+ "Rogue_Hooded": {
+  "center": [
+   0.0,
+   1.0845,
+   0.0081
+  ],
+  "folder": "Characters",
+  "minY": -0.002,
+  "size": [
+   1.9447,
+   2.173,
+   1.0992
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 3743
+ },
+ "Skeleton_Arrow": {
+  "center": [
+   0.0,
+   -0.0087,
+   0.0169
+  ],
+  "folder": "Weapons",
+  "minY": -0.3829,
+  "size": [
+   0.1173,
+   0.7485,
+   0.1016
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 28
+ },
+ "Skeleton_Axe": {
+  "center": [
+   0.0,
+   0.3752,
+   -0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.2508,
+  "size": [
+   0.9886,
+   1.252,
+   0.2819
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 279
+ },
+ "Skeleton_Blade": {
+  "center": [
+   0.0,
+   0.4192,
+   -0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.3294,
+  "size": [
+   0.5727,
+   1.4972,
+   0.2223
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 245
+ },
+ "Skeleton_Crossbow": {
+  "center": [
+   0.0,
+   0.0828,
+   0.4317
+  ],
+  "folder": "Weapons",
+  "minY": -0.1712,
+  "size": [
+   1.1113,
+   0.5082,
+   1.4188
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 315
+ },
+ "Skeleton_Mage": {
+  "center": [
+   0.0,
+   1.3151,
+   0.0193
+  ],
+  "folder": "Characters",
+  "minY": -0.0,
+  "size": [
+   1.9382,
+   2.6303,
+   1.7353
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 2348
+ },
+ "Skeleton_Minion": {
+  "center": [
+   0.0,
+   1.083,
+   -0.0023
+  ],
+  "folder": "Characters",
+  "minY": -0.0,
+  "size": [
+   1.9382,
+   2.1661,
+   0.9122
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 2711
+ },
+ "Skeleton_Rogue": {
+  "center": [
+   0.0,
+   1.1539,
+   -0.0052
+  ],
+  "folder": "Characters",
+  "minY": -0.0,
+  "size": [
+   1.9425,
+   2.3079,
+   1.1528
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 2719
+ },
+ "Skeleton_Shield_Large_A": {
+  "center": [
+   0.0022,
+   -0.0,
+   0.0119
+  ],
+  "folder": "Weapons",
+  "minY": -0.5675,
+  "size": [
+   0.8771,
+   1.135,
+   0.3625
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 337
+ },
+ "Skeleton_Shield_Small_A": {
+  "center": [
+   -0.0,
+   0.0,
+   0.0333
+  ],
+  "folder": "Weapons",
+  "minY": -0.4161,
+  "size": [
+   0.8322,
+   0.8322,
+   0.1565
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 252
+ },
+ "Skeleton_Staff": {
+  "center": [
+   -0.1589,
+   0.2046,
+   0.0082
+  ],
+  "folder": "Weapons",
+  "minY": -0.8463,
+  "size": [
+   0.5978,
+   2.1018,
+   0.7533
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 790
+ },
+ "Skeleton_Warrior": {
+  "center": [
+   0.0,
+   1.2952,
+   -0.0288
+  ],
+  "folder": "Characters",
+  "minY": -0.0,
+  "size": [
+   1.9425,
+   2.5905,
+   1.4588
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 3079
+ },
+ "Stone_Chunks_Large": {
+  "center": [
+   -0.0136,
+   0.5016,
+   0.0011
+  ],
+  "folder": "Resources",
+  "minY": -0.0371,
+  "size": [
+   1.5011,
+   1.0773,
+   1.3459
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 833
+ },
+ "Textiles_Stack_Large_Colored": {
+  "center": [
+   0.0111,
+   0.4362,
+   -0.0184
+  ],
+  "folder": "Resources",
+  "minY": -0.0416,
+  "size": [
+   1.6389,
+   0.9556,
+   1.6649
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 968
+ },
+ "Tree_1_A_Color1": {
+  "center": [
+   -0.3441,
+   1.819,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.2613,
+  "size": [
+   3.181,
+   4.1607,
+   3.2511
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 287
+ },
+ "Tree_1_B_Color1": {
+  "center": [
+   0.2139,
+   2.1238,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.341,
+  "size": [
+   4.0068,
+   4.9296,
+   3.4455
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 340
+ },
+ "Tree_1_C_Color1": {
+  "center": [
+   0.5998,
+   3.5148,
+   0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.3923,
+  "size": [
+   6.6913,
+   7.8143,
+   5.7534
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 737
+ },
+ "Tree_2_A_Color1": {
+  "center": [
+   -0.3411,
+   1.9639,
+   -0.2144
+  ],
+  "folder": "Forest",
+  "minY": -0.3735,
+  "size": [
+   2.6,
+   4.6748,
+   2.0
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 193
+ },
+ "Tree_2_B_Color1": {
+  "center": [
+   0.2353,
+   2.6763,
+   0.3286
+  ],
+  "folder": "Forest",
+  "minY": -0.3448,
+  "size": [
+   3.7,
+   6.0421,
+   2.1
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 273
+ },
+ "Tree_2_C_Color1": {
+  "center": [
+   -0.2124,
+   3.0669,
+   -0.1892
+  ],
+  "folder": "Forest",
+  "minY": -0.3932,
+  "size": [
+   4.6,
+   6.9204,
+   3.4
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 361
+ },
+ "Tree_3_A_Color1": {
+  "center": [
+   -0.0055,
+   1.492,
+   -0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.2613,
+  "size": [
+   3.0932,
+   3.5066,
+   3.0932
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 513
+ },
+ "Tree_3_B_Color1": {
+  "center": [
+   -0.0269,
+   1.8354,
+   -0.0
+  ],
+  "folder": "Forest",
+  "minY": -0.341,
+  "size": [
+   4.1294,
+   4.3529,
+   4.1294
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 518
+ },
+ "Tree_4_A_Color1": {
+  "center": [
+   0.0437,
+   2.2951,
+   -0.0175
+  ],
+  "folder": "Forest",
+  "minY": -0.3421,
+  "size": [
+   2.0074,
+   5.2744,
+   2.0044
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 234
+ },
+ "Tree_4_B_Color1": {
+  "center": [
+   0.0438,
+   3.0949,
+   -0.2113
+  ],
+  "folder": "Forest",
+  "minY": -0.3764,
+  "size": [
+   2.574,
+   6.9426,
+   2.2703
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 297
+ },
+ "Tree_Bare_1_A_Color1": {
+  "center": [
+   0.0521,
+   1.1671,
+   -0.0773
+  ],
+  "folder": "Forest",
+  "minY": -0.2613,
+  "size": [
+   1.1286,
+   2.8569,
+   1.0341
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 174
+ },
+ "Tree_Bare_2_A_Color1": {
+  "center": [
+   -0.0941,
+   1.5631,
+   0.0909
+  ],
+  "folder": "Forest",
+  "minY": -0.3583,
+  "size": [
+   1.1963,
+   3.8428,
+   0.6
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 219
+ },
+ "Wood_Log_Stack": {
+  "center": [
+   -0.0047,
+   0.7433,
+   0.007
+  ],
+  "folder": "Resources",
+  "minY": -0.0059,
+  "size": [
+   1.6775,
+   1.4984,
+   1.5
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1810
+ },
+ "anvil": {
+  "center": [
+   -0.0961,
+   0.4,
+   -0.0
+  ],
+  "folder": "Tools",
+  "minY": -0.0,
+  "size": [
+   1.6172,
+   0.8,
+   0.75
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 165
+ },
+ "arrow_bow": {
+  "center": [
+   -0.0,
+   -0.0236,
+   -0.0107
+  ],
+  "folder": "Weapons",
+  "minY": -0.0944,
+  "size": [
+   0.1635,
+   0.1416,
+   1.2615
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 28
+ },
+ "axe_1handed": {
+  "center": [
+   -0.2317,
+   0.3492,
+   0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.273,
+  "size": [
+   0.7143,
+   1.2444,
+   0.185
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 141
+ },
+ "axe_2handed": {
+  "center": [
+   0.0,
+   0.4293,
+   0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.433,
+  "size": [
+   1.2395,
+   1.7246,
+   0.2618
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 256
+ },
+ "barrel": {
+  "center": [
+   -0.0,
+   0.1059,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.2015,
+   0.2117,
+   0.2015
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 126
+ },
+ "bow_withString": {
+  "center": [
+   -0.1895,
+   -0.0,
+   -0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.0778,
+  "size": [
+   0.6354,
+   0.1556,
+   1.9837
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 704
+ },
+ "bricks_A": {
+  "center": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0,
+  "size": [
+   2.0,
+   2.0,
+   2.0
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 424
+ },
+ "bricks_B": {
+  "center": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0,
+  "size": [
+   2.0,
+   2.0,
+   2.0
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 424
+ },
+ "bucket_metal": {
+  "center": [
+   0.0,
+   0.5792,
+   -0.0
+  ],
+  "folder": "Tools",
+  "minY": -0.0,
+  "size": [
+   0.912,
+   1.1583,
+   0.8
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 247
+ },
+ "bucket_water": {
+  "center": [
+   0.0,
+   0.0525,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": 0.0,
+  "size": [
+   0.14,
+   0.105,
+   0.14
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 66
+ },
+ "building_archeryrange_green": {
+  "center": [
+   0.0353,
+   0.8959,
+   -0.0981
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.6706,
+   1.7917,
+   1.5508
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 2280
+ },
+ "building_barracks_red": {
+  "center": [
+   0.0,
+   0.82,
+   0.063
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.44,
+   1.6401,
+   1.5661
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 2582
+ },
+ "building_blacksmith_blue": {
+  "center": [
+   0.0138,
+   0.4874,
+   0.0626
+  ],
+  "folder": "Medieval",
+  "minY": -0.0051,
+  "size": [
+   1.2876,
+   0.9851,
+   1.2452
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1431
+ },
+ "building_castle_blue": {
+  "center": [
+   -0.0,
+   1.9896,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.9754,
+   3.9792,
+   2.2563
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 3595
+ },
+ "building_church_blue": {
+  "center": [
+   -0.0,
+   0.8225,
+   0.0175
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.029,
+   1.645,
+   1.155
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1012
+ },
+ "building_destroyed": {
+  "center": [
+   0.0508,
+   0.483,
+   -0.0605
+  ],
+  "folder": "Medieval",
+  "minY": -0.0139,
+  "size": [
+   1.5393,
+   0.9939,
+   1.3059
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 577
+ },
+ "building_home_A_blue": {
+  "center": [
+   -0.0,
+   0.465,
+   -0.0418
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.792,
+   0.93,
+   0.8537
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 594
+ },
+ "building_home_A_red": {
+  "center": [
+   -0.0,
+   0.465,
+   -0.0418
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.792,
+   0.93,
+   0.8537
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 594
+ },
+ "building_home_A_yellow": {
+  "center": [
+   -0.0,
+   0.465,
+   -0.0418
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.792,
+   0.93,
+   0.8537
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 594
+ },
+ "building_home_B_blue": {
+  "center": [
+   -0.0013,
+   0.64,
+   0.0107
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.8749,
+   1.28,
+   1.0987
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 884
+ },
+ "building_home_B_green": {
+  "center": [
+   -0.0013,
+   0.64,
+   0.0107
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.8749,
+   1.28,
+   1.0987
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 884
+ },
+ "building_home_B_red": {
+  "center": [
+   -0.0013,
+   0.64,
+   0.0107
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.8749,
+   1.28,
+   1.0987
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 884
+ },
+ "building_market_yellow": {
+  "center": [
+   -0.0017,
+   0.4852,
+   -0.0572
+  ],
+  "folder": "Medieval",
+  "minY": -0.0056,
+  "size": [
+   1.7994,
+   0.9816,
+   1.3156
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1909
+ },
+ "building_stage_A": {
+  "center": [
+   0.0427,
+   0.1371,
+   0.0952
+  ],
+  "folder": "Medieval",
+  "minY": -0.0059,
+  "size": [
+   1.0467,
+   0.2859,
+   0.875
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 420
+ },
+ "building_tavern_red": {
+  "center": [
+   -0.0091,
+   0.6983,
+   -0.0362
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.1717,
+   1.3967,
+   1.3323
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1745
+ },
+ "building_tower_A_blue": {
+  "center": [
+   -0.0,
+   1.0959,
+   0.0033
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.9933,
+   2.1917,
+   1.1535
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1363
+ },
+ "building_tower_B_red": {
+  "center": [
+   -0.0,
+   1.2427,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.1974,
+   2.4854,
+   1.3826
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1533
+ },
+ "building_well_blue": {
+  "center": [
+   0.0109,
+   0.413,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.6518,
+   0.826,
+   0.7507
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 398
+ },
+ "building_windmill_green": {
+  "center": [
+   0.005,
+   0.7289,
+   0.0293
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.1258,
+   1.4579,
+   0.8165
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1616
+ },
+ "crate_A_big": {
+  "center": [
+   0.0,
+   0.105,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": 0.0,
+  "size": [
+   0.21,
+   0.21,
+   0.21
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 68
+ },
+ "crate_B_small": {
+  "center": [
+   0.0,
+   0.07,
+   0.0
+  ],
+  "folder": "Medieval",
+  "minY": 0.0,
+  "size": [
+   0.14,
+   0.14,
+   0.14
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 68
+ },
+ "crate_long_A": {
+  "center": [
+   0.0,
+   0.075,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.4,
+   0.15,
+   0.2
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 298
+ },
+ "crossbow_1handed": {
+  "center": [
+   0.0012,
+   0.0317,
+   0.3333
+  ],
+  "folder": "Weapons",
+  "minY": -0.1712,
+  "size": [
+   0.9114,
+   0.4059,
+   1.2219
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 314
+ },
+ "dagger": {
+  "center": [
+   0.0095,
+   0.378,
+   0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.2249,
+  "size": [
+   0.2593,
+   1.2058,
+   0.1517
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 88
+ },
+ "dirt": {
+  "center": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0443,
+  "size": [
+   2.0886,
+   2.0886,
+   2.0886
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 716
+ },
+ "dirt_with_grass": {
+  "center": [
+   0.0,
+   -0.0222,
+   -0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0443,
+  "size": [
+   2.166,
+   2.0443,
+   2.166
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 548
+ },
+ "fence_stone_straight": {
+  "center": [
+   -1.0,
+   0.0845,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.05,
+  "size": [
+   0.2,
+   0.269,
+   1.1547
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 144
+ },
+ "fence_wood_straight": {
+  "center": [
+   -1.0,
+   0.225,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.05,
+  "size": [
+   0.1,
+   0.55,
+   1.1547
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 108
+ },
+ "flag_blue": {
+  "center": [
+   0.0004,
+   0.1387,
+   -0.1101
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.055,
+   0.2775,
+   0.264
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 29
+ },
+ "flag_red": {
+  "center": [
+   0.0004,
+   0.1387,
+   -0.1101
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.055,
+   0.2775,
+   0.264
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 29
+ },
+ "grass": {
+  "center": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0,
+  "size": [
+   2.166,
+   2.0,
+   2.166
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 262
+ },
+ "gravel": {
+  "center": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0443,
+  "size": [
+   2.0886,
+   2.0886,
+   2.0886
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 716
+ },
+ "grindstone": {
+  "center": [
+   0.2681,
+   0.775,
+   0.035
+  ],
+  "folder": "Tools",
+  "minY": 0.0,
+  "size": [
+   1.9362,
+   1.55,
+   2.27
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 603
+ },
+ "lantern": {
+  "center": [
+   0.0,
+   0.5534,
+   0.0
+  ],
+  "folder": "Tools",
+  "minY": -0.0,
+  "size": [
+   0.7528,
+   1.1068,
+   0.7528
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 401
+ },
+ "lava": {
+  "center": [
+   0.0001,
+   -0.0,
+   -0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0057,
+  "size": [
+   2.0111,
+   2.0113,
+   2.0114
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 1040
+ },
+ "metal": {
+  "center": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0,
+  "size": [
+   2.0,
+   2.0,
+   2.0
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 338
+ },
+ "quiver": {
+  "center": [
+   0.0,
+   -0.0439,
+   0.0242
+  ],
+  "folder": "Weapons",
+  "minY": -0.5086,
+  "size": [
+   0.3054,
+   0.9294,
+   0.1945
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 140
+ },
+ "resource_lumber": {
+  "center": [
+   -0.0016,
+   0.105,
+   0.0016
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.6859,
+   0.21,
+   0.3305
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 120
+ },
+ "rock_single_A": {
+  "center": [
+   0.0,
+   0.0347,
+   -0.015
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.2982,
+   0.0693,
+   0.2836
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 11
+ },
+ "rock_single_C": {
+  "center": [
+   -0.0133,
+   0.0973,
+   -0.0099
+  ],
+  "folder": "Medieval",
+  "minY": -0.0001,
+  "size": [
+   0.3439,
+   0.1948,
+   0.3442
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 22
+ },
+ "rope_bundle_A": {
+  "center": [
+   0.0039,
+   0.006,
+   -0.0022
+  ],
+  "folder": "Tools",
+  "minY": -0.1199,
+  "size": [
+   1.3949,
+   0.2519,
+   0.527
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 624
+ },
+ "sack": {
+  "center": [
+   0.0,
+   0.0299,
+   -0.0059
+  ],
+  "folder": "Medieval",
+  "minY": -0.0025,
+  "size": [
+   0.1065,
+   0.0647,
+   0.1595
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 48
+ },
+ "shield_badge": {
+  "center": [
+   0.0,
+   -0.0294,
+   -0.0218
+  ],
+  "folder": "Weapons",
+  "minY": -0.5401,
+  "size": [
+   0.8826,
+   1.0216,
+   0.2459
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 140
+ },
+ "shield_round": {
+  "center": [
+   -0.0,
+   -0.0,
+   0.0212
+  ],
+  "folder": "Weapons",
+  "minY": -0.4413,
+  "size": [
+   0.8826,
+   0.8826,
+   0.3319
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 151
+ },
+ "shield_spikes": {
+  "center": [
+   0.0,
+   -0.037,
+   0.0851
+  ],
+  "folder": "Weapons",
+  "minY": -0.5555,
+  "size": [
+   1.007,
+   1.037,
+   0.4598
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 244
+ },
+ "shield_square": {
+  "center": [
+   -0.0,
+   0.0,
+   0.0058
+  ],
+  "folder": "Weapons",
+  "minY": -0.5964,
+  "size": [
+   0.8826,
+   1.1929,
+   0.3011
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 140
+ },
+ "spellbook_open": {
+  "center": [
+   0.0,
+   -0.0,
+   0.0234
+  ],
+  "folder": "Weapons",
+  "minY": -0.2844,
+  "size": [
+   0.8282,
+   0.5688,
+   0.2219
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 148
+ },
+ "staff": {
+  "center": [
+   0.0427,
+   0.1769,
+   -0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.9004,
+  "size": [
+   0.5762,
+   2.1547,
+   0.2923
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 218
+ },
+ "stone": {
+  "center": [
+   -0.0,
+   0.0,
+   -0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.01,
+  "size": [
+   2.02,
+   2.02,
+   2.02
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 626
+ },
+ "stone_dark": {
+  "center": [
+   0.0,
+   -0.0,
+   -0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.025,
+  "size": [
+   2.05,
+   2.05,
+   2.05
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 650
+ },
+ "sword_1handed": {
+  "center": [
+   0.0,
+   0.5219,
+   -0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.3658,
+  "size": [
+   0.5034,
+   1.7753,
+   0.1306
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 160
+ },
+ "sword_2handed": {
+  "center": [
+   0.0,
+   0.7815,
+   -0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.4014,
+  "size": [
+   0.839,
+   2.3658,
+   0.248
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 216
+ },
+ "target": {
+  "center": [
+   0.0,
+   0.1509,
+   -0.0289
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.2393,
+   0.3018,
+   0.1421
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 86
+ },
+ "tent": {
+  "center": [
+   0.0,
+   0.258,
+   -0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.516,
+   0.516,
+   0.516
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 73
+ },
+ "torch": {
+  "center": [
+   0.0001,
+   0.3586,
+   -0.0016
+  ],
+  "folder": "Tools",
+  "minY": -0.2249,
+  "size": [
+   0.2109,
+   1.1671,
+   0.2254
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 239
+ },
+ "trees_A_large": {
+  "center": [
+   0.0042,
+   0.45,
+   -0.0081
+  ],
+  "folder": "Medieval",
+  "minY": -0.0133,
+  "size": [
+   1.9452,
+   0.9264,
+   1.9666
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 468
+ },
+ "trees_B_medium": {
+  "center": [
+   0.0403,
+   0.5655,
+   -0.0569
+  ],
+  "folder": "Medieval",
+  "minY": -0.0215,
+  "size": [
+   1.8638,
+   1.174,
+   1.8332
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 560
+ },
+ "wall_corner_A_outside": {
+  "center": [
+   -0.1201,
+   0.55,
+   -0.3502
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   1.7598,
+   1.1,
+   1.4317
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 257
+ },
+ "wall_straight": {
+  "center": [
+   0.0,
+   0.55,
+   0.0
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   2.0,
+   1.1,
+   0.8
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 329
+ },
+ "wall_straight_gate": {
+  "center": [
+   0.0,
+   0.657,
+   0.0478
+  ],
+  "folder": "Medieval",
+  "minY": -0.05,
+  "size": [
+   2.0,
+   1.414,
+   0.8956
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 462
+ },
+ "wand": {
+  "center": [
+   -0.0,
+   0.2174,
+   0.0
+  ],
+  "folder": "Weapons",
+  "minY": -0.2657,
+  "size": [
+   0.1606,
+   0.9661,
+   0.1606
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 77
+ },
+ "weaponrack": {
+  "center": [
+   0.0,
+   0.12,
+   -0.005
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.2,
+   0.24,
+   0.13
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 32
+ },
+ "wheelbarrow": {
+  "center": [
+   0.0,
+   0.0942,
+   0.04
+  ],
+  "folder": "Medieval",
+  "minY": -0.0,
+  "size": [
+   0.238,
+   0.1884,
+   0.5057
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 210
+ },
+ "wood": {
+  "center": [
+   -0.0,
+   0.0,
+   -0.0
+  ],
+  "folder": "Blocks",
+  "minY": -1.0,
+  "size": [
+   2.0,
+   2.0,
+   2.0
+  ],
+  "unitScale": 100.0,
+  "upAxis": 1,
+  "version": 7400,
+  "verts": 586
+ }
+}

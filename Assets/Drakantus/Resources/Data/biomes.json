@@ -1,0 +1,3105 @@
+{
+ "_comment": "Biomas do Criador de Andares. Modelos = ids do ModelLibrary (nomes dos FBX KayKit); '#' = forma primitiva (duna, cristal, escombro, tumulo, cruz, lava, cacto, monte_neve, pilar_quebrado, estalagmite). min/max = altura em metros. TODO(modelos): trocar por Quaternius Nature / Kenney Holiday / KayKit Dungeon quando baixar.",
+ "biomes": [
+  {
+   "id": "floresta",
+   "name": "Floresta",
+   "category": "Natureza",
+   "desc": "Clareiras na mata fechada, vaga-lumes e luz do sol entre as copas.",
+   "floorBlock": "grass",
+   "floorBlockAlt": "dirt_with_grass",
+   "floorTint": "ffffff",
+   "floorAltTint": "",
+   "floorAltChance": 0.35,
+   "baseColor": "2f4a2a",
+   "wallStyle": "trees",
+   "wallBlock": "dirt",
+   "wallBlockAlt": "dirt_with_grass",
+   "wallTint": "ffffff",
+   "wallHeight": 3.5,
+   "decoTint": "",
+   "trees": [
+    {
+     "id": "Tree_1_A_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_1_B_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_1_C_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_A_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_B_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_C_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_A_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_B_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_4_A_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_4_B_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "Wood_Log_Stack",
+     "min": 1.2,
+     "max": 1.2,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "resource_lumber",
+     "min": 0.8,
+     "max": 0.8,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "tent",
+     "min": 2.6,
+     "max": 2.6,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 0.3
+    }
+   ],
+   "ruins": [
+    {
+     "id": "building_destroyed",
+     "min": 2.8,
+     "max": 3.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "Grass_1_A_Color1",
+     "min": 0.35,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_1_C_Color1",
+     "min": 0.35,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_2_A_Color1",
+     "min": 0.35,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_2_C_Color1",
+     "min": 0.35,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Bush_1_A_Color1",
+     "min": 0.8,
+     "max": 1.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.6
+    },
+    {
+     "id": "Bush_1_C_Color1",
+     "min": 0.8,
+     "max": 1.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.6
+    },
+    {
+     "id": "Bush_2_A_Color1",
+     "min": 0.8,
+     "max": 1.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.6
+    },
+    {
+     "id": "Bush_3_A_Color1",
+     "min": 0.8,
+     "max": 1.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.6
+    },
+    {
+     "id": "Bush_4_A_Color1",
+     "min": 0.8,
+     "max": 1.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.6
+    }
+   ],
+   "special": [],
+   "backdrop": [
+    {
+     "id": "Tree_1_A_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_1_B_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_1_C_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_A_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_B_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_C_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_A_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_B_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_4_A_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_4_B_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "treeDensity": 0.35,
+   "rockDensity": 0.35,
+   "propDensity": 0.15,
+   "ruinDensity": 0.03,
+   "scatterDensity": 2.2,
+   "specialDensity": 0,
+   "sun": "fff0c2",
+   "ambient": "5c7566",
+   "fog": "4d7360",
+   "sunIntensity": 0.95,
+   "fogDensity": 0.018,
+   "sunPitch": 58,
+   "sunYaw": -20,
+   "dark": false,
+   "torchColor": "ffb060",
+   "torchDensity": 0.15,
+   "particles": "vagalumes",
+   "particleColor": "c8ff70",
+   "music": "forest",
+   "hazard": "",
+   "enemyTint": "ffffff",
+   "enemies": [
+    "minion",
+    "rogue",
+    "archer",
+    "warrior",
+    "brute",
+    "mage"
+   ],
+   "miniBosses": [
+    "mb_cacador",
+    "mb_colosso"
+   ],
+   "bosses": [
+    "king"
+   ]
+  },
+  {
+   "id": "ruinas",
+   "name": "Ruínas (interior)",
+   "category": "Interior",
+   "desc": "Salões de pedra antiga, colunas quebradas e entulho.",
+   "floorBlock": "stone",
+   "floorBlockAlt": "stone_dark",
+   "floorTint": "e8e0d0",
+   "floorAltTint": "",
+   "floorAltChance": 0.25,
+   "baseColor": "1a1a20",
+   "wallStyle": "blocks",
+   "wallBlock": "bricks_A",
+   "wallBlockAlt": "bricks_B",
+   "wallTint": "e0d8cc",
+   "wallHeight": 3.5,
+   "decoTint": "",
+   "trees": [],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "c8c0b8",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "c8c0b8",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "c8c0b8",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "c8c0b8",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "c8c0b8",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "c8c0b8",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "c8c0b8",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "barrel",
+     "min": 1.05,
+     "max": 1.05,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_A_big",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_B_small",
+     "min": 0.7,
+     "max": 0.7,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_long_A",
+     "min": 0.9,
+     "max": 0.9,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "sack",
+     "min": 0.4,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "rope_bundle_A",
+     "min": 0.15,
+     "max": 0.15,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "bucket_metal",
+     "min": 0.8,
+     "max": 0.8,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "weaponrack",
+     "min": 1.5,
+     "max": 1.5,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "anvil",
+     "min": 0.85,
+     "max": 0.85,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.3
+    }
+   ],
+   "ruins": [
+    {
+     "id": "building_destroyed",
+     "min": 2.6,
+     "max": 3.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "#pilar_quebrado",
+     "min": 1.2,
+     "max": 2.8,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "Skeleton_Blade",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Small_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Axe",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Arrow",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Large_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "rock_single_A",
+     "min": 0.2,
+     "max": 0.45,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "rock_single_C",
+     "min": 0.2,
+     "max": 0.45,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Stone_Chunks_Large",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "special": [
+    {
+     "id": "#escombro",
+     "min": 0.6,
+     "max": 1.4,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "backdrop": [],
+   "treeDensity": 0,
+   "rockDensity": 0.25,
+   "propDensity": 0.45,
+   "ruinDensity": 0.12,
+   "scatterDensity": 1.2,
+   "specialDensity": 0.15,
+   "sun": "9aa8d0",
+   "ambient": "2a2c3a",
+   "fog": "1a1c26",
+   "sunIntensity": 0.35,
+   "fogDensity": 0.022,
+   "sunPitch": 50,
+   "sunYaw": -30,
+   "dark": false,
+   "torchColor": "ff9e4a",
+   "torchDensity": 0.6,
+   "particles": "poeira",
+   "particleColor": "fff0d0",
+   "music": "crypt",
+   "hazard": "",
+   "enemyTint": "ffffff",
+   "enemies": [
+    "minion",
+    "warrior",
+    "rogue",
+    "archer",
+    "mage",
+    "brute"
+   ],
+   "miniBosses": [
+    "mb_carcereiro",
+    "mb_bruxa"
+   ],
+   "bosses": [
+    "necro",
+    "boss_lich"
+   ]
+  },
+  {
+   "id": "masmorra",
+   "name": "Masmorra",
+   "category": "Interior",
+   "desc": "Corredores escuros de tijolo, tochas tremulando e celas.",
+   "floorBlock": "stone_dark",
+   "floorBlockAlt": "stone",
+   "floorTint": "ffffff",
+   "floorAltTint": "b8b8c0",
+   "floorAltChance": 0.18,
+   "baseColor": "08080c",
+   "wallStyle": "blocks",
+   "wallBlock": "bricks_B",
+   "wallBlockAlt": "stone_dark",
+   "wallTint": "c8c8d0",
+   "wallHeight": 3.6,
+   "decoTint": "",
+   "trees": [],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "9898a0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "9898a0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "9898a0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "9898a0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "9898a0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "9898a0",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "9898a0",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "barrel",
+     "min": 1.05,
+     "max": 1.05,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_A_big",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_B_small",
+     "min": 0.7,
+     "max": 0.7,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_long_A",
+     "min": 0.9,
+     "max": 0.9,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "sack",
+     "min": 0.4,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "rope_bundle_A",
+     "min": 0.15,
+     "max": 0.15,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "bucket_metal",
+     "min": 0.8,
+     "max": 0.8,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "weaponrack",
+     "min": 1.5,
+     "max": 1.5,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "anvil",
+     "min": 0.85,
+     "max": 0.85,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.3
+    }
+   ],
+   "ruins": [
+    {
+     "id": "#pilar_quebrado",
+     "min": 1.4,
+     "max": 3.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "Skeleton_Blade",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Small_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Axe",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Arrow",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Large_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "rock_single_A",
+     "min": 0.2,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Stone_Chunks_Large",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "special": [
+    {
+     "id": "#estalagmite",
+     "min": 0.8,
+     "max": 2.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "6a6470",
+     "weight": 1.0
+    }
+   ],
+   "backdrop": [],
+   "treeDensity": 0,
+   "rockDensity": 0.15,
+   "propDensity": 0.5,
+   "ruinDensity": 0.08,
+   "scatterDensity": 1.4,
+   "specialDensity": 0.12,
+   "sun": "4a5080",
+   "ambient": "141626",
+   "fog": "08090f",
+   "sunIntensity": 0.1,
+   "fogDensity": 0.03,
+   "sunPitch": 50,
+   "sunYaw": -30,
+   "dark": true,
+   "torchColor": "ff9e4a",
+   "torchDensity": 1.0,
+   "particles": "poeira",
+   "particleColor": "ffd8a0",
+   "music": "crypt",
+   "hazard": "",
+   "enemyTint": "ffffff",
+   "enemies": [
+    "minion",
+    "warrior",
+    "rogue",
+    "archer",
+    "mage",
+    "brute"
+   ],
+   "miniBosses": [
+    "mb_carcereiro",
+    "mb_bruxa",
+    "mb_colosso"
+   ],
+   "bosses": [
+    "necro",
+    "boss_lich",
+    "king"
+   ]
+  },
+  {
+   "id": "cidade",
+   "name": "Cidade medieval",
+   "category": "Cidade",
+   "desc": "Ruas de pedra entre casas, barracas e bandeiras.",
+   "floorBlock": "stone",
+   "floorBlockAlt": "gravel",
+   "floorTint": "e8e0d0",
+   "floorAltTint": "",
+   "floorAltChance": 0.2,
+   "baseColor": "4a4640",
+   "wallStyle": "blocks",
+   "wallBlock": "bricks_A",
+   "wallBlockAlt": "stone",
+   "wallTint": "f0e8d8",
+   "wallHeight": 3.2,
+   "decoTint": "",
+   "trees": [
+    {
+     "id": "Tree_1_A_Color1",
+     "min": 3.5,
+     "max": 4.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_1_B_Color1",
+     "min": 3.5,
+     "max": 4.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_1_C_Color1",
+     "min": 3.5,
+     "max": 4.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_A_Color1",
+     "min": 3.5,
+     "max": 4.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "props": [
+    {
+     "id": "barrel",
+     "min": 1.05,
+     "max": 1.05,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_A_big",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_B_small",
+     "min": 0.7,
+     "max": 0.7,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "sack",
+     "min": 0.4,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "wheelbarrow",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "weaponrack",
+     "min": 1.5,
+     "max": 1.5,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "target",
+     "min": 1.7,
+     "max": 1.7,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "tent",
+     "min": 2.6,
+     "max": 2.6,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 0.4
+    },
+    {
+     "id": "flag_red",
+     "min": 3.6,
+     "max": 3.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.4
+    },
+    {
+     "id": "flag_blue",
+     "min": 3.6,
+     "max": 3.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.4
+    },
+    {
+     "id": "bucket_water",
+     "min": 0.6,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Textiles_Stack_Large_Colored",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "Pallet_Wood_Covered_A",
+     "min": 0.8,
+     "max": 0.8,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    }
+   ],
+   "ruins": [
+    {
+     "id": "building_well_blue",
+     "min": 3.2,
+     "max": 3.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "sack",
+     "min": 0.4,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "bucket_water",
+     "min": 0.6,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "rock_single_A",
+     "min": 0.2,
+     "max": 0.35,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_1_A_Color1",
+     "min": 0.35,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_1_C_Color1",
+     "min": 0.35,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "special": [],
+   "backdrop": [
+    {
+     "id": "building_home_A_blue",
+     "min": 6.0,
+     "max": 7.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "building_home_A_red",
+     "min": 6.0,
+     "max": 7.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "building_home_A_yellow",
+     "min": 6.0,
+     "max": 7.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "building_home_B_blue",
+     "min": 6.0,
+     "max": 7.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "building_home_B_green",
+     "min": 6.0,
+     "max": 7.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "building_home_B_red",
+     "min": 6.0,
+     "max": 7.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "building_tavern_red",
+     "min": 8,
+     "max": 8,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 0.5
+    },
+    {
+     "id": "building_church_blue",
+     "min": 9.5,
+     "max": 9.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 0.3
+    },
+    {
+     "id": "building_windmill_green",
+     "min": 9,
+     "max": 9,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 0.3
+    }
+   ],
+   "treeDensity": 0.06,
+   "rockDensity": 0.08,
+   "propDensity": 0.8,
+   "ruinDensity": 0.02,
+   "scatterDensity": 0.8,
+   "specialDensity": 0,
+   "sun": "ffe2b0",
+   "ambient": "6a6a78",
+   "fog": "8a90a0",
+   "sunIntensity": 1.1,
+   "fogDensity": 0.01,
+   "sunPitch": 40,
+   "sunYaw": -55,
+   "dark": false,
+   "torchColor": "ffc070",
+   "torchDensity": 0.3,
+   "particles": "folhas",
+   "particleColor": "c8a060",
+   "music": "town",
+   "hazard": "",
+   "enemyTint": "ffffff",
+   "enemies": [
+    "rogue",
+    "archer",
+    "warrior",
+    "minion",
+    "brute",
+    "mage"
+   ],
+   "miniBosses": [
+    "mb_cacador",
+    "mb_carcereiro"
+   ],
+   "bosses": [
+    "king",
+    "boss_farao"
+   ]
+  },
+  {
+   "id": "cidade_destruida",
+   "name": "Cidade destruída",
+   "category": "Cidade",
+   "desc": "Escombros, casas desabadas, fumaça e cinzas no ar.",
+   "floorBlock": "stone",
+   "floorBlockAlt": "gravel",
+   "floorTint": "a8a098",
+   "floorAltTint": "7a7068",
+   "floorAltChance": 0.35,
+   "baseColor": "2a2420",
+   "wallStyle": "blocks",
+   "wallBlock": "bricks_A",
+   "wallBlockAlt": "stone_dark",
+   "wallTint": "9a8f88",
+   "wallHeight": 3.0,
+   "decoTint": "8a7f78",
+   "trees": [
+    {
+     "id": "Tree_Bare_1_A_Color1",
+     "min": 3.0,
+     "max": 4.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "6a6058",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_Bare_2_A_Color1",
+     "min": 3.0,
+     "max": 4.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "6a6058",
+     "weight": 1.0
+    }
+   ],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "barrel",
+     "min": 1.05,
+     "max": 1.05,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "6a5a4a",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_A_big",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "6a5a4a",
+     "weight": 1.0
+    },
+    {
+     "id": "wheelbarrow",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "5a4a40",
+     "weight": 1.0
+    },
+    {
+     "id": "Wood_Log_Stack",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "4a3a30",
+     "weight": 1.0
+    },
+    {
+     "id": "sack",
+     "min": 0.4,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a7a6a",
+     "weight": 1.0
+    }
+   ],
+   "ruins": [
+    {
+     "id": "building_destroyed",
+     "min": 2.8,
+     "max": 3.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "#pilar_quebrado",
+     "min": 1.2,
+     "max": 2.6,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "rock_single_A",
+     "min": 0.25,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 1.0
+    },
+    {
+     "id": "rock_single_C",
+     "min": 0.25,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8078",
+     "weight": 1.0
+    },
+    {
+     "id": "Stone_Chunks_Large",
+     "min": 0.4,
+     "max": 0.8,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "9a9088",
+     "weight": 1.0
+    }
+   ],
+   "special": [
+    {
+     "id": "#escombro",
+     "min": 0.6,
+     "max": 1.6,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "backdrop": [
+    {
+     "id": "building_destroyed",
+     "min": 3.0,
+     "max": 3.6,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "",
+     "weight": 2
+    },
+    {
+     "id": "building_home_A_blue",
+     "min": 5.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "6a6060",
+     "weight": 1.0
+    },
+    {
+     "id": "building_home_A_red",
+     "min": 5.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "6a6060",
+     "weight": 1.0
+    },
+    {
+     "id": "building_home_A_yellow",
+     "min": 5.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "6a6060",
+     "weight": 1.0
+    }
+   ],
+   "treeDensity": 0.04,
+   "rockDensity": 0.2,
+   "propDensity": 0.35,
+   "ruinDensity": 0.15,
+   "scatterDensity": 1.4,
+   "specialDensity": 0.5,
+   "sun": "ffb080",
+   "ambient": "4a3a3a",
+   "fog": "5a4a44",
+   "sunIntensity": 0.8,
+   "fogDensity": 0.02,
+   "sunPitch": 25,
+   "sunYaw": -70,
+   "dark": false,
+   "torchColor": "ff8a40",
+   "torchDensity": 0.25,
+   "particles": "cinzas",
+   "particleColor": "c0b0a8",
+   "music": "ruins_city",
+   "hazard": "",
+   "enemyTint": "e8d8d0",
+   "enemies": [
+    "warrior",
+    "rogue",
+    "archer",
+    "minion",
+    "brute",
+    "mage"
+   ],
+   "miniBosses": [
+    "mb_colosso",
+    "mb_carcereiro"
+   ],
+   "bosses": [
+    "boss_senhor_cinzas"
+   ]
+  },
+  {
+   "id": "deserto",
+   "name": "Deserto",
+   "category": "Natureza",
+   "desc": "Areia dourada, dunas, cactos e ruínas de um império esquecido.",
+   "floorBlock": "dirt",
+   "floorBlockAlt": "gravel",
+   "floorTint": "f0d4a0",
+   "floorAltTint": "e8c890",
+   "floorAltChance": 0.3,
+   "baseColor": "d8b880",
+   "wallStyle": "rocks",
+   "wallBlock": "stone",
+   "wallBlockAlt": "dirt",
+   "wallTint": "e0b880",
+   "wallHeight": 3.4,
+   "decoTint": "",
+   "trees": [],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8b878",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8b878",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8b878",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8b878",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8b878",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e8b878",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e8b878",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "barrel",
+     "min": 1.05,
+     "max": 1.05,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8c8a0",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_A_big",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8c8a0",
+     "weight": 1.0
+    },
+    {
+     "id": "tent",
+     "min": 2.6,
+     "max": 2.6,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "f0e0c0",
+     "weight": 0.4
+    },
+    {
+     "id": "Gold_Nuggets",
+     "min": 0.5,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.3
+    }
+   ],
+   "ruins": [
+    {
+     "id": "building_destroyed",
+     "min": 2.6,
+     "max": 3.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "f0d0a0",
+     "weight": 1.0
+    },
+    {
+     "id": "#pilar_quebrado",
+     "min": 1.4,
+     "max": 3.2,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e8c890",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "Skeleton_Blade",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "f0e0c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Small_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "f0e0c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Axe",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "f0e0c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Arrow",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "f0e0c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Large_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "f0e0c0",
+     "weight": 1.0
+    },
+    {
+     "id": "rock_single_A",
+     "min": 0.2,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e8c890",
+     "weight": 1.0
+    }
+   ],
+   "special": [
+    {
+     "id": "#duna",
+     "min": 0.6,
+     "max": 1.2,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "#cacto",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.8
+    }
+   ],
+   "backdrop": [
+    {
+     "id": "#duna",
+     "min": 1.5,
+     "max": 3.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 2
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.6,
+     "max": 2.8,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e0b070",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.6,
+     "max": 2.8,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e0b070",
+     "weight": 1.0
+    }
+   ],
+   "treeDensity": 0,
+   "rockDensity": 0.15,
+   "propDensity": 0.2,
+   "ruinDensity": 0.1,
+   "scatterDensity": 0.6,
+   "specialDensity": 0.45,
+   "sun": "fff0d0",
+   "ambient": "a89070",
+   "fog": "e0c8a0",
+   "sunIntensity": 1.35,
+   "fogDensity": 0.012,
+   "sunPitch": 62,
+   "sunYaw": -30,
+   "dark": false,
+   "torchColor": "ffc070",
+   "torchDensity": 0.12,
+   "particles": "areia",
+   "particleColor": "e8d0a0",
+   "music": "desert",
+   "hazard": "",
+   "enemyTint": "fff0d0",
+   "enemies": [
+    "minion",
+    "rogue",
+    "archer",
+    "warrior",
+    "brute",
+    "mage"
+   ],
+   "miniBosses": [
+    "mb_cacador",
+    "mb_colosso"
+   ],
+   "bosses": [
+    "boss_farao"
+   ]
+  },
+  {
+   "id": "neve",
+   "name": "Neve",
+   "category": "Natureza",
+   "desc": "Campos gelados, pinheiros cobertos de neve e cristais de gelo.",
+   "floorBlock": "stone",
+   "floorBlockAlt": "stone",
+   "floorTint": "f4f8ff",
+   "floorAltTint": "d8e4f0",
+   "floorAltChance": 0.3,
+   "baseColor": "e8f0f8",
+   "wallStyle": "rocks",
+   "wallBlock": "stone",
+   "wallBlockAlt": "stone",
+   "wallTint": "e0ecf8",
+   "wallHeight": 3.4,
+   "decoTint": "",
+   "trees": [
+    {
+     "id": "Tree_2_A_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "d8e8f4",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_B_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "d8e8f4",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_A_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "d8e8f4",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_B_Color1",
+     "min": 3.5,
+     "max": 5.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "d8e8f4",
+     "weight": 1.0
+    }
+   ],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "dce4f0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "dce4f0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "dce4f0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "dce4f0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "dce4f0",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "dce4f0",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "dce4f0",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "barrel",
+     "min": 1.05,
+     "max": 1.05,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "c8d8e8",
+     "weight": 1.0
+    },
+    {
+     "id": "crate_A_big",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "c8d8e8",
+     "weight": 1.0
+    },
+    {
+     "id": "Wood_Log_Stack",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "d0d8e0",
+     "weight": 1.0
+    }
+   ],
+   "ruins": [
+    {
+     "id": "#pilar_quebrado",
+     "min": 1.2,
+     "max": 2.6,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "d0e0f0",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "Bush_1_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    },
+    {
+     "id": "Bush_1_C_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    },
+    {
+     "id": "Bush_2_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    },
+    {
+     "id": "Bush_3_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    },
+    {
+     "id": "Bush_4_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    }
+   ],
+   "special": [
+    {
+     "id": "#cristal",
+     "min": 1.0,
+     "max": 2.6,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    },
+    {
+     "id": "#monte_neve",
+     "min": 0.4,
+     "max": 0.9,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "backdrop": [
+    {
+     "id": "Tree_2_A_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_2_B_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_A_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_3_B_Color1",
+     "min": 4.5,
+     "max": 6.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "e0ecf8",
+     "weight": 1.0
+    }
+   ],
+   "treeDensity": 0.12,
+   "rockDensity": 0.2,
+   "propDensity": 0.12,
+   "ruinDensity": 0.05,
+   "scatterDensity": 0.6,
+   "specialDensity": 0.45,
+   "sun": "e8f0ff",
+   "ambient": "8090a8",
+   "fog": "c8d8e8",
+   "sunIntensity": 1.1,
+   "fogDensity": 0.02,
+   "sunPitch": 45,
+   "sunYaw": -40,
+   "dark": false,
+   "torchColor": "ffb070",
+   "torchDensity": 0.2,
+   "particles": "neve",
+   "particleColor": "ffffff",
+   "music": "snow",
+   "hazard": "",
+   "enemyTint": "d8ecff",
+   "enemies": [
+    "minion",
+    "warrior",
+    "archer",
+    "rogue",
+    "mage",
+    "brute"
+   ],
+   "miniBosses": [
+    "mb_bruxa",
+    "mb_carcereiro"
+   ],
+   "bosses": [
+    "boss_rainha_gelo"
+   ]
+  },
+  {
+   "id": "lava",
+   "name": "Lava / Vulcão",
+   "category": "Perigo",
+   "desc": "Rocha negra, rios de lava, brasas no ar e calor sufocante.",
+   "floorBlock": "stone_dark",
+   "floorBlockAlt": "stone",
+   "floorTint": "5a4a48",
+   "floorAltTint": "6a4a40",
+   "floorAltChance": 0.25,
+   "baseColor": "1a0a06",
+   "wallStyle": "rocks",
+   "wallBlock": "stone_dark",
+   "wallBlockAlt": "stone_dark",
+   "wallTint": "4a3838",
+   "wallHeight": 3.6,
+   "decoTint": "",
+   "trees": [],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "bucket_metal",
+     "min": 0.8,
+     "max": 0.8,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "5a4a48",
+     "weight": 1.0
+    },
+    {
+     "id": "anvil",
+     "min": 0.85,
+     "max": 0.85,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.3
+    }
+   ],
+   "ruins": [
+    {
+     "id": "#pilar_quebrado",
+     "min": 1.4,
+     "max": 3.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "4a3a38",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "Skeleton_Blade",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "8a6a5a",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Small_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "8a6a5a",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Axe",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "8a6a5a",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Arrow",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "8a6a5a",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Large_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "8a6a5a",
+     "weight": 1.0
+    },
+    {
+     "id": "Stone_Chunks_Large",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "4a3a38",
+     "weight": 1.0
+    }
+   ],
+   "special": [
+    {
+     "id": "#estalagmite",
+     "min": 1.0,
+     "max": 2.4,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "3a2a28",
+     "weight": 1.0
+    },
+    {
+     "id": "#lava",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.6
+    }
+   ],
+   "backdrop": [
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.8,
+     "max": 3.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "3a2a28",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.8,
+     "max": 3.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "3a2a28",
+     "weight": 1.0
+    }
+   ],
+   "treeDensity": 0,
+   "rockDensity": 0.2,
+   "propDensity": 0.1,
+   "ruinDensity": 0.06,
+   "scatterDensity": 0.8,
+   "specialDensity": 0.35,
+   "sun": "ff7040",
+   "ambient": "3a1a14",
+   "fog": "2a0e08",
+   "sunIntensity": 0.4,
+   "fogDensity": 0.025,
+   "sunPitch": 55,
+   "sunYaw": -30,
+   "dark": true,
+   "torchColor": "ff7a2a",
+   "torchDensity": 0.45,
+   "particles": "brasas",
+   "particleColor": "ff7a2a",
+   "music": "lava",
+   "hazard": "lava",
+   "enemyTint": "ffc8a8",
+   "enemies": [
+    "warrior",
+    "brute",
+    "mage",
+    "rogue",
+    "minion",
+    "archer"
+   ],
+   "miniBosses": [
+    "mb_colosso",
+    "mb_carcereiro"
+   ],
+   "bosses": [
+    "boss_senhor_cinzas"
+   ]
+  },
+  {
+   "id": "cemiterio",
+   "name": "Cemitério",
+   "category": "Sombrio",
+   "desc": "Túmulos, cruzes, árvores secas e névoa fria rente ao chão.",
+   "floorBlock": "dirt",
+   "floorBlockAlt": "grass",
+   "floorTint": "8a8070",
+   "floorAltTint": "6a7a5a",
+   "floorAltChance": 0.35,
+   "baseColor": "252a22",
+   "wallStyle": "blocks",
+   "wallBlock": "stone",
+   "wallBlockAlt": "stone_dark",
+   "wallTint": "a0a0a8",
+   "wallHeight": 2.6,
+   "decoTint": "",
+   "trees": [
+    {
+     "id": "Tree_Bare_1_A_Color1",
+     "min": 3.0,
+     "max": 4.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "7a7470",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_Bare_2_A_Color1",
+     "min": 3.0,
+     "max": 4.5,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "7a7470",
+     "weight": 1.0
+    }
+   ],
+   "rocks": [
+    {
+     "id": "Rock_1_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8a90",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_2_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8a90",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_A_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8a90",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_E_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8a90",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_3_F_Color1",
+     "min": 0.3,
+     "max": 0.6,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "8a8a90",
+     "weight": 1.0
+    },
+    {
+     "id": "Rock_1_J_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "8a8a90",
+     "weight": 0.5
+    },
+    {
+     "id": "Rock_2_D_Color1",
+     "min": 1.4,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "8a8a90",
+     "weight": 0.5
+    }
+   ],
+   "props": [
+    {
+     "id": "fence_stone_straight",
+     "min": 1.0,
+     "max": 1.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "9a9aa0",
+     "weight": 1.0
+    },
+    {
+     "id": "lantern",
+     "min": 0.7,
+     "max": 0.7,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 0.4
+    },
+    {
+     "id": "sack",
+     "min": 0.4,
+     "max": 0.4,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "7a7068",
+     "weight": 0.3
+    }
+   ],
+   "ruins": [
+    {
+     "id": "#pilar_quebrado",
+     "min": 1.2,
+     "max": 2.4,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "9a9aa0",
+     "weight": 1.0
+    }
+   ],
+   "scatter": [
+    {
+     "id": "Skeleton_Blade",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "c8c8c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Small_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "c8c8c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Axe",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "c8c8c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Arrow",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "c8c8c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Skeleton_Shield_Large_A",
+     "min": 0.6,
+     "max": 1.1,
+     "collider": false,
+     "occluder": false,
+     "lying": true,
+     "tint": "c8c8c0",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_1_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "6a7060",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_1_C_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "6a7060",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_2_A_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "6a7060",
+     "weight": 1.0
+    },
+    {
+     "id": "Grass_2_C_Color1",
+     "min": 0.3,
+     "max": 0.5,
+     "collider": false,
+     "occluder": false,
+     "lying": false,
+     "tint": "6a7060",
+     "weight": 1.0
+    }
+   ],
+   "special": [
+    {
+     "id": "#tumulo",
+     "min": 0.8,
+     "max": 1.3,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 2
+    },
+    {
+     "id": "#cruz",
+     "min": 1.4,
+     "max": 2.0,
+     "collider": true,
+     "occluder": false,
+     "lying": false,
+     "tint": "",
+     "weight": 1.0
+    }
+   ],
+   "backdrop": [
+    {
+     "id": "Tree_Bare_1_A_Color1",
+     "min": 4.0,
+     "max": 6.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "5a5450",
+     "weight": 1.0
+    },
+    {
+     "id": "Tree_Bare_2_A_Color1",
+     "min": 4.0,
+     "max": 6.0,
+     "collider": true,
+     "occluder": true,
+     "lying": false,
+     "tint": "5a5450",
+     "weight": 1.0
+    }
+   ],
+   "treeDensity": 0.08,
+   "rockDensity": 0.12,
+   "propDensity": 0.15,
+   "ruinDensity": 0.05,
+   "scatterDensity": 1.0,
+   "specialDensity": 0.9,
+   "sun": "8090c0",
+   "ambient": "2a3040",
+   "fog": "3a4450",
+   "sunIntensity": 0.25,
+   "fogDensity": 0.035,
+   "sunPitch": 40,
+   "sunYaw": -30,
+   "dark": true,
+   "torchColor": "9fd0ff",
+   "torchDensity": 0.35,
+   "particles": "nevoa",
+   "particleColor": "c0d0e0",
+   "music": "crypt",
+   "hazard": "",
+   "enemyTint": "d0e0ff",
+   "enemies": [
+    "minion",
+    "warrior",
+    "archer",
+    "mage",
+    "rogue",
+    "brute"
+   ],
+   "miniBosses": [
+    "mb_bruxa",
+    "mb_carcereiro"
+   ],
+   "bosses": [
+    "necro",
+    "boss_lich"
+   ]
+  }
+ ]
+}

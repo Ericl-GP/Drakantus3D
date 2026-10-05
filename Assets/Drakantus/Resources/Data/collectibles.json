@@ -1,0 +1,284 @@
+{
+ "collectibles": [
+  {
+   "id": "estrela_1",
+   "kind": "estrela",
+   "name": "Estrela da Porta",
+   "desc": "Ainda morna, como se tivesse caído ontem.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 25
+  },
+  {
+   "id": "estrela_2",
+   "kind": "estrela",
+   "name": "Estrela Sussurrante",
+   "desc": "Zumbe baixinho quando você fala perto dela.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 30
+  },
+  {
+   "id": "estrela_3",
+   "kind": "estrela",
+   "name": "Estrela Partida",
+   "desc": "Uma lasca fina com uma rachadura dourada.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 35
+  },
+  {
+   "id": "estrela_4",
+   "kind": "estrela",
+   "name": "Estrela do Poço",
+   "desc": "Encontrada refletida numa poça que não existia.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 40
+  },
+  {
+   "id": "estrela_5",
+   "kind": "estrela",
+   "name": "Estrela Pálida",
+   "desc": "Brilha mais forte no escuro dos corredores.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 45
+  },
+  {
+   "id": "estrela_6",
+   "kind": "estrela",
+   "name": "Estrela Gêmea",
+   "desc": "Parece procurar uma irmã igual a ela.",
+   "lore": "",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 50
+  },
+  {
+   "id": "estrela_7",
+   "kind": "estrela",
+   "name": "Estrela Errante",
+   "desc": "Nunca está exatamente onde você a deixou.",
+   "lore": "",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 55
+  },
+  {
+   "id": "estrela_8",
+   "kind": "estrela",
+   "name": "Coração da Estrela",
+   "desc": "O fragmento mais quente de todos. Pulsa.",
+   "lore": "",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 60
+  },
+  {
+   "id": "livro_praca",
+   "kind": "livro",
+   "name": "Diário de um Feirante",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "praca",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_ossos",
+   "kind": "livro",
+   "name": "Tratado sobre Ossos Antigos",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "ossos",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_bioma_catacumbas",
+   "kind": "livro",
+   "name": "Mapa Rasgado das Criptas",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "bioma_catacumbas",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_bioma_floresta",
+   "kind": "livro",
+   "name": "Caderno do Caçador",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "bioma_floresta",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_bioma_gelo",
+   "kind": "livro",
+   "name": "Carta Congelada",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "bioma_gelo",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_bioma_areia",
+   "kind": "livro",
+   "name": "Pergaminho de Areia",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "bioma_areia",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_bioma_cinzas",
+   "kind": "livro",
+   "name": "Livro de Receitas da Forja",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "bioma_cinzas",
+   "minFloor": 1,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_classe_guerreiro",
+   "kind": "livro",
+   "name": "Manual do Machado",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "classe_guerreiro",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_classe_tank",
+   "kind": "livro",
+   "name": "Juramento Escrito à Mão",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "classe_tank",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_classe_arqueiro",
+   "kind": "livro",
+   "name": "Anotações de Tiro",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "classe_arqueiro",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_classe_mago",
+   "kind": "livro",
+   "name": "Grimório de Bolso",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "classe_mago",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "livro_topo",
+   "kind": "livro",
+   "name": "Diário de Nyx",
+   "desc": "Livro de Lore: libera uma página no Códex.",
+   "lore": "topo",
+   "minFloor": 2,
+   "coins": 0,
+   "xp": 20
+  },
+  {
+   "id": "moeda_1",
+   "kind": "moeda",
+   "name": "Moeda de Grumak",
+   "desc": "Tem uma coroa gravada, torta como a do rei.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 60,
+   "xp": 0
+  },
+  {
+   "id": "moeda_2",
+   "kind": "moeda",
+   "name": "Moeda do Reino Sem Nome",
+   "desc": "O rosto do rei foi raspado de propósito.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 75,
+   "xp": 0
+  },
+  {
+   "id": "moeda_3",
+   "kind": "moeda",
+   "name": "Moeda Furada",
+   "desc": "Usada como amuleto por algum guarda antigo.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 90,
+   "xp": 0
+  },
+  {
+   "id": "moeda_4",
+   "kind": "moeda",
+   "name": "Moeda de Areia",
+   "desc": "Areia escorre dela sem nunca acabar.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 105,
+   "xp": 0
+  },
+  {
+   "id": "moeda_5",
+   "kind": "moeda",
+   "name": "Moeda Gelada",
+   "desc": "Deixa os dedos dormentes por um minuto.",
+   "lore": "",
+   "minFloor": 1,
+   "coins": 120,
+   "xp": 0
+  },
+  {
+   "id": "moeda_6",
+   "kind": "moeda",
+   "name": "Moeda da Ganância",
+   "desc": "Pesa mais do que deveria. Muito mais.",
+   "lore": "",
+   "minFloor": 2,
+   "coins": 135,
+   "xp": 0
+  },
+  {
+   "id": "moeda_7",
+   "kind": "moeda",
+   "name": "Moeda de Duas Caras",
+   "desc": "As duas faces mostram a Torre.",
+   "lore": "",
+   "minFloor": 2,
+   "coins": 150,
+   "xp": 0
+  },
+  {
+   "id": "moeda_8",
+   "kind": "moeda",
+   "name": "Moeda Estelar",
+   "desc": "Cunhada com metal que caiu do céu.",
+   "lore": "",
+   "minFloor": 2,
+   "coins": 165,
+   "xp": 0
+  }
+ ]
+}

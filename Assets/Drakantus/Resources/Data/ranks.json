@@ -1,0 +1,222 @@
+{
+ "ranks": [
+  {
+   "id": "F",
+   "name": "F",
+   "title": "Novato",
+   "color": "9a9a9a",
+   "desc": "Recém-registrado. Todo herói começa aqui.",
+   "points": 0,
+   "coins": 0,
+   "items": [],
+   "trial": {
+    "title": "",
+    "desc": "",
+    "goal": "",
+    "target": "",
+    "count": 0,
+    "coins": 0,
+    "xp": 0
+   }
+  },
+  {
+   "id": "E",
+   "name": "E",
+   "title": "Aprendiz",
+   "color": "8fc46a",
+   "desc": "Já sabe de que lado se segura a espada.",
+   "points": 60,
+   "coins": 150,
+   "items": [
+    "health_potion",
+    "health_potion",
+    "mana_potion"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank E",
+    "desc": "Mostre disciplina: derrote 10 lacaios esqueletos.",
+    "goal": "kill",
+    "target": "minion",
+    "count": 10,
+    "coins": 50,
+    "xp": 40
+   }
+  },
+  {
+   "id": "D",
+   "name": "D",
+   "title": "Aventureiro",
+   "color": "5aa8e8",
+   "desc": "Um nome conhecido na taverna.",
+   "points": 160,
+   "coins": 300,
+   "items": [
+    "great_potion",
+    "moon_pendant"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank D",
+    "desc": "Conclua o Andar 1 da Torre sob o olhar da Guilda.",
+    "goal": "floor",
+    "target": "1",
+    "count": 1,
+    "coins": 80,
+    "xp": 60
+   }
+  },
+  {
+   "id": "C",
+   "name": "C",
+   "title": "Veterano",
+   "color": "3fd0c0",
+   "desc": "Os novatos pedem conselhos a você.",
+   "points": 320,
+   "coins": 500,
+   "items": [
+    "frost_blade",
+    "great_potion"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank C",
+    "desc": "Derrube o Rei Esqueleto Grumak.",
+    "goal": "boss",
+    "target": "king",
+    "count": 1,
+    "coins": 120,
+    "xp": 100
+   }
+  },
+  {
+   "id": "B",
+   "name": "B",
+   "title": "Caçador de Mortos",
+   "color": "a77bff",
+   "desc": "Os esqueletos sussurram o seu nome.",
+   "points": 560,
+   "coins": 800,
+   "items": [
+    "azure_plate",
+    "guardian_ring"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank B",
+    "desc": "Derrote 4 brutamontes esqueletos.",
+    "goal": "kill",
+    "target": "brute",
+    "count": 4,
+    "coins": 160,
+    "xp": 140
+   }
+  },
+  {
+   "id": "A",
+   "name": "A",
+   "title": "Herói de Aster",
+   "color": "ff5a5a",
+   "desc": "A cidade dorme tranquila por sua causa.",
+   "points": 900,
+   "coins": 1200,
+   "items": [
+    "ember_saber"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank A",
+    "desc": "Conclua o Andar 2, a Cripta do Necromante.",
+    "goal": "floor",
+    "target": "2",
+    "count": 1,
+    "coins": 220,
+    "xp": 200
+   }
+  },
+  {
+   "id": "S",
+   "name": "S",
+   "title": "Lenda Viva",
+   "color": "ffb03a",
+   "desc": "Bardos compõem baladas sobre você.",
+   "points": 1400,
+   "coins": 2000,
+   "items": [
+    "dragon_plate"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank S",
+    "desc": "Derrote o Necromante Ancião.",
+    "goal": "boss",
+    "target": "necro",
+    "count": 1,
+    "coins": 300,
+    "xp": 300
+   }
+  },
+  {
+   "id": "SS",
+   "name": "SS",
+   "title": "Campeão da Torre",
+   "color": "ffd76a",
+   "desc": "Poucos chegaram tão longe.",
+   "points": 2100,
+   "coins": 3000,
+   "items": [
+    "sun_bow",
+    "star_staff"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank SS",
+    "desc": "Derrote 60 criaturas da Torre.",
+    "goal": "kill",
+    "target": "any",
+    "count": 60,
+    "coins": 400,
+    "xp": 400
+   }
+  },
+  {
+   "id": "SSS",
+   "name": "SSS",
+   "title": "Mito",
+   "color": "ff66cc",
+   "desc": "As cores do mundo se curvam diante de você.",
+   "points": 3000,
+   "coins": 5000,
+   "items": [
+    "ember_saber",
+    "dragon_plate"
+   ],
+   "trial": {
+    "title": "Prova de Promoção: Rank SSS",
+    "desc": "Derrote 3 chefes da Torre.",
+    "goal": "boss",
+    "target": "any",
+    "count": 3,
+    "coins": 600,
+    "xp": 600
+   }
+  },
+  {
+   "id": "DEUS",
+   "name": "DEUS",
+   "title": "Deus da Guilda",
+   "color": "fff2b0",
+   "desc": "Além de todos os ranks. A Guilda se ajoelha.",
+   "points": 4500,
+   "coins": 10000,
+   "items": [
+    "sun_bow",
+    "star_staff",
+    "dragon_plate",
+    "ember_saber"
+   ],
+   "trial": {
+    "title": "Prova Divina",
+    "desc": "Derrote 150 criaturas da Torre.",
+    "goal": "kill",
+    "target": "any",
+    "count": 150,
+    "coins": 1000,
+    "xp": 1000
+   }
+  }
+ ]
+}

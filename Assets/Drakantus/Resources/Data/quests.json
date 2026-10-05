@@ -1,0 +1,612 @@
+{
+ "quests": [
+  {
+   "id": "d_minions",
+   "type": "daily",
+   "title": "Ossos pela Praça",
+   "desc": "Os lacaios esqueletos não param de levantar. Mande-os de volta ao pó.",
+   "goal": "kill",
+   "target": "minion",
+   "count": 12,
+   "coins": 60,
+   "xp": 30,
+   "points": 10,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "health_potion"
+   ]
+  },
+  {
+   "id": "d_warriors",
+   "type": "daily",
+   "title": "Escudos Rachados",
+   "desc": "Guerreiros esqueletos bloqueiam a passagem do Andar 1. Quebre a formação.",
+   "goal": "kill",
+   "target": "warrior",
+   "count": 8,
+   "coins": 80,
+   "xp": 40,
+   "points": 12,
+   "minRank": 0,
+   "order": 0,
+   "items": []
+  },
+  {
+   "id": "d_archers",
+   "type": "daily",
+   "title": "Chuva de Flechas",
+   "desc": "Os arqueiros da Torre estão atirando em qualquer coisa que se mexe.",
+   "goal": "kill",
+   "target": "archer",
+   "count": 6,
+   "coins": 70,
+   "xp": 35,
+   "points": 12,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "mana_potion"
+   ]
+  },
+  {
+   "id": "d_rogues",
+   "type": "daily",
+   "title": "Sombras Ligeiras",
+   "desc": "Ladinos esqueletos roubaram suprimentos da Guilda. Recupere o orgulho.",
+   "goal": "kill",
+   "target": "rogue",
+   "count": 8,
+   "coins": 70,
+   "xp": 35,
+   "points": 12,
+   "minRank": 0,
+   "order": 0,
+   "items": []
+  },
+  {
+   "id": "d_mages",
+   "type": "daily",
+   "title": "Silêncio Arcano",
+   "desc": "Magos esqueletos estão estudando feitiços proibidos. Interrompa as aulas.",
+   "goal": "kill",
+   "target": "mage",
+   "count": 5,
+   "coins": 120,
+   "xp": 60,
+   "points": 18,
+   "minRank": 1,
+   "order": 0,
+   "items": [
+    "mana_potion"
+   ]
+  },
+  {
+   "id": "d_any",
+   "type": "daily",
+   "title": "Limpeza Geral",
+   "desc": "A Guilda paga por cabeça. Qualquer criatura da Torre serve.",
+   "goal": "kill",
+   "target": "any",
+   "count": 30,
+   "coins": 100,
+   "xp": 50,
+   "points": 15,
+   "minRank": 0,
+   "order": 0,
+   "items": []
+  },
+  {
+   "id": "d_collect",
+   "type": "daily",
+   "title": "Catador de Tesouros",
+   "desc": "Recolha os tesouros que as criaturas deixam cair. O seu pet pode ajudar!",
+   "goal": "collect",
+   "target": "any",
+   "count": 15,
+   "coins": 60,
+   "xp": 30,
+   "points": 10,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "health_potion"
+   ]
+  },
+  {
+   "id": "d_coins",
+   "type": "daily",
+   "title": "Moedas Perdidas",
+   "desc": "Moedas antigas brilham pelo chão da Torre. Junte todas que puder.",
+   "goal": "collect",
+   "target": "coin",
+   "count": 25,
+   "coins": 50,
+   "xp": 25,
+   "points": 10,
+   "minRank": 0,
+   "order": 0,
+   "items": []
+  },
+  {
+   "id": "d_skills",
+   "type": "daily",
+   "title": "Treino de Técnicas",
+   "desc": "O Instrutor Kael quer ver você usando suas habilidades em combate de verdade.",
+   "goal": "skill",
+   "target": "any",
+   "count": 25,
+   "coins": 60,
+   "xp": 40,
+   "points": 10,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "mana_potion"
+   ]
+  },
+  {
+   "id": "d_floor1",
+   "type": "daily",
+   "title": "Ronda nas Catacumbas",
+   "desc": "Conclua o Andar 1 e garanta que nada saia de lá hoje.",
+   "goal": "floor",
+   "target": "1",
+   "count": 1,
+   "coins": 120,
+   "xp": 60,
+   "points": 18,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "health_potion",
+    "health_potion"
+   ]
+  },
+  {
+   "id": "d_floor2",
+   "type": "daily",
+   "title": "Vigília na Cripta",
+   "desc": "Conclua o Andar 2 antes que o Necromante reúna mais servos.",
+   "goal": "floor",
+   "target": "2",
+   "count": 1,
+   "coins": 200,
+   "xp": 100,
+   "points": 25,
+   "minRank": 2,
+   "order": 0,
+   "items": [
+    "great_potion"
+   ]
+  },
+  {
+   "id": "h_king",
+   "type": "hunt",
+   "title": "Caçada: Rei Grumak",
+   "desc": "Recompensa pela coroa do Rei Esqueleto Grumak. Ele sempre volta... e sempre cai.",
+   "goal": "boss",
+   "target": "king",
+   "count": 1,
+   "coins": 200,
+   "xp": 120,
+   "points": 35,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "strength_elixir"
+   ]
+  },
+  {
+   "id": "h_brutes",
+   "type": "hunt",
+   "title": "Caçada: Brutamontes",
+   "desc": "Os brutamontes esqueletos esmagaram três aventureiros esta semana. Chega.",
+   "goal": "kill",
+   "target": "brute",
+   "count": 3,
+   "coins": 160,
+   "xp": 90,
+   "points": 30,
+   "minRank": 1,
+   "order": 0,
+   "items": []
+  },
+  {
+   "id": "h_necro",
+   "type": "hunt",
+   "title": "Caçada: Necromante Ancião",
+   "desc": "O Ancião precisa ser derrotado de novo. A Guilda paga bem por isso.",
+   "goal": "boss",
+   "target": "necro",
+   "count": 1,
+   "coins": 400,
+   "xp": 250,
+   "points": 60,
+   "minRank": 2,
+   "order": 0,
+   "items": [
+    "great_potion"
+   ]
+  },
+  {
+   "id": "h_mage_elite",
+   "type": "hunt",
+   "title": "Caçada: Círculo Arcano",
+   "desc": "Um círculo inteiro de magos esqueletos. Elimine dez deles.",
+   "goal": "kill",
+   "target": "mage",
+   "count": 10,
+   "coins": 260,
+   "xp": 150,
+   "points": 40,
+   "minRank": 3,
+   "order": 0,
+   "items": []
+  },
+  {
+   "id": "h_any_boss",
+   "type": "hunt",
+   "title": "Caçada: Tiranos da Torre",
+   "desc": "Derrote três chefes, quaisquer que sejam. Só os melhores aceitam.",
+   "goal": "boss",
+   "target": "any",
+   "count": 3,
+   "coins": 600,
+   "xp": 350,
+   "points": 80,
+   "minRank": 4,
+   "order": 0,
+   "items": [
+    "great_potion",
+    "strength_elixir"
+   ]
+  },
+  {
+   "id": "s1",
+   "type": "story",
+   "title": "O Primeiro Passo",
+   "desc": "Oren quer ver se você aguenta a Torre. Conclua o Andar 1.",
+   "goal": "floor",
+   "target": "1",
+   "count": 1,
+   "coins": 150,
+   "xp": 80,
+   "points": 40,
+   "minRank": 0,
+   "order": 1,
+   "items": [
+    "health_potion",
+    "health_potion"
+   ]
+  },
+  {
+   "id": "s2",
+   "type": "story",
+   "title": "Coroa de Ossos",
+   "desc": "O Rei Grumak comanda as catacumbas. Derrube o trono dele.",
+   "goal": "boss",
+   "target": "king",
+   "count": 1,
+   "coins": 250,
+   "xp": 150,
+   "points": 50,
+   "minRank": 0,
+   "order": 2,
+   "items": [
+    "strength_elixir"
+   ]
+  },
+  {
+   "id": "s3",
+   "type": "story",
+   "title": "Sussurros na Cripta",
+   "desc": "Algo chama os mortos lá em cima. Derrote os magos que guardam o segredo.",
+   "goal": "kill",
+   "target": "mage",
+   "count": 6,
+   "coins": 250,
+   "xp": 150,
+   "points": 50,
+   "minRank": 0,
+   "order": 3,
+   "items": [
+    "mana_potion",
+    "mana_potion"
+   ]
+  },
+  {
+   "id": "s4",
+   "type": "story",
+   "title": "A Cripta do Necromante",
+   "desc": "Suba até a cripta e conclua o Andar 2.",
+   "goal": "floor",
+   "target": "2",
+   "count": 1,
+   "coins": 350,
+   "xp": 200,
+   "points": 60,
+   "minRank": 0,
+   "order": 4,
+   "items": [
+    "great_potion"
+   ]
+  },
+  {
+   "id": "s5",
+   "type": "story",
+   "title": "O Fim do Ancião",
+   "desc": "O Necromante Ancião é a fonte de tudo. Acabe com ele.",
+   "goal": "boss",
+   "target": "necro",
+   "count": 1,
+   "coins": 600,
+   "xp": 350,
+   "points": 100,
+   "minRank": 0,
+   "order": 5,
+   "items": [
+    "moon_pendant"
+   ]
+  },
+  {
+   "id": "s6",
+   "type": "story",
+   "title": "Guardião de Aster",
+   "desc": "A Torre nunca dorme. Prove que Aster está protegida derrotando 100 criaturas.",
+   "goal": "kill",
+   "target": "any",
+   "count": 100,
+   "coins": 800,
+   "xp": 500,
+   "points": 150,
+   "minRank": 0,
+   "order": 6,
+   "items": [
+    "guardian_ring"
+   ]
+  },
+  {
+   "id": "c_grumak_1",
+   "type": "chain",
+   "chain": "eco_grumak",
+   "chainStep": 1,
+   "title": "O Eco de Grumak I: Guardas do Rei",
+   "desc": "Um sussurro ecoa nas catacumbas: os guardas do Rei Grumak voltaram a marchar. Quebre a guarda dele.",
+   "goal": "kill",
+   "target": "warrior",
+   "count": 10,
+   "coins": 250,
+   "xp": 150,
+   "points": 30,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "strength_elixir"
+   ],
+   "targetTime": 240
+  },
+  {
+   "id": "c_grumak_2",
+   "type": "chain",
+   "chain": "eco_grumak",
+   "chainStep": 2,
+   "title": "O Eco de Grumak II: A Coroa Rachada",
+   "desc": "A coroa de Grumak tem uma rachadura que brilha. Derrote o rei antes que ela se feche.",
+   "goal": "boss",
+   "target": "king",
+   "count": 1,
+   "coins": 400,
+   "xp": 250,
+   "points": 45,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "great_potion"
+   ],
+   "targetTime": 300
+  },
+  {
+   "id": "c_grumak_3",
+   "type": "chain",
+   "chain": "eco_grumak",
+   "chainStep": 3,
+   "title": "O Eco de Grumak III: Silêncio",
+   "desc": "Leve o silêncio de volta às Catacumbas Esquecidas: conclua o Andar 1 sem olhar para trás.",
+   "goal": "floor",
+   "target": "1",
+   "count": 1,
+   "coins": 750,
+   "xp": 450,
+   "points": 80,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "king_mantle"
+   ],
+   "targetTime": 480
+  },
+  {
+   "id": "c_grimorio_1",
+   "type": "chain",
+   "chain": "grimorio",
+   "chainStep": 1,
+   "title": "O Grimório Perdido I: Tinta de Osso",
+   "desc": "Magos esqueletos escrevem feitiços com tinta de osso. Cale as penas deles.",
+   "goal": "kill",
+   "target": "mage",
+   "count": 8,
+   "coins": 280,
+   "xp": 170,
+   "points": 30,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "mana_potion",
+    "mana_potion"
+   ],
+   "targetTime": 300
+  },
+  {
+   "id": "c_grimorio_2",
+   "type": "chain",
+   "chain": "grimorio",
+   "chainStep": 2,
+   "title": "O Grimório Perdido II: Páginas Soltas",
+   "desc": "As páginas arrancadas viraram tesouros espalhados pelo chão da Torre. Recolha-as.",
+   "goal": "collect",
+   "target": "item",
+   "count": 6,
+   "coins": 380,
+   "xp": 240,
+   "points": 45,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "great_potion"
+   ],
+   "targetTime": 420
+  },
+  {
+   "id": "c_grimorio_3",
+   "type": "chain",
+   "chain": "grimorio",
+   "chainStep": 3,
+   "title": "O Grimório Perdido III: O Autor",
+   "desc": "O grimório tem dono: o Necromante Ancião. Devolva o livro... à força.",
+   "goal": "boss",
+   "target": "necro",
+   "count": 1,
+   "coins": 850,
+   "xp": 500,
+   "points": 90,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "sun_medallion"
+   ],
+   "targetTime": 420
+  },
+  {
+   "id": "c_sombras_1",
+   "type": "chain",
+   "chain": "sombras",
+   "chainStep": 1,
+   "title": "Caça às Sombras I: Passos Leves",
+   "desc": "Ladinos esqueletos seguem os novatos da Guilda. Vire o caçador.",
+   "goal": "kill",
+   "target": "rogue",
+   "count": 12,
+   "coins": 240,
+   "xp": 140,
+   "points": 30,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "health_potion",
+    "health_potion"
+   ],
+   "targetTime": 260
+  },
+  {
+   "id": "c_sombras_2",
+   "type": "chain",
+   "chain": "sombras",
+   "chainStep": 2,
+   "title": "Caça às Sombras II: Olhos no Escuro",
+   "desc": "Os arqueiros que davam cobertura aos ladinos ainda estão lá em cima.",
+   "goal": "kill",
+   "target": "archer",
+   "count": 10,
+   "coins": 330,
+   "xp": 200,
+   "points": 40,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "strength_elixir"
+   ],
+   "targetTime": 280
+  },
+  {
+   "id": "c_sombras_3",
+   "type": "chain",
+   "chain": "sombras",
+   "chainStep": 3,
+   "title": "Caça às Sombras III: A Noite Inteira",
+   "desc": "Uma noite inteira de caça. Nada que se mexa na Torre fica de pé.",
+   "goal": "kill",
+   "target": "any",
+   "count": 60,
+   "coins": 800,
+   "xp": 480,
+   "points": 85,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "phoenix_boots"
+   ],
+   "targetTime": 720
+  },
+  {
+   "id": "c_tesouro_1",
+   "type": "chain",
+   "chain": "tesouro",
+   "chainStep": 1,
+   "title": "O Tesouro do Rei Antigo I: Rastro Dourado",
+   "desc": "Moedas antigas estão aparecendo no chão da Torre. Siga o rastro.",
+   "goal": "collect",
+   "target": "coin",
+   "count": 40,
+   "coins": 260,
+   "xp": 150,
+   "points": 30,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "health_potion"
+   ],
+   "targetTime": 360
+  },
+  {
+   "id": "c_tesouro_2",
+   "type": "chain",
+   "chain": "tesouro",
+   "chainStep": 2,
+   "title": "O Tesouro do Rei Antigo II: Os Carregadores",
+   "desc": "Brutamontes carregam baús de um rei esquecido. Alivie a carga deles.",
+   "goal": "kill",
+   "target": "brute",
+   "count": 4,
+   "coins": 420,
+   "xp": 260,
+   "points": 45,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "great_potion"
+   ],
+   "targetTime": 300
+  },
+  {
+   "id": "c_tesouro_3",
+   "type": "chain",
+   "chain": "tesouro",
+   "chainStep": 3,
+   "title": "O Tesouro do Rei Antigo III: A Câmara",
+   "desc": "O mapa aponta para os andares de baixo. Conclua dois andares da Torre.",
+   "goal": "floor",
+   "target": "any",
+   "count": 2,
+   "coins": 900,
+   "xp": 520,
+   "points": 95,
+   "minRank": 0,
+   "order": 0,
+   "items": [
+    "dragon_ring"
+   ],
+   "targetTime": 900
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+{
+ "npcs": [
+  {
+   "id": "bram",
+   "name": "Bram",
+   "role": "Ferreiro",
+   "model": "hero_Barbarian",
+   "tint": "c87a4a",
+   "weapon": "hammer",
+   "anim": "Interact",
+   "function": "shop:armas",
+   "lines": [
+    "Aço bom não se compra barato. Mas se compra aqui!",
+    "Cada lâmina dessa forja já provou sangue de esqueleto.",
+    "Volte com moedas e eu te deixo mais perigoso.",
+    "Tem arma que você não usa? Eu compro. Preço justo, palavra de ferreiro."
+   ]
+  },
+  {
+   "id": "rurik",
+   "name": "Rurik",
+   "role": "Armeira",
+   "model": "hero_Knight",
+   "tint": "8fa4c8",
+   "weapon": "shield",
+   "anim": "Idle",
+   "function": "shop:armaduras",
+   "lines": [
+    "Quem sobe a torre sem armadura desce carregado.",
+    "Placa, couro ou malha? Escolha o que te mantém de pé.",
+    "Eu testo cada peça com o martelo do Bram. Ele odeia isso.",
+    "Armadura velha? Traz aqui que eu pago e derreto."
+   ]
+  },
+  {
+   "id": "iria",
+   "name": "Iria",
+   "role": "Joalheira",
+   "model": "hero_Mage",
+   "tint": "d8a8ff",
+   "weapon": "wand",
+   "anim": "Idle",
+   "function": "shop:joias",
+   "lines": [
+    "Uma joia certa vale mais que três espadas.",
+    "Este âmbar ainda guarda o calor do sol antigo.",
+    "Anéis não brilham à toa. Eles escutam a sua mana."
+   ]
+  },
+  {
+   "id": "mika",
+   "name": "Mika",
+   "role": "Alquimista",
+   "model": "hero_Mage",
+   "tint": "8fd18a",
+   "weapon": "",
+   "anim": "Interact",
+   "function": "shop:pocoes",
+   "lines": [
+    "Vermelha cura, azul acalma a mente. Não beba a verde!",
+    "Leve algumas poções. A torre não tem farmácia.",
+    "Ops, isso fumegou? Ignore. Está tudo sob controle."
+   ]
+  },
+  {
+   "id": "guardiao",
+   "name": "Guardião Teodor",
+   "role": "Guardião da Torre",
+   "model": "hero_Knight",
+   "tint": "c8b070",
+   "weapon": "spear",
+   "anim": "Idle",
+   "function": "tower",
+   "lines": [
+    "Alto lá. Só aventureiros registrados na Guilda entram na Torre.",
+    "Cada andar é uma instância só sua. Ninguém vai te ajudar lá dentro.",
+    "Os mortos acordaram de novo. Mostre a eles quem manda."
+   ]
+  },
+  {
+   "id": "tomas",
+   "name": "Tomás",
+   "role": "Guarda da praça",
+   "model": "hero_Knight",
+   "tint": "a0a8b0",
+   "weapon": "spear",
+   "anim": "Idle",
+   "function": "talk",
+   "lines": [
+    "Praça tranquila hoje. Bem diferente da torre.",
+    "Dica de guarda: segure o escudo antes do golpe, não depois.",
+    "Viu aquela marca vermelha no chão? Saia de cima dela!"
+   ]
+  },
+  {
+   "id": "pip",
+   "name": "Pip",
+   "role": "Criança curiosa",
+   "model": "hero_Rogue",
+   "tint": "ffd27a",
+   "weapon": "",
+   "anim": "Cheer",
+   "function": "talk",
+   "lines": [
+    "Você vai subir a torre? Me traz um osso de esqueleto!",
+    "Quando eu crescer vou ser Tank. Ninguém me derruba!",
+    "Uau, que espada! Posso segurar? Só um pouquinho?"
+   ]
+  },
+  {
+   "id": "lia",
+   "name": "Lia",
+   "role": "Criança sonhadora",
+   "model": "hero_Mage",
+   "tint": "ffb0c8",
+   "weapon": "wand",
+   "anim": "Wave",
+   "function": "talk",
+   "lines": [
+    "Eu fiz uma bola de fogo! Era pequenininha, mas era.",
+    "A Mestra Aldra disse que magia é paciência. Eu não tenho!",
+    "Tchau, herói! Volta com histórias!"
+   ]
+  },
+  {
+   "id": "lirio",
+   "name": "Lírio",
+   "role": "Bardo",
+   "model": "hero_Rogue_Hooded",
+   "tint": "b04a6a",
+   "weapon": "",
+   "anim": "Sit",
+   "function": "talk",
+   "lines": [
+    "~ Subiu a torre, desceu de glória, e o Rei Grumak virou história ~",
+    "Me traga um feito digno e eu componho uma balada.",
+    "A melhor rima para 'esqueleto'? 'Pó completo'."
+   ]
+  },
+  {
+   "id": "dario",
+   "name": "Dário",
+   "role": "Mercador viajante",
+   "model": "hero_Rogue_Hooded",
+   "tint": "9a7a4a",
+   "weapon": "",
+   "anim": "Idle",
+   "function": "talk",
+   "lines": [
+    "Vendo de tudo, mas hoje só tenho fofoca.",
+    "Dizem que no segundo andar um necromante ergue os mortos sem parar.",
+    "Item lendário? Só cai de chefe. E de chefe com sorte."
+   ]
+  },
+  {
+   "id": "marta",
+   "name": "Marta",
+   "role": "Aldeã",
+   "model": "hero_Rogue",
+   "tint": "e8d8b0",
+   "weapon": "",
+   "anim": "Wave",
+   "function": "talk",
+   "lines": [
+    "Bom dia! A padaria fica do outro lado da praça.",
+    "Meu marido sumiu na torre há anos... ou foi pescar. Nunca sei.",
+    "Cuide-se lá dentro, viu?"
+   ]
+  },
+  {
+   "id": "ezio",
+   "name": "Velho Ézio",
+   "role": "Veterano aposentado",
+   "model": "hero_Barbarian",
+   "tint": "8a8a8a",
+   "weapon": "axe",
+   "anim": "Sit",
+   "function": "talk",
+   "lines": [
+    "Na minha época a torre tinha três andares a mais. E subíamos descalços.",
+    "Parry na hora certa vale mais que qualquer armadura.",
+    "Combo alto, coração calmo. É assim que se luta."
+   ]
+  },
+  {
+   "id": "sera",
+   "name": "Sera",
+   "role": "Recepcionista da Guilda",
+   "model": "hero_Rogue",
+   "tint": "ffffff",
+   "weapon": "",
+   "anim": "Wave",
+   "function": "register|rank",
+   "lines": [
+    "Bem-vindo à Guilda dos Aventureiros! Quer se registrar?",
+    "Com o registro você pode escolher uma classe e entrar na Torre.",
+    "Assine aqui, por favor. Letra bonita, hein?"
+   ]
+  },
+  {
+   "id": "aldra",
+   "name": "Mestra Aldra",
+   "role": "Mestra de Classes",
+   "model": "hero_Mage",
+   "tint": "6a5aa8",
+   "weapon": "staff",
+   "anim": "Idle",
+   "function": "class_master",
+   "lines": [
+    "No nível 10, todo aventureiro encontra a sua verdadeira forma. Venha me ver.",
+    "Guerreiro vira sombra ou muralha de aço. Tank vira fúria ou escudo. Escolha bem: não há volta.",
+    "Assassino, Cavaleiro, Pistoleiro, Arqueiro Superior, Sacerdote, Arqui-mago, Berserker, The Guard. Qual é o seu?"
+   ]
+  },
+  {
+   "id": "kael",
+   "name": "Instrutor Kael",
+   "role": "Instrutor de Habilidades",
+   "model": "hero_Barbarian",
+   "tint": "c85a4a",
+   "weapon": "sword",
+   "anim": "Cheer",
+   "function": "skills",
+   "lines": [
+    "Quatro teclas, quatro armas: Z, X, C e V. Use todas!",
+    "Novas técnicas chegam com a experiência. Suba de nível e volte aqui.",
+    "Habilidade boa é habilidade usada na hora certa."
+   ]
+  },
+  {
+   "id": "oren",
+   "name": "Oren",
+   "role": "Mestre de Missões",
+   "model": "hero_Knight",
+   "tint": "7a6a4a",
+   "weapon": "",
+   "anim": "Interact",
+   "function": "quests|rank",
+   "lines": [
+    "O quadro está cheio de pedidos. Os mortos não descansam.",
+    "Limpe um andar e a Guilda paga. Simples assim.",
+    "Comece pelo Andar 1. O Rei Grumak está ficando ousado."
+   ]
+  },
+  {
+   "id": "nyx",
+   "name": "Nyx",
+   "role": "Aventureira",
+   "model": "hero_Rogue_Hooded",
+   "tint": "3a3a4a",
+   "weapon": "dagger",
+   "anim": "Sit",
+   "function": "talk",
+   "lines": [
+    "Fui até o segundo andar. Os magos esqueletos atiram de longe, fique em movimento.",
+    "Esquiva com Q atravessa golpes. Confie em mim.",
+    "Não conte pra ninguém, mas tenho medo de escuro."
+   ]
+  },
+  {
+   "id": "borin",
+   "name": "Borin",
+   "role": "Aventureiro",
+   "model": "hero_Barbarian",
+   "tint": "a86a3a",
+   "weapon": "axe",
+   "anim": "Cheer",
+   "function": "talk",
+   "lines": [
+    "HA! Combo de 50 hoje! Quem chega perto?",
+    "O baú do chefe tinha um item azul! Um dia vem o laranja.",
+    "Bebida por minha conta quando você derrubar o Necromante!"
+   ]
+  },
+  {
+   "id": "lumi",
+   "name": "Lumi",
+   "role": "Criadora de Pets",
+   "model": "hero_Mage",
+   "tint": "ffb0e0",
+   "weapon": "",
+   "anim": "Idle",
+   "function": "pets",
+   "lines": [
+    "Olha só quem chegou! Meus bichinhos adoram visitas.",
+    "Um pet busca o loot pra você e ainda ajuda na briga. Fofo E útil!",
+    "Trate bem do seu pet: quanto mais ele luta e coleta, mais ele cresce.",
+    "No nível 10 eles evoluem! Eu choro toda vez."
+   ]
+  }
+ ]
+}

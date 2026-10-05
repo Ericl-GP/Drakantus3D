@@ -1,0 +1,30 @@
+{
+ "_comment": "Habilidades extras por id de enemies.json (lidas por EnemyAbilities via FloorRoot). Ids: investida, escudo, invocar, veneno, teleporte, furia, fogo, pedras. phaseAbilities: ganhas a cada 33% de vida perdida.",
+ "profiles": [
+  { "id": "king", "abilities": ["investida"], "phaseAbilities": ["pedras", "furia"], "phases": true, "aura": "" },
+  { "id": "necro", "abilities": ["invocar"], "phaseAbilities": ["teleporte", "veneno"], "phases": true, "aura": "b98aff" },
+  { "id": "mb_carcereiro", "abilities": ["investida", "escudo"], "phaseAbilities": [], "phases": false, "aura": "" },
+  { "id": "mb_bruxa", "abilities": ["veneno", "teleporte"], "phaseAbilities": [], "phases": false, "aura": "7aff5a" },
+  { "id": "mb_cacador", "abilities": ["teleporte", "pedras"], "phaseAbilities": [], "phases": false, "aura": "" },
+  { "id": "mb_colosso", "abilities": ["pedras", "furia"], "phaseAbilities": [], "phases": false, "aura": "" },
+  { "id": "boss_senhor_cinzas", "abilities": ["fogo"], "phaseAbilities": ["investida", "furia"], "phases": true, "aura": "ff7a2a" },
+  { "id": "boss_rainha_gelo", "abilities": ["escudo"], "phaseAbilities": ["teleporte", "pedras"], "phases": true, "aura": "9fd8ff" },
+  { "id": "boss_farao", "abilities": ["invocar"], "phaseAbilities": ["veneno", "investida"], "phases": true, "aura": "ffd04a" },
+  { "id": "boss_lich", "abilities": ["invocar", "teleporte"], "phaseAbilities": ["fogo", "furia"], "phases": true, "aura": "c890ff" }
+ ],
+ "_patterns": "[Inimigos] Padrões dos chefes (BossPatterns.cs) por fase: phase1 100-66%, phase2 66-33%, phase3 33-0%. Ids: shockwave, spin, leap, guard, spiral, bonewall, clones, drain, fan, firegrid, charges, icerain, meteor, nova, plague. hpMult = vida extra; summon = id invocado por guard; color = cor dos efeitos.",
+ "patterns": [
+  { "id": "king", "color": "ff7a4a", "summon": "shield_bearer", "wallColor": "e8e0c8", "hpMult": 1.8,
+    "phase1": ["shockwave", "spin"], "phase2": ["shockwave", "spin", "leap", "guard"], "phase3": ["shockwave", "leap", "spin", "guard", "charges"] },
+  { "id": "necro", "color": "c86aff", "summon": "swarm_ossinho", "wallColor": "e8e0c8", "hpMult": 1.6,
+    "phase1": ["spiral", "drain", "fan"], "phase2": ["spiral", "drain", "bonewall", "clones"], "phase3": ["spiral", "drain", "clones", "bonewall", "nova"] },
+  { "id": "boss_senhor_cinzas", "color": "ff7a2a", "summon": "fire_warrior", "wallColor": "5a4038", "hpMult": 1.35,
+    "phase1": ["firegrid", "fan"], "phase2": ["firegrid", "fan", "charges"], "phase3": ["firegrid", "charges", "meteor", "shockwave"] },
+  { "id": "boss_rainha_gelo", "color": "9fe4ff", "summon": "ice_rogue", "wallColor": "bfeaff", "hpMult": 1.35,
+    "phase1": ["icerain", "nova"], "phase2": ["icerain", "nova", "fan", "bonewall"], "phase3": ["icerain", "nova", "spiral", "fan"] },
+  { "id": "boss_farao", "color": "ffd04a", "summon": "plague_minion", "wallColor": "d8c08a", "hpMult": 1.35,
+    "phase1": ["charges", "plague"], "phase2": ["charges", "plague", "guard", "fan"], "phase3": ["charges", "plague", "guard", "shockwave", "fan"] },
+  { "id": "boss_lich", "color": "c890ff", "summon": "summoner", "wallColor": "e8e0c8", "hpMult": 1.35,
+    "phase1": ["spiral", "meteor"], "phase2": ["spiral", "meteor", "clones", "drain"], "phase3": ["spiral", "meteor", "clones", "drain", "nova", "firegrid"] }
+ ]
+}

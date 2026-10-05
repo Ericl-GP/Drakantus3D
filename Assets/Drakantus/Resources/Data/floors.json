@@ -1,0 +1,26 @@
+{
+    "floors": [
+        {
+            "id": "tower_f3",
+            "name": "Salões Esquecidos",
+            "subtitle": "Andar 03 · Salões Esquecidos",
+            "biome": "lava",
+            "next": "",
+            "floor": 3,
+            "recommendedLevel": 6,
+            "difficulty": 3,
+            "builtIn": false
+        },
+        {
+            "id": "tower_f4",
+            "name": "Salões Esquecidos2 ",
+            "subtitle": "Andar 04 · Salões Esquecidos2 ",
+            "biome": "cidade_destruida",
+            "next": "",
+            "floor": 4,
+            "recommendedLevel": 6,
+            "difficulty": 3,
+            "builtIn": false
+        }
+    ]
+}

@@ -1,0 +1,573 @@
+{
+ "enemies": [
+  {
+   "id": "minion",
+   "name": "Esqueleto lacaio",
+   "model": "Skeleton_Minion",
+   "hp": 6,
+   "dmg": 6,
+   "speed": 2.6,
+   "xp": 7,
+   "coins": [
+    2,
+    5
+   ],
+   "windup": 0.5,
+   "scale": 1.0,
+   "reach": 1.4,
+   "weapon": "",
+   "tint": ""
+  },
+  {
+   "id": "warrior",
+   "name": "Esqueleto guerreiro",
+   "model": "Skeleton_Warrior",
+   "hp": 12,
+   "dmg": 9,
+   "speed": 2.2,
+   "xp": 13,
+   "coins": [
+    4,
+    9
+   ],
+   "windup": 0.6,
+   "scale": 1.0,
+   "reach": 1.6,
+   "weapon": "skel_sword",
+   "tint": ""
+  },
+  {
+   "id": "rogue",
+   "name": "Esqueleto ladino",
+   "model": "Skeleton_Rogue",
+   "hp": 8,
+   "dmg": 7,
+   "speed": 3.0,
+   "xp": 10,
+   "coins": [
+    3,
+    7
+   ],
+   "windup": 0.4,
+   "scale": 1.0,
+   "reach": 1.4,
+   "weapon": "skel_dagger",
+   "tint": ""
+  },
+  {
+   "id": "archer",
+   "name": "Esqueleto arqueiro",
+   "model": "Skeleton_Rogue",
+   "hp": 7,
+   "dmg": 6,
+   "speed": 2.2,
+   "xp": 11,
+   "coins": [
+    4,
+    8
+   ],
+   "windup": 0.7,
+   "scale": 1.0,
+   "reach": 9.0,
+   "ranged": "arrow",
+   "weapon": "skel_crossbow",
+   "tint": "c8d8ff"
+  },
+  {
+   "id": "mage",
+   "name": "Esqueleto mago",
+   "model": "Skeleton_Mage",
+   "hp": 20,
+   "dmg": 12,
+   "speed": 2.0,
+   "xp": 20,
+   "coins": [
+    8,
+    14
+   ],
+   "windup": 0.8,
+   "scale": 1.0,
+   "reach": 8.0,
+   "ranged": "orb",
+   "weapon": "skel_staff",
+   "tint": ""
+  },
+  {
+   "id": "brute",
+   "name": "Esqueleto brutamontes",
+   "model": "Skeleton_Warrior",
+   "hp": 34,
+   "dmg": 18,
+   "speed": 1.8,
+   "xp": 28,
+   "coins": [
+    10,
+    18
+   ],
+   "windup": 0.8,
+   "scale": 1.3,
+   "reach": 2.0,
+   "weapon": "skel_axe",
+   "tint": "ffd8b0"
+  },
+  {
+   "id": "king",
+   "name": "Rei Esqueleto Grumak",
+   "model": "Skeleton_Warrior",
+   "hp": 60,
+   "dmg": 14,
+   "speed": 2.0,
+   "xp": 60,
+   "coins": [
+    30,
+    45
+   ],
+   "windup": 0.7,
+   "scale": 1.7,
+   "reach": 2.4,
+   "weapon": "skel_axe",
+   "tint": "ffc89a",
+   "boss": true,
+   "chest": 1
+  },
+  {
+   "id": "necro",
+   "name": "Necromante Ancião",
+   "model": "Skeleton_Mage",
+   "hp": 120,
+   "dmg": 20,
+   "speed": 1.8,
+   "xp": 140,
+   "coins": [
+    80,
+    110
+   ],
+   "windup": 0.75,
+   "scale": 1.8,
+   "reach": 9.0,
+   "ranged": "orb",
+   "weapon": "skel_staff",
+   "tint": "d8a8ff",
+   "boss": true,
+   "chest": 2
+  },
+  {
+   "id": "mb_carcereiro",
+   "name": "Carcereiro de Ossos",
+   "model": "Skeleton_Warrior",
+   "hp": 48,
+   "dmg": 13,
+   "speed": 2.3,
+   "xp": 45,
+   "coins": [
+    20,
+    32
+   ],
+   "windup": 0.65,
+   "scale": 1.45,
+   "reach": 2.0,
+   "weapon": "skel_axe",
+   "tint": "a8b8d0",
+   "boss": true,
+   "chest": 1
+  },
+  {
+   "id": "mb_bruxa",
+   "name": "Bruxa da Cripta",
+   "model": "Skeleton_Mage",
+   "hp": 40,
+   "dmg": 12,
+   "speed": 2.0,
+   "xp": 45,
+   "coins": [
+    20,
+    32
+   ],
+   "windup": 0.75,
+   "scale": 1.35,
+   "reach": 8.0,
+   "ranged": "orb",
+   "weapon": "skel_staff",
+   "tint": "9cff9c",
+   "boss": true,
+   "chest": 1
+  },
+  {
+   "id": "mb_cacador",
+   "name": "Caçador Sombrio",
+   "model": "Skeleton_Rogue",
+   "hp": 38,
+   "dmg": 10,
+   "speed": 2.9,
+   "xp": 42,
+   "coins": [
+    18,
+    30
+   ],
+   "windup": 0.6,
+   "scale": 1.35,
+   "reach": 9.0,
+   "ranged": "arrow",
+   "weapon": "skel_crossbow",
+   "tint": "8a86b0",
+   "boss": true,
+   "chest": 1
+  },
+  {
+   "id": "mb_colosso",
+   "name": "Colosso de Ossos",
+   "model": "Skeleton_Warrior",
+   "hp": 75,
+   "dmg": 18,
+   "speed": 1.7,
+   "xp": 60,
+   "coins": [
+    25,
+    40
+   ],
+   "windup": 0.8,
+   "scale": 1.75,
+   "reach": 2.3,
+   "weapon": "skel_axe",
+   "tint": "d8c8a8",
+   "boss": true,
+   "chest": 1
+  },
+  {
+   "id": "boss_senhor_cinzas",
+   "name": "Senhor das Cinzas",
+   "model": "Skeleton_Warrior",
+   "hp": 180,
+   "dmg": 22,
+   "speed": 2.0,
+   "xp": 180,
+   "coins": [
+    100,
+    140
+   ],
+   "windup": 0.7,
+   "scale": 1.95,
+   "reach": 2.6,
+   "weapon": "skel_sword",
+   "tint": "ff9a6a",
+   "boss": true,
+   "chest": 2
+  },
+  {
+   "id": "boss_rainha_gelo",
+   "name": "Rainha do Gelo Eterno",
+   "model": "Skeleton_Mage",
+   "hp": 160,
+   "dmg": 20,
+   "speed": 1.9,
+   "xp": 180,
+   "coins": [
+    100,
+    140
+   ],
+   "windup": 0.75,
+   "scale": 1.85,
+   "reach": 9.0,
+   "ranged": "orb",
+   "weapon": "skel_staff",
+   "tint": "a8e0ff",
+   "boss": true,
+   "chest": 2
+  },
+  {
+   "id": "boss_farao",
+   "name": "Faraó Esquecido",
+   "model": "Skeleton_Warrior",
+   "hp": 200,
+   "dmg": 20,
+   "speed": 1.9,
+   "xp": 200,
+   "coins": [
+    110,
+    150
+   ],
+   "windup": 0.75,
+   "scale": 1.95,
+   "reach": 2.6,
+   "weapon": "skel_axe",
+   "tint": "ffe08a",
+   "boss": true,
+   "chest": 2
+  },
+  {
+   "id": "boss_lich",
+   "name": "Lich Supremo",
+   "model": "Skeleton_Mage",
+   "hp": 240,
+   "dmg": 24,
+   "speed": 1.8,
+   "xp": 260,
+   "coins": [
+    140,
+    190
+   ],
+   "windup": 0.75,
+   "scale": 2.0,
+   "reach": 9.0,
+   "ranged": "orb",
+   "weapon": "skel_staff",
+   "tint": "c890ff",
+   "boss": true,
+   "chest": 2
+  },
+  {
+   "id": "swarm_ossinho",
+   "name": "Ossinho",
+   "model": "Skeleton_Minion",
+   "hp": 3,
+   "dmg": 3,
+   "speed": 3.9,
+   "xp": 3,
+   "coins": [
+    1,
+    2
+   ],
+   "windup": 0.35,
+   "scale": 0.62,
+   "reach": 1.1,
+   "weapon": "",
+   "tint": "efe6cc",
+   "ai": "swarm"
+  },
+  {
+   "id": "bomber",
+   "name": "Esqueleto Bombardeiro",
+   "model": "Skeleton_Minion",
+   "hp": 5,
+   "dmg": 16,
+   "speed": 3.5,
+   "xp": 9,
+   "coins": [
+    3,
+    6
+   ],
+   "windup": 0.5,
+   "scale": 0.9,
+   "reach": 1.2,
+   "weapon": "",
+   "tint": "ff9a6a",
+   "ai": "bomber"
+  },
+  {
+   "id": "shield_bearer",
+   "name": "Esqueleto Escudeiro",
+   "model": "Skeleton_Warrior",
+   "hp": 18,
+   "dmg": 9,
+   "speed": 2.0,
+   "xp": 16,
+   "coins": [
+    5,
+    10
+   ],
+   "windup": 0.65,
+   "scale": 1.05,
+   "reach": 1.6,
+   "weapon": "skel_sword",
+   "tint": "b8c8e0",
+   "ai": "shield",
+   "offhand": "skel_shield"
+  },
+  {
+   "id": "summoner",
+   "name": "Esqueleto Invocador",
+   "model": "Skeleton_Mage",
+   "hp": 14,
+   "dmg": 6,
+   "speed": 2.1,
+   "xp": 18,
+   "coins": [
+    6,
+    12
+   ],
+   "windup": 0.8,
+   "scale": 1.0,
+   "reach": 8.0,
+   "weapon": "skel_staff",
+   "tint": "a8ffb8",
+   "ai": "summoner",
+   "summon": "swarm_ossinho",
+   "cooldown": 7.0
+  },
+  {
+   "id": "charger",
+   "name": "Esqueleto Aríete",
+   "model": "Skeleton_Warrior",
+   "hp": 24,
+   "dmg": 14,
+   "speed": 2.0,
+   "xp": 20,
+   "coins": [
+    6,
+    12
+   ],
+   "windup": 0.75,
+   "scale": 1.2,
+   "reach": 1.8,
+   "weapon": "skel_axe",
+   "tint": "d8a070",
+   "ai": "charger",
+   "cooldown": 6.0
+  },
+  {
+   "id": "healer",
+   "name": "Esqueleto Curandeiro",
+   "model": "Skeleton_Mage",
+   "hp": 12,
+   "dmg": 5,
+   "speed": 2.4,
+   "xp": 18,
+   "coins": [
+    6,
+    11
+   ],
+   "windup": 0.8,
+   "scale": 0.95,
+   "reach": 1.5,
+   "weapon": "skel_staff",
+   "tint": "9affb0",
+   "ai": "healer",
+   "cooldown": 4.5
+  },
+  {
+   "id": "sniper",
+   "name": "Esqueleto Atirador",
+   "model": "Skeleton_Rogue",
+   "hp": 9,
+   "dmg": 13,
+   "speed": 2.3,
+   "xp": 16,
+   "coins": [
+    5,
+    10
+   ],
+   "windup": 0.7,
+   "scale": 1.0,
+   "reach": 13.0,
+   "weapon": "skel_crossbow",
+   "tint": "ffb0a0",
+   "ai": "sniper",
+   "cooldown": 3.0
+  },
+  {
+   "id": "fire_warrior",
+   "name": "Esqueleto Flamejante",
+   "model": "Skeleton_Warrior",
+   "hp": 16,
+   "dmg": 11,
+   "speed": 2.3,
+   "xp": 17,
+   "coins": [
+    5,
+    10
+   ],
+   "windup": 0.6,
+   "scale": 1.05,
+   "reach": 1.6,
+   "weapon": "skel_sword",
+   "tint": "ff8a4a",
+   "element": "fire"
+  },
+  {
+   "id": "ice_rogue",
+   "name": "Esqueleto Glacial",
+   "model": "Skeleton_Rogue",
+   "hp": 12,
+   "dmg": 8,
+   "speed": 3.0,
+   "xp": 14,
+   "coins": [
+    4,
+    9
+   ],
+   "windup": 0.45,
+   "scale": 1.0,
+   "reach": 1.4,
+   "weapon": "skel_dagger",
+   "tint": "9fe4ff",
+   "element": "ice"
+  },
+  {
+   "id": "plague_minion",
+   "name": "Lacaio Pestilento",
+   "model": "Skeleton_Minion",
+   "hp": 8,
+   "dmg": 6,
+   "speed": 2.7,
+   "xp": 9,
+   "coins": [
+    2,
+    6
+   ],
+   "windup": 0.5,
+   "scale": 0.95,
+   "reach": 1.4,
+   "weapon": "",
+   "tint": "9cff7a",
+   "element": "poison"
+  },
+  {
+   "id": "fire_mage",
+   "name": "Piromante Esqueleto",
+   "model": "Skeleton_Mage",
+   "hp": 18,
+   "dmg": 12,
+   "speed": 2.0,
+   "xp": 20,
+   "coins": [
+    8,
+    14
+   ],
+   "windup": 0.8,
+   "scale": 1.0,
+   "reach": 8.0,
+   "weapon": "skel_staff",
+   "tint": "ff7a3a",
+   "ranged": "orb",
+   "element": "fire"
+  },
+  {
+   "id": "goblin_ouro",
+   "name": "Goblin de Ouro",
+   "model": "Skeleton_Minion",
+   "hp": 28,
+   "dmg": 1,
+   "speed": 4.6,
+   "xp": 40,
+   "coins": [
+    0,
+    0
+   ],
+   "windup": 1.0,
+   "scale": 0.72,
+   "reach": 1.0,
+   "weapon": "",
+   "tint": "ffd24a",
+   "ai": "goblin"
+  },
+  {
+   "id": "necro_clone",
+   "name": "Ilusão Sombria",
+   "model": "Skeleton_Mage",
+   "hp": 1,
+   "dmg": 8,
+   "speed": 1.8,
+   "xp": 0,
+   "coins": [
+    0,
+    0
+   ],
+   "windup": 0.9,
+   "scale": 1.0,
+   "reach": 8.0,
+   "weapon": "skel_staff",
+   "tint": "d8a8ff",
+   "ranged": "orb"
+  }
+ ]
+}

@@ -1,0 +1,832 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89cd391075845f64cb6f798327671dd6, type: 3}
+  m_Name: ModelLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::Drakantus.ModelLibrary
+  entries:
+  - id: bricks_A
+    prefab: {fileID: 919132149155446097, guid: 5ebdc92dff746fc48a4ecd7e273db823, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: bricks_B
+    prefab: {fileID: 919132149155446097, guid: ca7231abef3f61445b52113bb598faa9, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: dirt
+    prefab: {fileID: 919132149155446097, guid: df5489de48291eb47af7a2f2d1eab62c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: dirt_with_grass
+    prefab: {fileID: 919132149155446097, guid: cacc3800199f7c442985c836779790ec, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: grass
+    prefab: {fileID: 919132149155446097, guid: e31f2ea0481104e448fcc739062ce1b8, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: gravel
+    prefab: {fileID: 919132149155446097, guid: 7aadecb2d87cb2646a51e2f925113452, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: lava
+    prefab: {fileID: 919132149155446097, guid: 89c551806717c284bb082233c0e227ab, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: metal
+    prefab: {fileID: 919132149155446097, guid: cbf248edf683252478f025efd47c9422, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: stone
+    prefab: {fileID: 919132149155446097, guid: c9b1691af12a7264d9931494be6104c6, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: stone_dark
+    prefab: {fileID: 919132149155446097, guid: 260add2a68d2de94188b0d13add46ff9, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: wood
+    prefab: {fileID: 919132149155446097, guid: b543c529d736f714a8437b804aceac80, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Barbarian
+    prefab: {fileID: 919132149155446097, guid: 7f9fb22c0cd1d7e45b0eeb59018ca908, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Knight
+    prefab: {fileID: 919132149155446097, guid: abeadb5a0d5a2074f817c52a46ada131, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Mage
+    prefab: {fileID: 919132149155446097, guid: 72646dadc5c65304f8d67f3a19e5f6f5, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Ranger
+    prefab: {fileID: 919132149155446097, guid: cadb027b89f83544fbf43b581244a3e4, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rogue
+    prefab: {fileID: 919132149155446097, guid: 29d43a428d4dbce4799187270b70a32a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rogue_Hooded
+    prefab: {fileID: 919132149155446097, guid: 908fe126b0d238d44ad6a26c49d21d47, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Mage
+    prefab: {fileID: 919132149155446097, guid: c2f435671d9217e439c2c1a1da708298, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Minion
+    prefab: {fileID: 919132149155446097, guid: 88389cc4e1023c448890af3405b2f149, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Rogue
+    prefab: {fileID: 919132149155446097, guid: df17251a93db95e44b34271cd637d05d, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Warrior
+    prefab: {fileID: 919132149155446097, guid: 3b50cbf1d223fe44f946beacb5708964, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Bush_1_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 4b9d64f642459d642aa4b8d75d824ee4, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Bush_1_C_Color1
+    prefab: {fileID: 919132149155446097, guid: cf0c883e8c103734ea607092c47326b7, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Bush_2_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 39825c3efd85ada42a933ca4ef800fe9, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Bush_3_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 4e17a5d8a406f3a47b698a9b3a8da638, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Bush_4_A_Color1
+    prefab: {fileID: 919132149155446097, guid: d12bfcfb56b26574fb0114fa91bf323b, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Grass_1_A_Color1
+    prefab: {fileID: 919132149155446097, guid: b9117846080e5414b83f17912caab1c1, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Grass_1_C_Color1
+    prefab: {fileID: 919132149155446097, guid: a5176f53307551c41bb42a62a09fdd7e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Grass_2_A_Color1
+    prefab: {fileID: 919132149155446097, guid: a184ee02900f5c148af83b32725d3019, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Grass_2_C_Color1
+    prefab: {fileID: 919132149155446097, guid: 0444c19aa44316249a2889f76ab79524, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rock_1_A_Color1
+    prefab: {fileID: 919132149155446097, guid: ddaeb76dd6f360040b99a185a0c3ed02, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rock_1_E_Color1
+    prefab: {fileID: 919132149155446097, guid: f0eddaaf564c6eb4c9404d49fe7d32f1, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rock_1_J_Color1
+    prefab: {fileID: 919132149155446097, guid: e506271485e700f449ca18ca02646260, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rock_2_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 377e889b8b785ad4c810d5302f4dc38a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rock_2_D_Color1
+    prefab: {fileID: 919132149155446097, guid: ab67d08825f5c214892aa34c1e730fe5, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rock_3_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 1393d1db7367e6c4c80720ea2c357e05, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rock_3_F_Color1
+    prefab: {fileID: 919132149155446097, guid: 78cc79f9131993846812c72252a89be2, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_1_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 254c8968c363509499c9bf1451196017, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_1_B_Color1
+    prefab: {fileID: 919132149155446097, guid: 7874df8c480ef3c4f8c8d89891edc6c5, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_1_C_Color1
+    prefab: {fileID: 919132149155446097, guid: aacc094d3ab7c334ba752c8c6ec42adc, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_2_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 74bb059a35de73a47846334c270341a0, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_2_B_Color1
+    prefab: {fileID: 919132149155446097, guid: caf6fdfe19045fb489293b19ef73c195, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_2_C_Color1
+    prefab: {fileID: 919132149155446097, guid: 1d781fa272052594fa9375979e069a94, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_3_A_Color1
+    prefab: {fileID: 919132149155446097, guid: 0a0047d992461e84c9aa192402402062, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_3_B_Color1
+    prefab: {fileID: 919132149155446097, guid: b579d0ada1354804b8f49162196473a9, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_4_A_Color1
+    prefab: {fileID: 919132149155446097, guid: f0a1cadfa135dcf4286813043df169db, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_4_B_Color1
+    prefab: {fileID: 919132149155446097, guid: e14ed421ff37bb249a16ce05c3839cca, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_Bare_1_A_Color1
+    prefab: {fileID: 919132149155446097, guid: eecbea77bf76bfd4791f57a3c166f667, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Tree_Bare_2_A_Color1
+    prefab: {fileID: 919132149155446097, guid: c8dfaa4d24781034daec1db3497f451d, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: barrel
+    prefab: {fileID: 919132149155446097, guid: 92e9e2171b1560f4989a115d4cecc326, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: bucket_water
+    prefab: {fileID: 919132149155446097, guid: 90a244eee1dab9d4b877b9d06a92db29, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_archeryrange_green
+    prefab: {fileID: 919132149155446097, guid: 2ae9729931d60ca429369acc681b6af1, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_barracks_red
+    prefab: {fileID: 919132149155446097, guid: b6495671edb00be4bbade0930f9dc182, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_blacksmith_blue
+    prefab: {fileID: 919132149155446097, guid: 38873b5033a1c544fb14f39d6486d4e8, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_castle_blue
+    prefab: {fileID: 919132149155446097, guid: 396fd9646fa85d04e91f6475bc5d8d6d, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_church_blue
+    prefab: {fileID: 919132149155446097, guid: ad5d0ce6f02e1964eba718d1317b3b0f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_destroyed
+    prefab: {fileID: 919132149155446097, guid: b29d7c8f5ec9cec4b988fa1be4e5bd91, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_home_A_blue
+    prefab: {fileID: 919132149155446097, guid: df6b98884857d624d9a97c54badad3da, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_home_A_red
+    prefab: {fileID: 919132149155446097, guid: 8af4d98298a6324418cf6cf012fc8caa, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_home_A_yellow
+    prefab: {fileID: 919132149155446097, guid: 56b2f43e9021cee45aa8139979a064e2, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_home_B_blue
+    prefab: {fileID: 919132149155446097, guid: 4e9e637b907b7d24b829f3c85dd0a14c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_home_B_green
+    prefab: {fileID: 919132149155446097, guid: a3082571a0c38394a90019d58d84527a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_home_B_red
+    prefab: {fileID: 919132149155446097, guid: 0129f1596de7bc84180d3c0dc4550d90, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_market_yellow
+    prefab: {fileID: 919132149155446097, guid: 17265ea804c890e4589bab0e33680847, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_stage_A
+    prefab: {fileID: 919132149155446097, guid: 997f3855a14078e4a9526beb1162f005, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_tavern_red
+    prefab: {fileID: 919132149155446097, guid: 5ed5ae507b3f6a9428afe3496e762960, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_tower_A_blue
+    prefab: {fileID: 919132149155446097, guid: 30de05d3cd934ee4da48bf50af9ac151, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_tower_B_red
+    prefab: {fileID: 919132149155446097, guid: 614f33ff2ffc198438e51ed9e9cd4234, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_well_blue
+    prefab: {fileID: 919132149155446097, guid: c8ab376ee8f6b674cb4455a3bf9d4c61, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: building_windmill_green
+    prefab: {fileID: 919132149155446097, guid: 8867794db6fa31245a36e0b55962d5c6, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: crate_A_big
+    prefab: {fileID: 919132149155446097, guid: a1d37acda452c5f4687e7f413dcb8789, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: crate_B_small
+    prefab: {fileID: 919132149155446097, guid: 7664fec91bea9d2429972e2920ab0856, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: crate_long_A
+    prefab: {fileID: 919132149155446097, guid: d2fa18f8e0b659e4b802704afd617851, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: fence_stone_straight
+    prefab: {fileID: 919132149155446097, guid: 88eba057fe7273447ad845e37d54003a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: fence_wood_straight
+    prefab: {fileID: 919132149155446097, guid: 7e94b204477812d49a9510edc42bef5b, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: flag_blue
+    prefab: {fileID: 919132149155446097, guid: f229de32288962041830b0a8454a25a2, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: flag_red
+    prefab: {fileID: 919132149155446097, guid: dc90e75ea941b754e8a36042f759cb72, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: resource_lumber
+    prefab: {fileID: 919132149155446097, guid: cdaeea4322ac3894c8d593d8848a5a50, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: rock_single_A
+    prefab: {fileID: 919132149155446097, guid: 679f06ce7ca490d4d8816174480b766c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: rock_single_C
+    prefab: {fileID: 919132149155446097, guid: 81bc57832ad831f40a5885235f13d06e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sack
+    prefab: {fileID: 919132149155446097, guid: 259e651a04a274f4aacc2bab5bc276f3, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: target
+    prefab: {fileID: 919132149155446097, guid: 3160e57fdb62e2c4698e6859657d788b, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: tent
+    prefab: {fileID: 919132149155446097, guid: 6549038930858924eb8b1a78131800ce, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: trees_A_large
+    prefab: {fileID: 919132149155446097, guid: 773f522a1d56cfa458639bbeccb156ff, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: trees_B_medium
+    prefab: {fileID: 919132149155446097, guid: 5e6237a74b6574d4a81f5d44fd953327, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: wall_corner_A_outside
+    prefab: {fileID: 919132149155446097, guid: 89bd6158d4e1b3d45bdb79b306d9acbc, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: wall_straight
+    prefab: {fileID: 919132149155446097, guid: cf228108d6ce01e48a22d246416ee33b, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: wall_straight_gate
+    prefab: {fileID: 919132149155446097, guid: 5e78f133ddef6f94f892233c348cba54, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: weaponrack
+    prefab: {fileID: 919132149155446097, guid: bdd675071fc753d4db694af591906d06, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: wheelbarrow
+    prefab: {fileID: 919132149155446097, guid: eff2ca719a84d2d4c97a7de41cac2111, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Gold_Bars_Stack_Small
+    prefab: {fileID: 919132149155446097, guid: 0bfbcf1ed8dbc1c49aa046c90b8ee92c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Gold_Nuggets
+    prefab: {fileID: 919132149155446097, guid: be6b2eee06143a1428e71aa32bdc0d10, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Pallet_Wood_Covered_A
+    prefab: {fileID: 919132149155446097, guid: 67b113bd120e2ca41b75daea9bf69ff9, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Stone_Chunks_Large
+    prefab: {fileID: 919132149155446097, guid: 19f5a73588a1866498d6ecf657dc1676, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Textiles_Stack_Large_Colored
+    prefab: {fileID: 919132149155446097, guid: 6ba6aae45629bc145a4be49996f51716, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Wood_Log_Stack
+    prefab: {fileID: 919132149155446097, guid: b8c6476b2dd80764f9bce631ebf24909, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: anvil
+    prefab: {fileID: 919132149155446097, guid: 9fdd95f2f6956aa48a3f6a0561104ce7, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: bucket_metal
+    prefab: {fileID: 919132149155446097, guid: 8da45cb61da87384299b5742bedb21ff, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: grindstone
+    prefab: {fileID: 919132149155446097, guid: c7490842d9e2adb47a4ec74db4437c2b, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: lantern
+    prefab: {fileID: 919132149155446097, guid: 27eaced870552df4193349b0f7fadef3, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: rope_bundle_A
+    prefab: {fileID: 919132149155446097, guid: 665855e58b7aa754bb61d34b8cecd3d3, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: torch
+    prefab: {fileID: 919132149155446097, guid: b16ab9e9857f6a1438ffd2141af0e355, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: arrow_A
+    prefab: {fileID: 919132149155446097, guid: 002b17c841c35284f9f66eb1b76e1b5f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: axe_A
+    prefab: {fileID: 919132149155446097, guid: ed1dd28d91da5224fbd6da34a25598b6, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: axe_B
+    prefab: {fileID: 919132149155446097, guid: f4c42a0502ac6a545b6c38d305204bda, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: axe_C
+    prefab: {fileID: 919132149155446097, guid: 160af20cc950f3e4ca56e89b498a00b4, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: bow_A_withString
+    prefab: {fileID: 919132149155446097, guid: 7a9589ac18ba3074e8cdb26f36c97c20, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: bow_B_withString
+    prefab: {fileID: 919132149155446097, guid: bdcedae7577afe241a3128b1b4f9a2ab, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: dagger_A
+    prefab: {fileID: 919132149155446097, guid: ffe37cf9875b4dc4da65b81b6aa8cbc3, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: dagger_B
+    prefab: {fileID: 919132149155446097, guid: 6635f991e726d6148af91e892ec9e83f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: halberd
+    prefab: {fileID: 919132149155446097, guid: 28987201de25d514f90c4ad300377e8e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hammer_A
+    prefab: {fileID: 919132149155446097, guid: 5f28fe4244d903745a228b92a82c742a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hammer_B
+    prefab: {fileID: 919132149155446097, guid: d18a2124cae7be74d84fb2907e69f69f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: shield_A
+    prefab: {fileID: 919132149155446097, guid: 4e048df8ebbbe864b81717ff1c78231c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: shield_B
+    prefab: {fileID: 919132149155446097, guid: 883e197800e5d3846a9215a87310113c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: shield_C
+    prefab: {fileID: 919132149155446097, guid: 9068d5753bed26a418506954533f68b5, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: spear_A
+    prefab: {fileID: 919132149155446097, guid: a7be897c33891a34bb437886b7977e29, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: staff_A
+    prefab: {fileID: 919132149155446097, guid: ad16f96d46ed5d644a315824cd89ddb6, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: staff_B
+    prefab: {fileID: 919132149155446097, guid: a4b7ed2c49decea40aabd8899ed1bc52, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sword_A
+    prefab: {fileID: 919132149155446097, guid: b4a79fb85f184564384c77165f68d04a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sword_B
+    prefab: {fileID: 919132149155446097, guid: 4aa67e90eabbb8643b3201c282e812ce, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sword_C
+    prefab: {fileID: 919132149155446097, guid: a1e3f87d3520dd84dbcce773e405e68e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sword_D
+    prefab: {fileID: 919132149155446097, guid: 6c871b27beb1a374cb15cad9aaa64668, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sword_E
+    prefab: {fileID: 919132149155446097, guid: 45d0d690fa288a041b270f2954fc6aac, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: wand_A
+    prefab: {fileID: 919132149155446097, guid: aec060e5c730fcb45acbaec69031db03, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: arrow_bow
+    prefab: {fileID: 919132149155446097, guid: b37a7a724c48b6a4f8d1a7a65098b732, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: axe_1handed
+    prefab: {fileID: 919132149155446097, guid: 165a2c9ba753adb4cb249d0f94f28853, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: axe_2handed
+    prefab: {fileID: 919132149155446097, guid: 5586cf889e5330b41ab37cef123b8328, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: bow_withString
+    prefab: {fileID: 919132149155446097, guid: 0b2c2fc9b165cca42b0efe9b662d154f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: crossbow_1handed
+    prefab: {fileID: 919132149155446097, guid: c323cda40d21fd445bd27cb7ae5fe282, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: dagger
+    prefab: {fileID: 919132149155446097, guid: 19ee341106ba6074295bbec60f4e29df, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: quiver
+    prefab: {fileID: 919132149155446097, guid: c5eca8c12e9773046b15c56a35a3cc04, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: shield_badge
+    prefab: {fileID: 919132149155446097, guid: 13f4630336dd7214a98134e19d089a7b, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: shield_round
+    prefab: {fileID: 919132149155446097, guid: 02e76956a574a094db36d32602aa311f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: shield_spikes
+    prefab: {fileID: 919132149155446097, guid: 1be75da84569b0240ad0deaa0b155d39, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: shield_square
+    prefab: {fileID: 919132149155446097, guid: b6836eb76675f6e47a8566838a250466, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Arrow
+    prefab: {fileID: 919132149155446097, guid: a95edc248482a2c42b2627e06422b74d, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Axe
+    prefab: {fileID: 919132149155446097, guid: 1a3414e90a4858441a31649783937039, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Blade
+    prefab: {fileID: 919132149155446097, guid: 8da09eb694e248f4c928b96c98307e24, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Crossbow
+    prefab: {fileID: 919132149155446097, guid: 80a7cabe0004a9b47b4452bb544dc696, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Shield_Large_A
+    prefab: {fileID: 919132149155446097, guid: 3985a4c2f1179e54d984e72f8bf2028e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Shield_Small_A
+    prefab: {fileID: 919132149155446097, guid: 9429fcf6051a8b14c8317c48a4f166c2, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Skeleton_Staff
+    prefab: {fileID: 919132149155446097, guid: bb67f864dcedb3e4aab7d31b163cd189, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: spellbook_open
+    prefab: {fileID: 919132149155446097, guid: 11a794f31e20f964d89c25a3c8a12f25, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: staff
+    prefab: {fileID: 919132149155446097, guid: ab0bbda08c38a5145ac929924734dde6, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sword_1handed
+    prefab: {fileID: 919132149155446097, guid: 8b0cf5cd5be04154088003f5b304429f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: sword_2handed
+    prefab: {fileID: 919132149155446097, guid: 4f905a0c47d61144ba5cca41c546b23c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: wand
+    prefab: {fileID: 919132149155446097, guid: dbf1c0c0a62ac864ab271a7f973bbecc, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hero_Barbarian
+    prefab: {fileID: 919132149155446097, guid: 7f9fb22c0cd1d7e45b0eeb59018ca908, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hero_Knight
+    prefab: {fileID: 919132149155446097, guid: abeadb5a0d5a2074f817c52a46ada131, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hero_Mage
+    prefab: {fileID: 919132149155446097, guid: 72646dadc5c65304f8d67f3a19e5f6f5, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hero_Ranger
+    prefab: {fileID: 919132149155446097, guid: cadb027b89f83544fbf43b581244a3e4, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hero_Rogue
+    prefab: {fileID: 919132149155446097, guid: 29d43a428d4dbce4799187270b70a32a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: hero_Rogue_Hooded
+    prefab: {fileID: 919132149155446097, guid: 908fe126b0d238d44ad6a26c49d21d47, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: enemy_Skeleton_Minion
+    prefab: {fileID: 919132149155446097, guid: 88389cc4e1023c448890af3405b2f149, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: enemy_Skeleton_Warrior
+    prefab: {fileID: 919132149155446097, guid: 3b50cbf1d223fe44f946beacb5708964, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: enemy_Skeleton_Rogue
+    prefab: {fileID: 919132149155446097, guid: df17251a93db95e44b34271cd637d05d, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: enemy_Skeleton_Mage
+    prefab: {fileID: 919132149155446097, guid: c2f435671d9217e439c2c1a1da708298, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_sword
+    prefab: {fileID: 919132149155446097, guid: 8b0cf5cd5be04154088003f5b304429f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_sword2h
+    prefab: {fileID: 919132149155446097, guid: 4f905a0c47d61144ba5cca41c546b23c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_axe
+    prefab: {fileID: 919132149155446097, guid: 165a2c9ba753adb4cb249d0f94f28853, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_axe2h
+    prefab: {fileID: 919132149155446097, guid: 5586cf889e5330b41ab37cef123b8328, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_bow
+    prefab: {fileID: 919132149155446097, guid: 0b2c2fc9b165cca42b0efe9b662d154f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_crossbow
+    prefab: {fileID: 919132149155446097, guid: c323cda40d21fd445bd27cb7ae5fe282, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_dagger
+    prefab: {fileID: 919132149155446097, guid: 19ee341106ba6074295bbec60f4e29df, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_staff
+    prefab: {fileID: 919132149155446097, guid: ab0bbda08c38a5145ac929924734dde6, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_wand
+    prefab: {fileID: 919132149155446097, guid: dbf1c0c0a62ac864ab271a7f973bbecc, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_shield
+    prefab: {fileID: 919132149155446097, guid: 02e76956a574a094db36d32602aa311f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_spear
+    prefab: {fileID: 919132149155446097, guid: a7be897c33891a34bb437886b7977e29, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_hammer
+    prefab: {fileID: 919132149155446097, guid: 5f28fe4244d903745a228b92a82c742a, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_skel_sword
+    prefab: {fileID: 919132149155446097, guid: 8da09eb694e248f4c928b96c98307e24, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_skel_dagger
+    prefab: {fileID: 919132149155446097, guid: 8da09eb694e248f4c928b96c98307e24, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_skel_axe
+    prefab: {fileID: 919132149155446097, guid: 1a3414e90a4858441a31649783937039, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_skel_crossbow
+    prefab: {fileID: 919132149155446097, guid: 80a7cabe0004a9b47b4452bb544dc696, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_skel_staff
+    prefab: {fileID: 919132149155446097, guid: bb67f864dcedb3e4aab7d31b163cd189, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: w_skel_shield
+    prefab: {fileID: 919132149155446097, guid: 9429fcf6051a8b14c8317c48a4f166c2, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Large_CombatMelee
+    prefab: {fileID: 919132149155446097, guid: 9f3881e16bd0d6f4ba1cd7df22e62335, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Large_General
+    prefab: {fileID: 919132149155446097, guid: 73b859b4f0d3c584aaf610c9e356368e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Large_MovementAdvanced
+    prefab: {fileID: 919132149155446097, guid: 0f8350ea64ec14c4c8b115f2f335c99d, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Large_MovementBasic
+    prefab: {fileID: 919132149155446097, guid: 75afec71e8811e74cbe9d81eb2305b5e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Large_Simulation
+    prefab: {fileID: 919132149155446097, guid: 3e8ffdfe88d1a36409ede0b6f3503461, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Large_Special
+    prefab: {fileID: 919132149155446097, guid: e1d8d3c2471f28f4898ce5f4f6efcaf6, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_CombatMelee
+    prefab: {fileID: 919132149155446097, guid: 940fc27dea281e64b871f155bcc53f7f, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_CombatRanged
+    prefab: {fileID: 919132149155446097, guid: dc5556a5cb8c9e5478a75e284b578fd4, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_General
+    prefab: {fileID: 919132149155446097, guid: 45c7f3ad68afda145a24ca50d042e687, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_MovementAdvanced
+    prefab: {fileID: 919132149155446097, guid: 2d57013fafe28fa42a006fd8f51294d7, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_MovementBasic
+    prefab: {fileID: 919132149155446097, guid: f8b41da0f58a25c46955873eb621b42e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_Simulation
+    prefab: {fileID: 919132149155446097, guid: ce494085be7facb41a83a4a5010aa6cc, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_Special
+    prefab: {fileID: 919132149155446097, guid: b17b53e9462dd6641b7e3411c1db8523, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Rig_Medium_Tools
+    prefab: {fileID: 919132149155446097, guid: 53984777d1e7351489828adc47a45b26, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Mannequin_Large
+    prefab: {fileID: 919132149155446097, guid: 73836786844caa142b5bcfedb7b50cdb, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Mannequin_Medium
+    prefab: {fileID: 919132149155446097, guid: db49e244e7b46fd498ced30c5402c66d, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Barrel
+    prefab: {fileID: 919132149155446097, guid: 3722e1d0f8b92684f9025bbba25f4f70, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Coin
+    prefab: {fileID: 919132149155446097, guid: ea58066025b617f4baba6b403684d826, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Platform
+    prefab: {fileID: 919132149155446097, guid: 72941c2a30850314083109b3bba5b7ae, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Cube
+    prefab: {fileID: 919132149155446097, guid: 3ba7be119ce61d049b5c2c042bf3be19, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Cube_Small
+    prefab: {fileID: 919132149155446097, guid: 8446add469db7994fbbb29bb66c6551e, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Cube_Small_Color
+    prefab: {fileID: 919132149155446097, guid: 216f6d9b95ce864499cf818baa829105, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Doorway
+    prefab: {fileID: 919132149155446097, guid: 3a301d4b027909846b45582a72fb3da3, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Floor
+    prefab: {fileID: 919132149155446097, guid: f91ac61aeaf4fe84cba79c319e35a1c7, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Slope
+    prefab: {fileID: 919132149155446097, guid: 29f2b13bd553df14a81cc3fdad4e318c, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Wall
+    prefab: {fileID: 919132149155446097, guid: 6194be41fbef9a64ab0af99f89d67590, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Primitive_Window
+    prefab: {fileID: 919132149155446097, guid: 8499f413bbf4a584ebf534c267af35cc, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  - id: Target
+    prefab: {fileID: 919132149155446097, guid: 4ab0f6b696244ad4293e2c12d6a4f2f2, type: 3}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: 1
+  characterAnimator: {fileID: 9100000, guid: e2555da49a939a04686ed3058436d2ff, type: 2}

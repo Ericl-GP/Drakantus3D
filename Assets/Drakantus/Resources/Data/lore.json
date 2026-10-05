@@ -1,0 +1,202 @@
+{
+ "pages": [
+  {
+   "id": "torre_ceu",
+   "chapter": "I · A Torre",
+   "title": "A Torre que Caiu do Céu",
+   "unlock": "start",
+   "hint": "",
+   "order": 1,
+   "text": "Ninguém em Aster esquece a noite em que o céu se abriu. Uma estrela desceu devagar demais para ser estrela e, ao tocar o chão, cresceu: pedra sobre pedra, andar sobre andar, até as nuvens. Pela manhã, a Torre estava lá, fincada ao lado da praça, com uma única porta e nenhuma janela.\n\nOs sábios dizem que ela não foi construída: foi plantada. E tudo que é plantado quer crescer."
+  },
+  {
+   "id": "guilda",
+   "chapter": "II · A Guilda",
+   "title": "A Guilda de Aster",
+   "unlock": "start",
+   "hint": "",
+   "order": 2,
+   "text": "Quando os primeiros esqueletos saíram pela porta da Torre, o povo de Aster fez o que sempre fez: juntou-se. Ferreiros, caçadores e aprendizes de magia fundaram a Guilda na velha casa de pedra da praça.\n\nOren cuida do quadro de missões; Sera registra cada novo herói; Mestra Aldra ensina as classes. O Rank vai de F a DEUS, e dizem que esse último existe só para lembrar que sempre há um andar acima."
+  },
+  {
+   "id": "praca",
+   "chapter": "II · A Guilda",
+   "title": "A Praça de Aster",
+   "unlock": "book",
+   "hint": "",
+   "order": 3,
+   "text": "Antes da Torre, Aster era só uma praça de feira, um poço e um bardo desafinado. Hoje é o último lugar seguro antes da porta de pedra. Bram martela até tarde, Mika ferve poções que cheiram a hortelã e enxofre, e as crianças Pip e Lia apostam qual herói volta primeiro.\n\nO velho Ézio jura que viu a Torre piscar uma vez, como um olho. Ninguém acredita. Ninguém também chega perto dela à noite."
+  },
+  {
+   "id": "ossos",
+   "chapter": "III · Os Mortos",
+   "title": "Por que os Mortos se Levantam",
+   "unlock": "book",
+   "hint": "",
+   "order": 4,
+   "text": "Os esqueletos da Torre não são dos nossos cemitérios. Os ossos são antigos, mais antigos que Aster, e vestem armaduras de reinos que nenhum mapa lembra.\n\nOs magos da Guilda acreditam que a Torre guarda tudo que já morreu dentro dela e, quando um herói entra, ela acorda seus guardas. Por isso os andares nunca ficam vazios por muito tempo: a Torre se lembra de cada um que caiu ali."
+  },
+  {
+   "id": "grumak",
+   "chapter": "III · Os Mortos",
+   "title": "Grumak, o Rei de Ossos",
+   "unlock": "kill:king",
+   "hint": "",
+   "order": 5,
+   "text": "Grumak foi rei de um povo sem nome, enterrado com a coroa e com a raiva intactas. Nas Catacumbas Esquecidas, ele ainda dá ordens a guardas que não respiram há mil anos.\n\nSeu golpe é lento, mas a terra treme quando ele cai. Os veteranos ensinam: saia da marca vermelha e bata enquanto ele se levanta. Quando Grumak tomba, a coroa rola e para em pé. Sempre em pé."
+  },
+  {
+   "id": "necromante",
+   "chapter": "III · Os Mortos",
+   "title": "O Necromante Ancião",
+   "unlock": "kill:necro",
+   "hint": "",
+   "order": 6,
+   "text": "Se Grumak é a raiva da Torre, o Necromante é a sua memória. Ele mora na cripta do segundo andar, cercado de velas roxas que nunca derretem, e conversa com os ossos como quem conversa com velhos amigos.\n\nFoi ele quem ensinou os esqueletos a se levantar de novo. Alguns heróis juram tê-lo ouvido dizer, ao cair: \"A Torre não é minha. Eu também sou só um inquilino.\""
+  },
+  {
+   "id": "lich",
+   "chapter": "III · Os Mortos",
+   "title": "O Lich Supremo",
+   "unlock": "kill:boss_lich",
+   "hint": "",
+   "order": 7,
+   "text": "Muito acima das criptas há um trono de gelo negro. O Lich Supremo foi o primeiro herói a chegar ao topo da Torre e o último a voltar. Voltou diferente.\n\nEle comanda os mortos de todos os andares e guarda uma pergunta que nunca respondeu: o que existe além do último degrau? Derrotá-lo não é vencer a Torre; é apenas ganhar o direito de subir."
+  },
+  {
+   "id": "bioma_catacumbas",
+   "chapter": "IV · Os Andares",
+   "title": "Catacumbas e Criptas",
+   "unlock": "book",
+   "hint": "",
+   "order": 8,
+   "text": "Os primeiros andares lembram o subsolo de um reino morto: corredores de pedra, nichos cheios de ossos, teias grossas como cortinas. Tochas acendem sozinhas quando um vivo passa.\n\nOs aventureiros contam que as salas mudam de lugar quando ninguém está olhando, e que é por isso que nenhum mapa da Torre fica certo por mais de uma semana."
+  },
+  {
+   "id": "bioma_floresta",
+   "chapter": "IV · Os Andares",
+   "title": "Andares Verdes",
+   "unlock": "book",
+   "hint": "",
+   "order": 9,
+   "text": "Ninguém espera encontrar árvores dentro de uma torre. Mas lá estão: clareiras de mata fechada, vaga-lumes e um céu que não pode existir sobre um teto de pedra.\n\nA Torre parece copiar lugares que viu em algum outro mundo. A grama é macia, a água é fresca, e mesmo assim nenhum pássaro canta. Os caçadores dizem que é ali que o silêncio fica mais alto."
+  },
+  {
+   "id": "bioma_gelo",
+   "chapter": "IV · Os Andares",
+   "title": "O Gelo Eterno",
+   "unlock": "book",
+   "hint": "",
+   "order": 10,
+   "text": "Mais acima, o frio chega antes da porta. Andares inteiros de gelo azul, estátuas de guerreiros congelados no meio do golpe e uma neve que cai de baixo para cima.\n\nA Rainha do Gelo Eterno reina ali. Dizem que ela não odeia os heróis: só quer que fiquem. Para sempre. Leve botas firmes e não pare de se mexer."
+  },
+  {
+   "id": "bioma_areia",
+   "chapter": "IV · Os Andares",
+   "title": "As Areias do Faraó",
+   "unlock": "book",
+   "hint": "",
+   "order": 11,
+   "text": "Há um andar onde a Torre esquece que é torre e vira deserto. Dunas sem fim, colunas meio enterradas e um sol que não se põe.\n\nO Faraó Esquecido governa essas areias e cobra pedágio em ouro de quem passa. Os mercadores da praça pagariam caro por um mapa dali; ninguém que fez um mapa voltou para vendê-lo."
+  },
+  {
+   "id": "bioma_cinzas",
+   "chapter": "IV · Os Andares",
+   "title": "A Forja das Cinzas",
+   "unlock": "book",
+   "hint": "",
+   "order": 12,
+   "text": "Rios de lava, bigornas do tamanho de casas e um calor que derrete o medo junto com o suor. A Forja das Cinzas é onde a Torre fabrica as armaduras dos seus guardas.\n\nO Senhor das Cinzas martela ali desde antes de Aster existir. Bram, o ferreiro, daria um braço para ver aquela forja. Ele diz que daria o outro para sair dela."
+  },
+  {
+   "id": "classe_guerreiro",
+   "chapter": "V · Os Caminhos",
+   "title": "O Caminho do Machado",
+   "unlock": "book",
+   "hint": "",
+   "order": 13,
+   "text": "\"Entra, gira, sai.\" É assim que Mestra Aldra resume o Guerreiro. Ele não espera o inimigo: vai até ele, abre espaço com o machado e já está longe quando o contra-ataque chega.\n\nOs guerreiros de Aster aprendem primeiro a respirar no meio da luta. Um golpe giratório na hora certa vale mais que dez golpes de raiva."
+  },
+  {
+   "id": "classe_tank",
+   "chapter": "V · Os Caminhos",
+   "title": "O Juramento do Escudo",
+   "unlock": "book",
+   "hint": "",
+   "order": 14,
+   "text": "O Tank faz um juramento simples: \"Ninguém passa por mim.\" Com espada e escudo, ele segura a linha enquanto o grupo respira.\n\nTomás, o guarda da praça, foi tank por vinte anos. Ele diz que a coragem não está em bater forte, e sim em ficar parado quando tudo manda correr. E em levantar o escudo um segundo antes do golpe."
+  },
+  {
+   "id": "classe_arqueiro",
+   "chapter": "V · Os Caminhos",
+   "title": "Os Olhos do Bosque",
+   "unlock": "book",
+   "hint": "",
+   "order": 15,
+   "text": "O Arqueiro nunca para de andar. Ele mede a sala com os olhos, escolhe o alvo e já está em outro lugar quando a flecha chega.\n\nOs arqueiros da Guilda treinam acertando maçãs na cabeça do bardo Lírio, que jura ter se oferecido. A regra de ouro é antiga: quem para de se mexer vira alvo."
+  },
+  {
+   "id": "classe_mago",
+   "chapter": "V · Os Caminhos",
+   "title": "A Chama Arcana",
+   "unlock": "book",
+   "hint": "",
+   "order": 16,
+   "text": "Magia, em Aster, é conta de cabeça e coragem. O Mago se posiciona, espera o bando se juntar e transforma a sala inteira numa explosão.\n\nMas todo mago aprende cedo que mana acaba. Os bons guardam uma Luz Curativa para depois da luta, porque um mago caído não explode nada."
+  },
+  {
+   "id": "pets",
+   "chapter": "VI · Companheiros",
+   "title": "Os Companheiros da Lumi",
+   "unlock": "pets:1",
+   "hint": "",
+   "order": 17,
+   "text": "Lumi chegou a Aster com um carrinho cheio de criaturinhas e uma placa: \"Adote um amigo\". Slimes, dragõezinhos, corujas, gatinhos, cogumelos e até um fantasminha tímido.\n\nEles buscam o loot do chão, crescem com o herói e, com o tempo, aprendem a lutar. Lumi não diz de onde eles vêm. Só diz que todos nasceram perto da Torre, e que gostam de quem volta para casa."
+  },
+  {
+   "id": "goblin_ouro",
+   "chapter": "VII · Lendas",
+   "title": "O Goblin de Ouro",
+   "unlock": "kill:goblin_ouro",
+   "hint": "",
+   "order": 18,
+   "text": "Um brilho dourado, um risinho e o som de moedas tilintando: é o Goblin de Ouro. Ele aparece em andares aleatórios, carregando um saco maior que ele mesmo, e foge assim que é visto.\n\nNinguém sabe para onde ele leva o tesouro. Quem o derruba ganha uma chuva de moedas e uma pergunta: por que um goblin precisaria de tanto ouro dentro de uma torre?"
+  },
+  {
+   "id": "ganancia",
+   "chapter": "VII · Lendas",
+   "title": "A Ganância",
+   "unlock": "goblins:3",
+   "hint": "",
+   "order": 19,
+   "text": "Os goblins de ouro não roubam para si. Eles levam tudo para um lugar que os velhos chamam de Ganância: um salão onde o ouro cresce como musgo e as portas só abrem para quem paga.\n\nDizem que lá dentro o tesouro é infinito, mas cada passo custa mais que o anterior. Um dia a Guilda vai organizar uma expedição. Até lá, guarde suas moedas e desconfie de qualquer coisa que brilhe demais."
+  },
+  {
+   "id": "estrelas",
+   "chapter": "VIII · O Céu",
+   "title": "Fragmentos de Estrela",
+   "unlock": "stars:4",
+   "hint": "",
+   "order": 20,
+   "text": "Às vezes, num canto esquecido de um andar, brilha um fragmento de luz que não é tocha nem magia. São pedaços da estrela que trouxe a Torre.\n\nOs fragmentos são quentes ao toque e zumbem quando estão perto uns dos outros. Os magos acreditam que, se todos forem reunidos, a estrela poderá ser lembrada e talvez contar por que caiu."
+  },
+  {
+   "id": "deuses",
+   "chapter": "VIII · O Céu",
+   "title": "Os Deuses da Guilda",
+   "unlock": "rank:9",
+   "hint": "",
+   "order": 21,
+   "text": "O último rank da Guilda não está escrito em nenhum livro de regras. Oren só pinta a palavra DEUS no quadro quando alguém chega lá, e apaga quando a pessoa vai embora.\n\nA lenda diz que os deuses de Aster eram heróis comuns que subiram tanto que a Torre os reconheceu. Agora eles vigiam do topo, esperando o próximo. Talvez você."
+  },
+  {
+   "id": "topo",
+   "chapter": "VIII · O Céu",
+   "title": "As Vozes do Topo",
+   "unlock": "book",
+   "hint": "",
+   "order": 22,
+   "text": "Quem passa muito tempo na Torre começa a ouvir. Não são vozes de mortos; são vozes de cima, chamando nomes de heróis que ainda nem nasceram.\n\nNyx, a aventureira da Guilda, ouviu o próprio nome uma vez, no andar mais alto que alcançou. Ela não subiu mais. Diz que ainda não está pronta para a resposta."
+  }
+ ]
+}
