@@ -10,6 +10,7 @@ namespace Drakantus
         public string targetSpawn = "tower_door";
         public string label = "Sair da Torre";
         public float radius = 1.6f;
+        public bool needsRegistration;
 
         void OnDrawGizmos()
         {

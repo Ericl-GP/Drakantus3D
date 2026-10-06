@@ -19,6 +19,8 @@ namespace Drakantus
         public string subtitle = "Andar 03";
         public string floorName = "Andar 03";
         public int floor = 3;
+        [Tooltip("\"dungeon\" (andar da Torre: pode lutar), \"hub\" (cidade) ou \"interior\" (Guilda).")]
+        public string kind = "dungeon";
         [Tooltip("Id do próximo andar. Vazio = procura o andar de número seguinte no FloorRegistry.")]
         public string next = "";
         [Range(1, 10)] public int difficulty = 1;
@@ -123,7 +125,7 @@ namespace Drakantus
                 id = string.IsNullOrEmpty(floorId) ? name : floorId,
                 title = title,
                 subtitle = subtitle,
-                kind = "dungeon",
+                kind = string.IsNullOrEmpty(kind) ? "dungeon" : kind,
                 floor = floor,
                 next = next,
                 music = string.IsNullOrEmpty(music) ? "dungeon" : music,
@@ -134,7 +136,7 @@ namespace Drakantus
                 fog = fog,
                 fogDensity = fogDensity,
             };
-            if (string.IsNullOrEmpty(info.next)) info.next = FloorRegistry.NextAfter(floor);
+            if (string.IsNullOrEmpty(info.next) && info.kind == "dungeon") info.next = FloorRegistry.NextAfter(floor);
             if (info.next == info.id) info.next = "";
             info.bounds = new Bounds(transform.TransformPoint(boundsCenter), boundsSize);
 
@@ -166,7 +168,12 @@ namespace Drakantus
             {
                 if (!p.gameObject.activeInHierarchy) continue;
                 info.portals.Add(new PortalSpawn(p.transform.position, string.IsNullOrEmpty(p.targetMap) ? "town" : p.targetMap,
-                    p.targetSpawn, p.label, p.radius > 0f ? p.radius : 1.6f));
+                    p.targetSpawn, p.label, p.radius > 0f ? p.radius : 1.6f, p.needsRegistration));
+            }
+            foreach (var nm in GetComponentsInChildren<NpcMarker>(true))
+            {
+                if (!nm.gameObject.activeInHierarchy || string.IsNullOrEmpty(nm.npcId)) continue;
+                info.npcs.Add(new NpcSpawn(nm.npcId, nm.transform.position, nm.transform.eulerAngles.y));
             }
             foreach (var s in GetComponentsInChildren<SanctuaryMarker>(true))
             {

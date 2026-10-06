@@ -1,0 +1,129 @@
+diff --git a/Assets/Drakantus/Scripts/World/CameraRig.cs b/Assets/Drakantus/Scripts/World/CameraRig.cs
+index eb068a6..67fc86a 100644
+--- a/Assets/Drakantus/Scripts/World/CameraRig.cs
++++ b/Assets/Drakantus/Scripts/World/CameraRig.cs
+@@ -40,6 +40,13 @@ public class CameraRig : MonoBehaviour
+         public float followTime = 0.12f;
+         public float collisionRadius = 0.3f;
+ 
++        [Header("Zoom-out estendido + nuvens (SkyClouds)")]
++        public bool overZoom = true;          // permite afastar além da vista isométrica
++        public float extraDistance = 40f;     // metros extras além de farDistance (24 → 64 m)
++        public float outStep = 0.12f;         // por "clique" da rodinha (fração do trecho extra, 0..1)
++        public float cloudStartAt = 0.25f;    // a partir daqui (0..1) as nuvens começam a surgir pelas bordas
++        public float closedHold = 0.3f;       // segundos de céu todo fechado antes de voltar à distância padrão
++
+         // ---- estado atual (somente leitura para os outros módulos)
+         public float pitch = 55f, yaw = 45f, fov = 32f, distance = 24f;
+         /// <summary>Zoom atual suavizado: 0 = isométrica longe, 1 = 3ª pessoa.</summary>
+@@ -48,6 +55,15 @@ public class CameraRig : MonoBehaviour
+         public float zoomTarget => zoomGoal;
+ 
+         float zoomCur, zoomGoal, zoomVel;
++        float outCur, outGoal, outVel, closedTime;   // zoom-out estendido (0 = normal, 1 = nuvens fechadas)
++        bool autoReturn;                              // nuvens fecharam: voltando sozinho à distância padrão
++        /// <summary>Quanto a câmera está afastada além do limite normal (0..1).</summary>
++        public float outZoom => outCur;
++        /// <summary>0 = céu aberto, 1 = nuvens fechadas por completo (usado pelo SkyClouds).</summary>
++        public float cloudClose => Mathf.Clamp01(Mathf.InverseLerp(cloudStartAt, 1f, outCur));
++        /// <summary>Ponto que a câmera está observando (herói + altura).</summary>
++        public Vector3 focusPoint => focus;
++        public bool returning => autoReturn;
+         float yawVel, followYaw;
+         bool following;
+         float trauma, seed, scrollCd;
+@@ -67,6 +83,7 @@ void Awake()
+             ComputeParams();
+             Cam.fieldOfView = fov;
+             if (GetComponent<OcclusionFader>() == null) gameObject.AddComponent<OcclusionFader>();
++            if (GetComponent<SkyClouds>() == null) gameObject.AddComponent<SkyClouds>();
+         }
+ 
+         void OnDestroy()
+@@ -97,6 +114,8 @@ public void Snap()
+         {
+             zoomCur = zoomGoal;
+             zoomVel = 0f;
++            outCur = outGoal = outVel = closedTime = 0f;
++            autoReturn = false;
+             punch = punchGoal = punchHold = 0f;
+             ComputeParams();
+             following = false;
+@@ -112,6 +131,8 @@ public void Snap()
+         public void Focus(Vector3 point)
+         {
+             target = null;
++            outCur = outGoal = outVel = closedTime = 0f;
++            autoReturn = false;
+             ComputeParams();
+             focus = point + Vector3.up * lift;
+             focusVel = Vector3.zero;
+@@ -153,6 +174,8 @@ void LateUpdate()
+ 
+             ReadZoomInput(udt);
+             zoomCur = Mathf.SmoothDamp(zoomCur, zoomGoal, ref zoomVel, 0.18f, Mathf.Infinity, udt);
++            outCur = Mathf.SmoothDamp(outCur, outGoal, ref outVel, 0.35f, Mathf.Infinity, udt);
++            UpdateAutoReturn(udt);
+ 
+             // punch: segura um instante e decai linearmente; o valor visível persegue rápido
+             if (punchHold > 0f) punchHold -= udt;
+@@ -187,13 +210,49 @@ void ReadZoomInput(float udt)
+             float sc = InputW.Scroll;
+             if (Mathf.Abs(sc) < 0.0001f || scrollCd > 0f) return;
+             scrollCd = 0.035f;   // touchpads mandam eventos minúsculos todo frame: limita a ~30 passos/s
+-            SetZoom(zoomGoal + Mathf.Sign(sc) * zoomStep);
++            if (autoReturn) return;   // nuvens fechadas: ignora a rodinha até a câmera voltar
++            if (sc < 0f)
++            {
++                // afastar: primeiro o zoom normal; no limite isométrico continua no trecho estendido
++                if (zoomGoal > 0.001f || !overZoom) SetZoom(zoomGoal - zoomStep);
++                else outGoal = Mathf.Min(1f, outGoal + outStep);
++            }
++            else
++            {
++                // aproximar: primeiro desfaz o trecho estendido; depois o zoom normal
++                if (outGoal > 0.001f) outGoal = Mathf.Max(0f, outGoal - outStep);
++                else SetZoom(zoomGoal + zoomStep);
++            }
+             // TODO(contrato): teclas +/- ou PageUp/PageDown não existem no InputW (enum K); quando o líder
+             // adicionar, chamar SetZoom(zoomGoal ± zoomStep) aqui.
+         }
+ 
+         static float Smooth(float t) { t = Mathf.Clamp01(t); return t * t * (3f - 2f * t); }
+ 
++        /// <summary>Quando as nuvens fecham por completo, volta sozinho à distância padrão (defaultZoom).</summary>
++        void UpdateAutoReturn(float udt)
++        {
++            if (!autoReturn)
++            {
++                if (outCur > 0.97f && outGoal > 0.95f)
++                {
++                    closedTime += udt;
++                    if (closedTime >= closedHold)
++                    {
++                        autoReturn = true;
++                        outGoal = 0f;
++                        SetZoom(defaultZoom);
++                    }
++                }
++                else closedTime = 0f;
++            }
++            else if (outCur < 0.04f)
++            {
++                autoReturn = false;
++                closedTime = 0f;
++            }
++        }
++
+         void ComputeParams()
+         {
+             float z = Mathf.Clamp01(zoomCur);
+@@ -202,7 +261,7 @@ void ComputeParams()
+             fov = Mathf.Lerp(farFov, nearFov, s);
+             lift = Mathf.Lerp(farLift, nearLift, s);
+             // interpolação exponencial: cada clique da rodinha "parece" igual
+-            distance = farDistance * Mathf.Pow(nearDistance / farDistance, z);
++            distance = farDistance * Mathf.Pow(nearDistance / farDistance, z) + extraDistance * outCur;
+         }
+ 
+         /// <summary>Yaw desejado: 45° fixo; acima de followYawFrom segue a direção do herói (atrás dele).</summary>

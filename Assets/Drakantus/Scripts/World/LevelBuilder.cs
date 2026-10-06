@@ -91,6 +91,12 @@ namespace Drakantus
             // [Andares] andar salvo pelo Criador de Andares (Resources/Floors/<id>.prefab) tem prioridade
             var floorPrefab = string.IsNullOrEmpty(mapId) ? null : Resources.Load<GameObject>(FloorRegistry.PrefabFolder + mapId);
             if (floorPrefab != null) return FloorRoot.Build(floorPrefab, root);
+            return BuildFromCode(mapId, root);
+        }
+
+        /// <summary>Gera o mapa por código, IGNORANDO qualquer prefab salvo (usado pelo exportador do editor).</summary>
+        public static LevelInfo BuildFromCode(string mapId, Transform root)
+        {
             reserved.Clear();
             gChao = D.Group(root, "Chao");
             gCon = D.Group(root, "Construcoes");

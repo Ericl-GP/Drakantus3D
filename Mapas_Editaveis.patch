@@ -1,0 +1,543 @@
+diff --git a/Assets/Drakantus/Editor/MapExporter.cs b/Assets/Drakantus/Editor/MapExporter.cs
+new file mode 100644
+index 0000000..b1e6c89
+--- /dev/null
++++ b/Assets/Drakantus/Editor/MapExporter.cs
+@@ -0,0 +1,223 @@
++using System.Collections.Generic;
++using System.IO;
++using UnityEditor;
++using UnityEngine;
++
++namespace Drakantus.EditorTools
++{
++    /// <summary>
++    /// Drakantus > Mapas: transforma um mapa gerado por código (praça, guilda) num PREFAB editável.
++    ///
++    /// Como usar: aperte Play, espere o jogo carregar, e escolha o menu. O exportador gera o mapa de novo
++    /// (mesma semente = mesmo resultado), salva em Assets/Drakantus/Resources/Floors/&lt;id&gt;.prefab e
++    /// guarda em Assets/Drakantus/MapAssets/&lt;id&gt;/ os materiais, texturas e malhas que o código criou
++    /// (sem isso o prefab ficaria rosa/vazio). Daí em diante o LevelBuilder usa o prefab no lugar do código.
++    /// Para voltar ao código: Drakantus > Mapas > Apagar prefab e voltar ao mapa por código.
++    ///
++    /// NPCs, portais e pontos de chegada viram objetos marcadores (NpcMarker, FloorPortalMarker, FloorSpawnPoint)
++    /// dentro de "Marcadores": mova, apague ou duplique à vontade.
++    /// </summary>
++    public static class MapExporter
++    {
++        const string FloorsDir = "Assets/Drakantus/Resources/Floors";
++        const string AssetsRoot = "Assets/Drakantus/MapAssets";
++
++        [MenuItem("Drakantus/Mapas/Exportar Praça (town) para prefab editável")]
++        static void ExportTown() { Export("town"); }
++        [MenuItem("Drakantus/Mapas/Exportar Praça (town) para prefab editável", true)]
++        static bool ExportTownOk() { return Application.isPlaying; }
++
++        [MenuItem("Drakantus/Mapas/Exportar Guilda (guild) para prefab editável")]
++        static void ExportGuild() { Export("guild"); }
++        [MenuItem("Drakantus/Mapas/Exportar Guilda (guild) para prefab editável", true)]
++        static bool ExportGuildOk() { return Application.isPlaying; }
++
++        [MenuItem("Drakantus/Mapas/Apagar prefab da Praça e voltar ao mapa por código")]
++        static void DeleteTown() { DeletePrefab("town"); }
++        [MenuItem("Drakantus/Mapas/Apagar prefab da Guilda e voltar ao mapa por código")]
++        static void DeleteGuild() { DeletePrefab("guild"); }
++
++        static void DeletePrefab(string id)
++        {
++            string path = FloorsDir + "/" + id + ".prefab";
++            if (!File.Exists(path)) { EditorUtility.DisplayDialog("Mapas", "Não existe prefab de " + id + ".", "OK"); return; }
++            if (!EditorUtility.DisplayDialog("Apagar prefab?", "Isto apaga " + path + " e o jogo volta a gerar \"" + id + "\" por código. As suas edições no prefab serão perdidas.", "Apagar", "Cancelar")) return;
++            AssetDatabase.DeleteAsset(path);
++            AssetDatabase.Refresh();
++        }
++
++        // ------------------------------------------------------------------ exportação
++        static void Export(string mapId)
++        {
++            if (!Application.isPlaying)
++            {
++                EditorUtility.DisplayDialog("Mapas", "Aperte Play primeiro (o mapa precisa ser gerado com o jogo rodando).", "OK");
++                return;
++            }
++            string prefabPath = FloorsDir + "/" + mapId + ".prefab";
++            if (File.Exists(prefabPath) && !EditorUtility.DisplayDialog("Substituir prefab?",
++                prefabPath + " já existe. Exportar de novo SUBSTITUI o prefab e perde as edições feitas nele.", "Substituir", "Cancelar")) return;
++
++            Directory.CreateDirectory(FloorsDir);
++            var sun = RenderSettings.sun != null ? RenderSettings.sun.transform : null;
++            Quaternion oldSun = sun != null ? sun.rotation : Quaternion.identity;
++
++            var root = new GameObject(mapId);
++            try
++            {
++                LevelInfo info = LevelBuilder.BuildFromCode(mapId, root.transform);
++                if (info == null) throw new System.Exception("LevelBuilder devolveu null para " + mapId);
++
++                // ângulos do sol que o LevelBuilder acabou de aplicar
++                float sunPitch = 50f, sunYaw = -30f;
++                if (sun != null) { var e = sun.eulerAngles; sunPitch = e.x; sunYaw = e.y; sun.rotation = oldSun; }
++
++                BuildRoot(root, info, mapId, sunPitch, sunYaw);
++                int saved = PersistAssets(root, mapId);
++
++                bool ok;
++                PrefabUtility.SaveAsPrefabAsset(root, prefabPath, out ok);
++                if (!ok) throw new System.Exception("SaveAsPrefabAsset falhou");
++
++                AssetDatabase.SaveAssets();
++                AssetDatabase.Refresh();
++                var asset = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
++                if (asset != null) { Selection.activeObject = asset; EditorGUIUtility.PingObject(asset); }
++                Debug.Log("[Drakantus] Mapa \"" + mapId + "\" exportado: " + prefabPath + " (" + saved + " assets em " + AssetsRoot + "/" + mapId + ")");
++                EditorUtility.DisplayDialog("Mapas",
++                    "Exportado: " + prefabPath + "\n\nPare o Play e abra o prefab (duplo clique) para editar. Ao reiniciar o Play o jogo já usa o prefab.", "OK");
++            }
++            catch (System.Exception ex)
++            {
++                Debug.LogException(ex);
++                EditorUtility.DisplayDialog("Mapas", "Falhou: " + ex.Message + "\n(veja o Console)", "OK");
++            }
++            finally
++            {
++                if (sun != null) sun.rotation = oldSun;
++                Object.DestroyImmediate(root);
++            }
++        }
++
++        /// <summary>FloorRoot + marcadores (chegadas, NPCs, portais, inimigos, santuário) a partir do LevelInfo.</summary>
++        static void BuildRoot(GameObject root, LevelInfo info, string mapId, float sunPitch, float sunYaw)
++        {
++            var fr = root.AddComponent<FloorRoot>();
++            fr.floorId = mapId;
++            fr.title = info.title; fr.subtitle = info.subtitle; fr.floorName = info.title;
++            fr.kind = info.kind; fr.floor = info.floor; fr.next = info.next; fr.music = info.music;
++            fr.ambient = info.ambient; fr.sun = info.sun; fr.sunIntensity = info.sunIntensity;
++            fr.sunPitch = sunPitch; fr.sunYaw = sunYaw;
++            fr.dark = info.dark; fr.fog = info.fog; fr.fogDensity = info.fogDensity;
++            fr.boundsCenter = info.bounds.center; fr.boundsSize = info.bounds.size;
++            fr.biome = ""; fr.generatorSettings = "Exportado de LevelBuilder.BuildFromCode(\"" + mapId + "\")";
++
++            var mk = new GameObject("Marcadores").transform;
++            mk.SetParent(root.transform, false);
++
++            foreach (var kv in info.spawns)
++            {
++                var g = new GameObject("Chegada_" + kv.Key);
++                g.transform.SetParent(mk, false);
++                g.transform.position = kv.Value;
++                g.AddComponent<FloorSpawnPoint>().key = kv.Key;
++            }
++            foreach (var n in info.npcs)
++            {
++                var g = new GameObject("Npc_" + n.npcId);
++                g.transform.SetParent(mk, false);
++                g.transform.SetPositionAndRotation(n.pos, Quaternion.Euler(0f, n.yaw, 0f));
++                g.AddComponent<NpcMarker>().npcId = n.npcId;
++            }
++            foreach (var p in info.portals)
++            {
++                var g = new GameObject("Portal_" + p.targetMap);
++                g.transform.SetParent(mk, false);
++                g.transform.position = p.pos;
++                var m = g.AddComponent<FloorPortalMarker>();
++                m.targetMap = p.targetMap; m.targetSpawn = p.targetSpawn; m.label = p.label;
++                m.radius = p.radius; m.needsRegistration = p.needsRegistration;
++            }
++            foreach (var e in info.enemies)
++            {
++                var g = new GameObject("Inimigo_" + e.id);
++                g.transform.SetParent(mk, false);
++                g.transform.position = e.pos;
++                var m = g.AddComponent<EnemySpawnMarker>();
++                m.enemyId = e.id; m.scale = e.scale;
++            }
++            if (info.hasSanctuary)
++            {
++                var g = new GameObject("Santuario");
++                g.transform.SetParent(mk, false);
++                g.transform.position = info.sanctuary;
++                g.AddComponent<SanctuaryMarker>();
++            }
++        }
++
++        // ------------------------------------------------------------------ materiais/malhas/texturas criados por código
++        /// <summary>Salva como assets tudo que o código criou em runtime (não é asset) e troca as referências.</summary>
++        static int PersistAssets(GameObject root, string mapId)
++        {
++            string dir = AssetsRoot + "/" + mapId;
++            EnsureFolder(AssetsRoot);
++            EnsureFolder(dir);
++            // limpa a exportação anterior deste mapa
++            foreach (var guid in AssetDatabase.FindAssets("", new[] { dir })) AssetDatabase.DeleteAsset(AssetDatabase.GUIDToAssetPath(guid));
++
++            var map = new Dictionary<Object, Object>();
++            int count = 0;
++
++            T Persist<T>(T obj, string ext) where T : Object
++            {
++                if (obj == null || EditorUtility.IsPersistent(obj)) return obj;
++                if (map.TryGetValue(obj, out var done)) return (T)done;
++                string name = string.IsNullOrEmpty(obj.name) ? typeof(T).Name : obj.name;
++                foreach (char c in Path.GetInvalidFileNameChars()) name = name.Replace(c, '_');
++                string path = dir + "/" + (count++).ToString("0000") + "_" + name + ext;
++                AssetDatabase.CreateAsset(obj, path);
++                map[obj] = obj;   // o próprio objeto vira o asset
++                return obj;
++            }
++
++            Material FixMaterial(Material m)
++            {
++                if (m == null || EditorUtility.IsPersistent(m)) return m;
++                if (map.ContainsKey(m)) return m;
++                // texturas primeiro (senão a referência ficaria presa a um objeto de cena)
++                foreach (var prop in m.GetTexturePropertyNames())
++                {
++                    var t = m.GetTexture(prop);
++                    if (t != null && !EditorUtility.IsPersistent(t)) m.SetTexture(prop, Persist(t, ".asset"));
++                }
++                return Persist(m, ".mat");
++            }
++
++            foreach (var r in root.GetComponentsInChildren<Renderer>(true))
++            {
++                var mats = r.sharedMaterials;
++                bool changed = false;
++                for (int i = 0; i < mats.Length; i++)
++                {
++                    var fixedMat = FixMaterial(mats[i]);
++                    if (fixedMat != mats[i]) { mats[i] = fixedMat; changed = true; }
++                }
++                if (changed) r.sharedMaterials = mats;
++            }
++            foreach (var mf in root.GetComponentsInChildren<MeshFilter>(true))
++                if (mf.sharedMesh != null && !EditorUtility.IsPersistent(mf.sharedMesh)) mf.sharedMesh = Persist(mf.sharedMesh, ".asset");
++            foreach (var mc in root.GetComponentsInChildren<MeshCollider>(true))
++                if (mc.sharedMesh != null && !EditorUtility.IsPersistent(mc.sharedMesh)) mc.sharedMesh = Persist(mc.sharedMesh, ".asset");
++
++            return count;
++        }
++
++        static void EnsureFolder(string path)
++        {
++            if (AssetDatabase.IsValidFolder(path)) return;
++            string parent = Path.GetDirectoryName(path).Replace('\\', '/');
++            EnsureFolder(parent);
++            AssetDatabase.CreateFolder(parent, Path.GetFileName(path));
++        }
++    }
++}
+diff --git a/Assets/Drakantus/Scripts/World/Floors/FloorPortalMarker.cs b/Assets/Drakantus/Scripts/World/Floors/FloorPortalMarker.cs
+index 675e320..e14cfdc 100644
+--- a/Assets/Drakantus/Scripts/World/Floors/FloorPortalMarker.cs
++++ b/Assets/Drakantus/Scripts/World/Floors/FloorPortalMarker.cs
+@@ -10,6 +10,7 @@ public class FloorPortalMarker : MonoBehaviour
+         public string targetSpawn = "tower_door";
+         public string label = "Sair da Torre";
+         public float radius = 1.6f;
++        public bool needsRegistration;
+ 
+         void OnDrawGizmos()
+         {
+diff --git a/Assets/Drakantus/Scripts/World/Floors/FloorRoot.cs b/Assets/Drakantus/Scripts/World/Floors/FloorRoot.cs
+index 8107758..667306c 100644
+--- a/Assets/Drakantus/Scripts/World/Floors/FloorRoot.cs
++++ b/Assets/Drakantus/Scripts/World/Floors/FloorRoot.cs
+@@ -19,6 +19,8 @@ public class FloorRoot : MonoBehaviour
+         public string subtitle = "Andar 03";
+         public string floorName = "Andar 03";
+         public int floor = 3;
++        [Tooltip("\"dungeon\" (andar da Torre: pode lutar), \"hub\" (cidade) ou \"interior\" (Guilda).")]
++        public string kind = "dungeon";
+         [Tooltip("Id do próximo andar. Vazio = procura o andar de número seguinte no FloorRegistry.")]
+         public string next = "";
+         [Range(1, 10)] public int difficulty = 1;
+@@ -123,7 +125,7 @@ public LevelInfo MakeInfo()
+                 id = string.IsNullOrEmpty(floorId) ? name : floorId,
+                 title = title,
+                 subtitle = subtitle,
+-                kind = "dungeon",
++                kind = string.IsNullOrEmpty(kind) ? "dungeon" : kind,
+                 floor = floor,
+                 next = next,
+                 music = string.IsNullOrEmpty(music) ? "dungeon" : music,
+@@ -134,7 +136,7 @@ public LevelInfo MakeInfo()
+                 fog = fog,
+                 fogDensity = fogDensity,
+             };
+-            if (string.IsNullOrEmpty(info.next)) info.next = FloorRegistry.NextAfter(floor);
++            if (string.IsNullOrEmpty(info.next) && info.kind == "dungeon") info.next = FloorRegistry.NextAfter(floor);
+             if (info.next == info.id) info.next = "";
+             info.bounds = new Bounds(transform.TransformPoint(boundsCenter), boundsSize);
+ 
+@@ -166,7 +168,12 @@ public LevelInfo MakeInfo()
+             {
+                 if (!p.gameObject.activeInHierarchy) continue;
+                 info.portals.Add(new PortalSpawn(p.transform.position, string.IsNullOrEmpty(p.targetMap) ? "town" : p.targetMap,
+-                    p.targetSpawn, p.label, p.radius > 0f ? p.radius : 1.6f));
++                    p.targetSpawn, p.label, p.radius > 0f ? p.radius : 1.6f, p.needsRegistration));
++            }
++            foreach (var nm in GetComponentsInChildren<NpcMarker>(true))
++            {
++                if (!nm.gameObject.activeInHierarchy || string.IsNullOrEmpty(nm.npcId)) continue;
++                info.npcs.Add(new NpcSpawn(nm.npcId, nm.transform.position, nm.transform.eulerAngles.y));
+             }
+             foreach (var s in GetComponentsInChildren<SanctuaryMarker>(true))
+             {
+diff --git a/Assets/Drakantus/Scripts/World/Floors/NpcMarker.cs b/Assets/Drakantus/Scripts/World/Floors/NpcMarker.cs
+new file mode 100644
+index 0000000..450a7da
+--- /dev/null
++++ b/Assets/Drakantus/Scripts/World/Floors/NpcMarker.cs
+@@ -0,0 +1,21 @@
++using UnityEngine;
++
++namespace Drakantus
++{
++    /// <summary>
++    /// Ponto onde um NPC aparece (id de Resources/Data/npcs.json). A rotação em Y do objeto é para onde o NPC olha.
++    /// Usado nos mapas exportados (Drakantus > Mapas) e em andares do Criador de Andares.
++    /// </summary>
++    public class NpcMarker : MonoBehaviour
++    {
++        public string npcId = "";
++
++        void OnDrawGizmos()
++        {
++            Gizmos.color = new Color(0.35f, 0.8f, 1f);
++            Vector3 p = transform.position;
++            Gizmos.DrawWireSphere(p + Vector3.up * 0.9f, 0.45f);
++            Gizmos.DrawLine(p + Vector3.up * 0.9f, p + Vector3.up * 0.9f + transform.forward * 1.2f);
++        }
++    }
++}
+diff --git a/Assets/Drakantus/Scripts/World/LevelBuilder.cs b/Assets/Drakantus/Scripts/World/LevelBuilder.cs
+index c1d24f9..5e029e3 100644
+--- a/Assets/Drakantus/Scripts/World/LevelBuilder.cs
++++ b/Assets/Drakantus/Scripts/World/LevelBuilder.cs
+@@ -91,6 +91,12 @@ public static LevelInfo Build(string mapId, Transform root)
+             // [Andares] andar salvo pelo Criador de Andares (Resources/Floors/<id>.prefab) tem prioridade
+             var floorPrefab = string.IsNullOrEmpty(mapId) ? null : Resources.Load<GameObject>(FloorRegistry.PrefabFolder + mapId);
+             if (floorPrefab != null) return FloorRoot.Build(floorPrefab, root);
++            return BuildFromCode(mapId, root);
++        }
++
++        /// <summary>Gera o mapa por código, IGNORANDO qualquer prefab salvo (usado pelo exportador do editor).</summary>
++        public static LevelInfo BuildFromCode(string mapId, Transform root)
++        {
+             reserved.Clear();
+             gChao = D.Group(root, "Chao");
+             gCon = D.Group(root, "Construcoes");
+diff --git a/Assets/Drakantus/Scripts/World/LevelDecor.cs b/Assets/Drakantus/Scripts/World/LevelDecor.cs
+index f9d285e..370ac28 100644
+--- a/Assets/Drakantus/Scripts/World/LevelDecor.cs
++++ b/Assets/Drakantus/Scripts/World/LevelDecor.cs
+@@ -787,31 +787,4 @@ public static GameObject Brazier(Transform props, Transform lights, Vector3 pos,
+         }
+     }
+ 
+-    /// <summary>Faz a luz da tocha tremular: duas frequências de ruído Perlin + quedas rápidas ocasionais.</summary>
+-    public class TorchFlicker : MonoBehaviour
+-    {
+-        public float baseIntensity = 2.5f;
+-        public float baseRange;          // 0 = não mexe no alcance
+-        public float amount = 0.18f;
+-        public float speed = 6f;
+-        public float seed;
+-        Light l;
+-
+-        void Awake() { l = GetComponent<Light>(); }
+-
+-        void Update()
+-        {
+-            if (l == null) return;
+-            float t = Time.time;
+-            float slow = Mathf.PerlinNoise(seed, t * speed * 0.35f) - 0.5f;
+-            float fast = Mathf.PerlinNoise(seed + 7.3f, t * speed * 2.2f) - 0.5f;
+-            float n = slow * 1.3f + fast * 0.7f;
+-            // "engasgo" da chama de vez em quando
+-            float gust = Mathf.PerlinNoise(seed + 19.1f, t * 0.9f);
+-            if (gust > 0.72f) n -= (gust - 0.72f) * 2.2f;
+-            float k = 1f + n * 2f * amount;
+-            l.intensity = baseIntensity * Mathf.Max(0.2f, k);
+-            if (baseRange > 0f) l.range = baseRange * (1f + n * 0.25f * amount);
+-        }
+-    }
+ }
+diff --git a/Assets/Drakantus/Scripts/World/Occluder.cs b/Assets/Drakantus/Scripts/World/Occluder.cs
+new file mode 100644
+index 0000000..eb5c192
+--- /dev/null
++++ b/Assets/Drakantus/Scripts/World/Occluder.cs
+@@ -0,0 +1,64 @@
++using System.Collections.Generic;
++using UnityEngine;
++
++namespace Drakantus
++{
++    /// <summary>
++    /// Marcador (sem lógica de jogo) para objetos GRANDES que podem tampar o herói: árvores, casas,
++    /// muralhas, rochas grandes, paredes da masmorra. O LevelBuilder adiciona no objeto raiz do modelo.
++    /// Guarda os Renderers e a caixa (bounds) para o OcclusionFader.
++    /// </summary>
++    public class Occluder : MonoBehaviour
++    {
++        public static readonly List<Occluder> All = new List<Occluder>();
++
++        Renderer[] rends;
++        Bounds box;
++        bool measured, hasBox;
++
++        void OnEnable() { All.Add(this); }
++        void OnDisable() { All.Remove(this); }
++
++        /// <summary>Renderers de malha do objeto (partículas ficam de fora).</summary>
++        public Renderer[] Renderers
++        {
++            get
++            {
++                if (rends == null)
++                {
++                    var list = new List<Renderer>();
++                    foreach (var r in GetComponentsInChildren<Renderer>(true))
++                        if (r is MeshRenderer || r is SkinnedMeshRenderer) list.Add(r);
++                    rends = list.ToArray();
++                }
++                return rends;
++            }
++        }
++
++        /// <summary>Caixa no mundo, encolhida um pouco no plano (copas de árvore são "redondas").</summary>
++        public bool TryGetBox(out Bounds b)
++        {
++            if (!measured)
++            {
++                measured = true;
++                hasBox = false;
++                foreach (var r in Renderers)
++                {
++                    if (r == null) continue;
++                    if (!hasBox) { box = r.bounds; hasBox = true; }
++                    else box.Encapsulate(r.bounds);
++                }
++                if (hasBox)
++                {
++                    Vector3 e = box.extents;
++                    box.extents = new Vector3(e.x * 0.82f, e.y, e.z * 0.82f);
++                }
++            }
++            b = box;
++            return hasBox;
++        }
++
++        /// <summary>Força medir de novo (se o objeto for movido/escalado depois).</summary>
++        public void Remeasure() { measured = false; rends = null; }
++    }
++}
+diff --git a/Assets/Drakantus/Scripts/World/OcclusionFader.cs b/Assets/Drakantus/Scripts/World/OcclusionFader.cs
+index 2714014..80aaadd 100644
+--- a/Assets/Drakantus/Scripts/World/OcclusionFader.cs
++++ b/Assets/Drakantus/Scripts/World/OcclusionFader.cs
+@@ -4,64 +4,6 @@
+ 
+ namespace Drakantus
+ {
+-    /// <summary>
+-    /// Marcador (sem lógica de jogo) para objetos GRANDES que podem tampar o herói: árvores, casas,
+-    /// muralhas, rochas grandes, paredes da masmorra. O LevelBuilder adiciona no objeto raiz do modelo.
+-    /// Guarda os Renderers e a caixa (bounds) para o OcclusionFader.
+-    /// </summary>
+-    public class Occluder : MonoBehaviour
+-    {
+-        public static readonly List<Occluder> All = new List<Occluder>();
+-
+-        Renderer[] rends;
+-        Bounds box;
+-        bool measured, hasBox;
+-
+-        void OnEnable() { All.Add(this); }
+-        void OnDisable() { All.Remove(this); }
+-
+-        /// <summary>Renderers de malha do objeto (partículas ficam de fora).</summary>
+-        public Renderer[] Renderers
+-        {
+-            get
+-            {
+-                if (rends == null)
+-                {
+-                    var list = new List<Renderer>();
+-                    foreach (var r in GetComponentsInChildren<Renderer>(true))
+-                        if (r is MeshRenderer || r is SkinnedMeshRenderer) list.Add(r);
+-                    rends = list.ToArray();
+-                }
+-                return rends;
+-            }
+-        }
+-
+-        /// <summary>Caixa no mundo, encolhida um pouco no plano (copas de árvore são "redondas").</summary>
+-        public bool TryGetBox(out Bounds b)
+-        {
+-            if (!measured)
+-            {
+-                measured = true;
+-                hasBox = false;
+-                foreach (var r in Renderers)
+-                {
+-                    if (r == null) continue;
+-                    if (!hasBox) { box = r.bounds; hasBox = true; }
+-                    else box.Encapsulate(r.bounds);
+-                }
+-                if (hasBox)
+-                {
+-                    Vector3 e = box.extents;
+-                    box.extents = new Vector3(e.x * 0.82f, e.y, e.z * 0.82f);
+-                }
+-            }
+-            b = box;
+-            return hasBox;
+-        }
+-
+-        /// <summary>Força medir de novo (se o objeto for movido/escalado depois).</summary>
+-        public void Remeasure() { measured = false; rends = null; }
+-    }
+ 
+     /// <summary>
+     /// Deixa semitransparentes (25%) os Occluders entre a câmera e o herói.
+diff --git a/Assets/Drakantus/Scripts/World/TorchFlicker.cs b/Assets/Drakantus/Scripts/World/TorchFlicker.cs
+new file mode 100644
+index 0000000..6ca78f0
+--- /dev/null
++++ b/Assets/Drakantus/Scripts/World/TorchFlicker.cs
+@@ -0,0 +1,32 @@
++using UnityEngine;
++
++namespace Drakantus
++{
++    /// <summary>Faz a luz da tocha tremular: duas frequências de ruído Perlin + quedas rápidas ocasionais.</summary>
++    public class TorchFlicker : MonoBehaviour
++    {
++        public float baseIntensity = 2.5f;
++        public float baseRange;          // 0 = não mexe no alcance
++        public float amount = 0.18f;
++        public float speed = 6f;
++        public float seed;
++        Light l;
++
++        void Awake() { l = GetComponent<Light>(); }
++
++        void Update()
++        {
++            if (l == null) return;
++            float t = Time.time;
++            float slow = Mathf.PerlinNoise(seed, t * speed * 0.35f) - 0.5f;
++            float fast = Mathf.PerlinNoise(seed + 7.3f, t * speed * 2.2f) - 0.5f;
++            float n = slow * 1.3f + fast * 0.7f;
++            // "engasgo" da chama de vez em quando
++            float gust = Mathf.PerlinNoise(seed + 19.1f, t * 0.9f);
++            if (gust > 0.72f) n -= (gust - 0.72f) * 2.2f;
++            float k = 1f + n * 2f * amount;
++            l.intensity = baseIntensity * Mathf.Max(0.2f, k);
++            if (baseRange > 0f) l.range = baseRange * (1f + n * 0.25f * amount);
++        }
++    }
++}
