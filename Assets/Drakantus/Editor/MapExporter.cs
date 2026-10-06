@@ -32,6 +32,16 @@ namespace Drakantus.EditorTools
         [MenuItem("Drakantus/Mapas/Exportar Guilda (guild) para prefab editável", true)]
         static bool ExportGuildOk() { return Application.isPlaying; }
 
+        [MenuItem("Drakantus/Mapas/Agrupar hitboxes soltas no prefab da Praça")]
+        static void GroupTown() { GroupInPrefab("town"); }
+        [MenuItem("Drakantus/Mapas/Agrupar hitboxes soltas no prefab da Praça", true)]
+        static bool GroupTownOk() { return !Application.isPlaying; }
+
+        [MenuItem("Drakantus/Mapas/Agrupar hitboxes soltas no prefab da Guilda")]
+        static void GroupGuild() { GroupInPrefab("guild"); }
+        [MenuItem("Drakantus/Mapas/Agrupar hitboxes soltas no prefab da Guilda", true)]
+        static bool GroupGuildOk() { return !Application.isPlaying; }
+
         [MenuItem("Drakantus/Mapas/Apagar prefab da Praça e voltar ao mapa por código")]
         static void DeleteTown() { DeletePrefab("town"); }
         [MenuItem("Drakantus/Mapas/Apagar prefab da Guilda e voltar ao mapa por código")]
@@ -73,6 +83,9 @@ namespace Drakantus.EditorTools
                 if (sun != null) { var e = sun.eulerAngles; sunPitch = e.x; sunYaw = e.y; sun.rotation = oldSun; }
 
                 BuildRoot(root, info, mapId, sunPitch, sunYaw);
+                int orphans;
+                int grouped = GroupHitboxes(root, out orphans);
+                Debug.Log("[Drakantus] Hitboxes agrupadas com o modelo: " + grouped + (orphans > 0 ? " (sem par: " + orphans + ")" : ""));
                 int saved = PersistAssets(root, mapId);
 
                 bool ok;
@@ -153,6 +166,108 @@ namespace Drakantus.EditorTools
                 g.transform.position = info.sanctuary;
                 g.AddComponent<SanctuaryMarker>();
             }
+        }
+
+        // ------------------------------------------------------------------ hitboxes soltas
+        // O código cria o colisor de bancos, barracas, postes e troncos como um objeto invisível IRMÃO do modelo.
+        // Ao mover só o modelo, o hitbox fica para trás. Aqui cada par vira "<modelo>_Grupo" (escala 1) com os dois dentro.
+        static readonly string[] PropHitboxes = { "Colisor_Banco", "Colisor_Barraca", "Colisor_Poste", "Tronco" };
+
+        static bool IsPropHitbox(Transform t)
+        {
+            if (t.GetComponent<Collider>() == null || t.GetComponent<Renderer>() != null) return false;
+            foreach (var n in PropHitboxes) if (t.name == n) return true;
+            return false;
+        }
+
+        static bool HasRenderer(Transform t) { return t.GetComponentInChildren<Renderer>(true) != null; }
+
+        static bool BoundsOf(Transform t, out Bounds b)
+        {
+            b = new Bounds(t.position, Vector3.zero);
+            bool any = false;
+            foreach (var r in t.GetComponentsInChildren<Renderer>(true))
+            {
+                if (r is ParticleSystemRenderer) continue;
+                if (!any) { b = r.bounds; any = true; } else b.Encapsulate(r.bounds);
+            }
+            return any;
+        }
+
+        /// <summary>Junta cada hitbox solta ao modelo mais próximo. Devolve quantas agrupou; orphans = sem modelo por perto.</summary>
+        public static int GroupHitboxes(GameObject root, out int orphans)
+        {
+            orphans = 0;
+            var cols = new List<Transform>();
+            foreach (var c in root.GetComponentsInChildren<Collider>(true))
+                if (IsPropHitbox(c.transform) && !cols.Contains(c.transform)) cols.Add(c.transform);
+
+            // passo 1: escolher o par de cada hitbox (antes de mexer na hierarquia)
+            var pairs = new List<KeyValuePair<Transform, Transform>>();
+            foreach (var ct in cols)
+            {
+                var parent = ct.parent;
+                if (parent == null || parent.name.EndsWith("_Grupo")) continue;   // já agrupada
+                Transform best = null;
+                float bestD = 1.0f;
+                for (int i = 0; i < parent.childCount; i++)
+                {
+                    var v = parent.GetChild(i);
+                    if (v == ct || IsPropHitbox(v) || v.name.EndsWith("_Grupo") || !HasRenderer(v)) continue;
+                    Vector3 d = v.position - ct.position; d.y = 0f;
+                    if (d.magnitude < bestD) { bestD = d.magnitude; best = v; }
+                }
+                if (best == null)   // plano B: o centro da hitbox cai dentro da caixa do modelo (em XZ)
+                {
+                    for (int i = 0; i < parent.childCount; i++)
+                    {
+                        var v = parent.GetChild(i);
+                        if (v == ct || IsPropHitbox(v) || v.name.EndsWith("_Grupo")) continue;
+                        Bounds b;
+                        if (!BoundsOf(v, out b)) continue;
+                        b.Expand(new Vector3(0.3f, 100f, 0.3f));
+                        if (b.Contains(new Vector3(ct.position.x, b.center.y, ct.position.z))) { best = v; break; }
+                    }
+                }
+                if (best == null) { orphans++; continue; }
+                pairs.Add(new KeyValuePair<Transform, Transform>(ct, best));
+            }
+
+            // passo 2: criar o grupo (escala 1, na posição/rotação do modelo) e mover os dois para dentro
+            var wrappers = new Dictionary<Transform, Transform>();
+            foreach (var pr in pairs)
+            {
+                Transform wrap;
+                if (!wrappers.TryGetValue(pr.Value, out wrap))
+                {
+                    var parent = pr.Value.parent;
+                    var g = new GameObject(pr.Value.name + "_Grupo");
+                    g.transform.SetParent(parent, false);
+                    g.transform.SetPositionAndRotation(pr.Value.position, pr.Value.rotation);
+                    pr.Value.SetParent(g.transform, true);
+                    wrap = g.transform;
+                    wrappers[pr.Value] = wrap;
+                }
+                pr.Key.SetParent(wrap, true);
+            }
+            return pairs.Count;
+        }
+
+        /// <summary>Roda o agrupamento num prefab já exportado (fora do Play).</summary>
+        static void GroupInPrefab(string id)
+        {
+            string path = FloorsDir + "/" + id + ".prefab";
+            if (!File.Exists(path)) { EditorUtility.DisplayDialog("Mapas", "Não existe " + path + ". Exporte o mapa primeiro.", "OK"); return; }
+            var contents = PrefabUtility.LoadPrefabContents(path);
+            try
+            {
+                int orphans;
+                int n = GroupHitboxes(contents, out orphans);
+                if (n > 0) PrefabUtility.SaveAsPrefabAsset(contents, path);
+                EditorUtility.DisplayDialog("Mapas", "Hitboxes agrupadas com o modelo: " + n + (orphans > 0 ? "\nSem modelo por perto (movidos antes?): " + orphans : "") +
+                    (n == 0 ? "\nNada a fazer (já agrupadas ou não encontradas)." : ""), "OK");
+            }
+            finally { PrefabUtility.UnloadPrefabContents(contents); }
         }
 
         // ------------------------------------------------------------------ materiais/malhas/texturas criados por código
